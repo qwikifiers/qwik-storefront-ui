@@ -1,4 +1,4 @@
-import { SfProgressSize } from '../../shared/SfProgress';
+import { SfProgressSize } from '../SfProgressCircular';
 
 export enum SfProgressLinearSize {
   'minimal' = 'minimal',

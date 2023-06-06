@@ -1,8 +1,17 @@
-import { SfProgressSize } from '../../shared/SfProgress';
-
 export type SfProgressCircularProps = {
   class?: string;
   value?: number;
   size?: `${SfProgressSize}`;
   ariaLabel?: string;
 };
+
+export enum SfProgressSize {
+  xs = 'xs',
+  sm = 'sm',
+  base = 'base',
+  lg = 'lg',
+  xl = 'xl',
+  '2xl' = '2xl',
+  '3xl' = '3xl',
+  '4xl' = '4xl',
+}
