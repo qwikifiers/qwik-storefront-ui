@@ -1,4 +1,3 @@
-export * from './SfInput';
 export * from './SfLink';
 export * from './SfListItem';
 export * from './SfLoader';

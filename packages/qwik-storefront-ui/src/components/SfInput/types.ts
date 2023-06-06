@@ -4,7 +4,6 @@ import {
   QwikIntrinsicElements,
   Signal,
 } from '@builder.io/qwik';
-import { SfInputSize } from '../../shared/SfInput';
 
 export type SfInputProps = Omit<
   QwikIntrinsicElements['input'],
@@ -19,3 +18,9 @@ export type SfInputProps = Omit<
   ref?: Signal<Element | undefined>;
   onChange$?: PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>;
 };
+
+export enum SfInputSize {
+  sm = 'sm',
+  base = 'base',
+  lg = 'lg',
+}
