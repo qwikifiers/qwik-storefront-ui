@@ -1,5 +1,4 @@
 import { QwikIntrinsicElements, Signal } from '@builder.io/qwik';
-import { SfLinkVariant } from '../../shared';
 
 export type SfLinkProps = QwikIntrinsicElements['a'] & {
   as?: any;
@@ -7,3 +6,8 @@ export type SfLinkProps = QwikIntrinsicElements['a'] & {
   class?: string;
   variant?: `${SfLinkVariant}`;
 };
+
+export enum SfLinkVariant {
+  primary = 'primary',
+  secondary = 'secondary',
+}
