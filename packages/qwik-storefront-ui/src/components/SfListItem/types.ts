@@ -1,5 +1,4 @@
 import { QwikIntrinsicElements, Signal } from '@builder.io/qwik';
-import { SfListItemSize } from '../../shared';
 
 export type SfListItemProps = QwikIntrinsicElements['a'] & {
   as?: any;
@@ -14,3 +13,9 @@ export type SfListItemProps = QwikIntrinsicElements['a'] & {
   showSlotPrefix?: boolean;
   showSlotSuffix?: boolean;
 };
+
+export enum SfListItemSize {
+  sm = 'sm',
+  base = 'base',
+  lg = 'lg',
+}
