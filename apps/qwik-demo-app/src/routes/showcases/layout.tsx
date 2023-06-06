@@ -68,15 +68,18 @@ export default component$(() => {
               <li
                 class="flex justify-between px-2 py-1 bg-gray-200 cursor-pointer select-none"
                 onClick$={() => {
-                  groupsOpenSignal.value = group;
+                  groupsOpenSignal.value =
+                    groupsOpenSignal.value === group ? '' : group;
                 }}
               >
                 {group}
                 <SfIconExpandMore
-                  class={`${!groupsOpenSignal.value ? 'rotate-180' : ''}`}
+                  class={`${
+                    groupsOpenSignal.value === group ? 'rotate-180' : ''
+                  }`}
                 />
               </li>
-              {!groupsOpenSignal.value ? (
+              {groupsOpenSignal.value === group ? (
                 <li>
                   <ul>
                     {groups[group].showcases.map((showcaseName) => (
