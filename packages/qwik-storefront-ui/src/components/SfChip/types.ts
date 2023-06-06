@@ -1,5 +1,4 @@
 import { QwikIntrinsicElements, Signal } from '@builder.io/qwik';
-import { SfChipSize } from '../../shared';
 
 export type SfChipProps = {
   ref?: Signal<Element | undefined>;
@@ -10,3 +9,8 @@ export type SfChipProps = {
   showSlotPrefix?: boolean;
   showSlotSuffix?: boolean;
 };
+
+export enum SfChipSize {
+  sm = 'sm',
+  base = 'base',
+}
