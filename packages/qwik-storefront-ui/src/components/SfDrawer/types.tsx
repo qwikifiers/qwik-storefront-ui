@@ -1,5 +1,4 @@
-import { PropFunction, QRL, Signal } from '@builder.io/qwik';
-import { SfDrawerPlacement } from '../../shared/SfDrawer';
+import { PropFunction, Signal } from '@builder.io/qwik';
 
 export type SfDrawerProps = {
   as?: any;
@@ -11,3 +10,10 @@ export type SfDrawerProps = {
   disableEsc?: boolean;
   onClose$?: PropFunction<() => false>;
 };
+
+export enum SfDrawerPlacement {
+  top = 'top',
+  bottom = 'bottom',
+  left = 'left',
+  right = 'right',
+}
