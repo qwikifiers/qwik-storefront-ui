@@ -1,7 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import { SfIconBase, SfIconBaseProps } from '../SfIconBase';
+import { SfIconBase, SfIconBaseProps, SfIconSize } from '../SfIconBase';
 import { SfIconProps } from './types';
-import { SfIconSize } from '../../shared';
 
 export const SfIconAdd = component$<SfIconBaseProps>(
   ({

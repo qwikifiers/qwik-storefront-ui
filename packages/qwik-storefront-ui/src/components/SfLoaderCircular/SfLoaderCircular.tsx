@@ -1,6 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import { SfLoaderSize } from '../../shared/SfLoader';
-import { SfLoaderCircularProps } from './types';
+import { SfLoaderCircularProps, SfLoaderSize } from './types';
 
 const sizeClasses = {
   [SfLoaderSize.xs]: 'h-4 w-4 ring-2',

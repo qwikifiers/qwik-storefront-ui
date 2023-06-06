@@ -1,6 +1,5 @@
 import { Slot, component$ } from '@builder.io/qwik';
-import { SfLinkVariant } from '../../shared';
-import { SfLinkProps } from './types';
+import { SfLinkProps, SfLinkVariant } from './types';
 
 const defaultLinkTag = 'a';
 

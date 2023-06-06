@@ -1,6 +1,5 @@
 import { Slot, component$ } from '@builder.io/qwik';
-import { SfInputSize } from '../../shared';
-import { SfInputProps } from './types';
+import { SfInputProps, SfInputSize } from './types';
 
 const sizeClasses = {
   [SfInputSize.sm]: 'py-1.5 px-4',

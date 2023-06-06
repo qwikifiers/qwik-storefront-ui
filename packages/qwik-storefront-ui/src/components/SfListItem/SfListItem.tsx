@@ -1,6 +1,5 @@
 import { Slot, component$ } from '@builder.io/qwik';
-import { SfListItemSize } from '../../shared';
-import { SfListItemProps } from './types';
+import { SfListItemProps, SfListItemSize } from './types';
 
 const sizeClasses = {
   [SfListItemSize.sm]: 'text-sm px-4 py-1',

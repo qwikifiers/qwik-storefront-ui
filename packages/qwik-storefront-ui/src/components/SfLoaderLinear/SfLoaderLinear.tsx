@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { SfLoaderLinearProps, SfLoaderLinearSize } from './types';
-import { SfLoaderSize } from '../../shared/SfLoader';
+import { SfLoaderSize } from '../SfLoaderCircular';
 
 const sizeClasses = {
   [SfLoaderLinearSize.minimal]: 'h-1',
