@@ -1,4 +1,4 @@
-import { Signal } from '@builder.io/qwik';
+import { PropFunction, QRL, Signal } from '@builder.io/qwik';
 import { SfDrawerPlacement } from '../../shared/SfDrawer';
 
 export type SfDrawerProps = {
@@ -9,5 +9,5 @@ export type SfDrawerProps = {
   placement?: `${SfDrawerPlacement}`;
   disableClickAway?: boolean;
   disableEsc?: boolean;
-  onClose$?: () => void;
+  onClose$?: PropFunction<() => false>;
 };

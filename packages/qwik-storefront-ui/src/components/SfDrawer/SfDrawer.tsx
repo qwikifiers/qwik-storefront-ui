@@ -42,7 +42,7 @@ export const SfDrawer = component$<SfDrawerProps>(
     return open ? (
       <Tag
         ref={ref ? ref : drawerRef}
-        className={`fixed ${placementClasses(placement)} ${_class}`}
+        class={`fixed ${placementClasses(placement)} ${_class}`}
         tabIndex="-1"
         data-testid="drawer"
         {...attributes}

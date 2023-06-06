@@ -1,5 +1,5 @@
-import { component$ } from '@builder.io/qwik';
+import type { RequestHandler } from '@builder.io/qwik-city';
 
-export default component$(() => {
-  return <div>Qwik StorefrontUI v2</div>;
-});
+export const onRequest: RequestHandler = async ({ redirect }) => {
+  throw redirect(308, '/AccordionItem/BasicAccordion/');
+};

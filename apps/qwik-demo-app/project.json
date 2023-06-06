@@ -21,7 +21,7 @@
       "executor": "@nrwl/vite:build",
       "options": {
         "outputPath": "dist/packages/qwik-demo-app",
-        "configFile": "packages/qwik-demo-app/vite.config.ts"
+        "configFile": "apps/qwik-demo-app/vite.config.ts"
       }
     },
     "build.ssr": {

@@ -273,7 +273,7 @@ export default component$(() => {
                         value={value}
                         checked={selectedFiltersSignal.value.includes(value)}
                         onChange$={(event) => {
-                          handleFilterSelection(event.target.value);
+                          handleFilterSelection(event.target?.value);
                         }}
                       />
                     </div>
