@@ -1,12 +1,21 @@
 {
   "name": "qwik-storefront-ui",
   "version": "0.0.1",
-  "description": "The goal is a component to support performant images on the web and automatic image optimization. That will be built as a pluggable component so devs could connect different image loaders to it (like Cloudinary, or builder)",
+  "description": "A frontend library for Qwik that helps developers quickly build fast, accessible, and beautiful storefronts.",
   "main": "./index.qwik.cjs",
   "qwik": "./index.qwik.mjs",
   "module": "./index.qwik.mjs",
   "types": "./qwik-storefront-ui/src/index.d.ts",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qwikifiers/qwik-storefront-ui"
+  },
+  "author": "gioboa",
+  "bugs": {
+    "url": "https://github.com/qwikifiers/qwik-storefront-ui/issues"
+  },
+  "homepage": "https://github.com/qwikifiers/qwik-storefront-ui#readme",
   "exports": {
     ".": {
       "import": "./index.qwik.mjs",
