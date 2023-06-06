@@ -1,5 +1,3 @@
-import { SfRatingSize } from '../../shared/SfRating';
-
 export type SfRatingProps = {
   class?: string;
   value?: number;
@@ -8,3 +6,11 @@ export type SfRatingProps = {
   halfIncrement?: boolean;
   ariaLabel?: string;
 };
+
+export enum SfRatingSize {
+  xs = 'xs',
+  sm = 'sm',
+  base = 'base',
+  lg = 'lg',
+  xl = 'xl',
+}
