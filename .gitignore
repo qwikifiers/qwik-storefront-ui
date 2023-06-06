@@ -15,6 +15,7 @@ tsconfig.tsbuildinfo
 .vscode/*
 !.vscode/tasks.json
 !.vscode/launch.json
+!.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/qwik.code-snippets
 
