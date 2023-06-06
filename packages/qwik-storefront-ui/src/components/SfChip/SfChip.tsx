@@ -1,6 +1,5 @@
 import { Slot, component$, useId } from '@builder.io/qwik';
-import { SfChipSize } from '../../shared';
-import { SfChipProps } from './types';
+import { SfChipProps, SfChipSize } from './types';
 
 export const SfChip = component$<SfChipProps>(
   ({

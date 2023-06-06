@@ -1,6 +1,5 @@
 import { Slot, component$ } from '@builder.io/qwik';
-import { SfButtonSize, SfButtonVariant } from '../../shared/SfButton';
-import { SfButtonProps } from './types';
+import { SfButtonProps, SfButtonSize, SfButtonVariant } from './types';
 
 export const defaultButtonTag = 'button';
 

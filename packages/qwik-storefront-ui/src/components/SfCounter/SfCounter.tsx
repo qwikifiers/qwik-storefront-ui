@@ -1,9 +1,13 @@
 import { Slot, component$ } from '@builder.io/qwik';
-import { SfCounterProps } from './types';
-import { SfCounterSize } from '../../shared';
+import { SfCounterProps, SfCounterSize } from './types';
 
 export const SfCounter = component$<SfCounterProps>(
-  ({ size = SfCounterSize.base, pill = false, class: _class, ...attributes }) => {
+  ({
+    size = SfCounterSize.base,
+    pill = false,
+    class: _class,
+    ...attributes
+  }) => {
     const sizeClasses: Record<SfCounterSize, string> = {
       [SfCounterSize['3xs']]: `text-3xs ${pill ? 'px-1' : ''}`,
       [SfCounterSize['2xs']]: `text-2xs ${pill ? 'px-1.5' : ''}`,
@@ -25,5 +29,5 @@ export const SfCounter = component$<SfCounterProps>(
         <Slot />
       </span>
     );
-  },
+  }
 );

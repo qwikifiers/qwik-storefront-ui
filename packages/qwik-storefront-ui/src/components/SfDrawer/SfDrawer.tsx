@@ -1,6 +1,5 @@
 import { $, Slot, component$, useSignal } from '@builder.io/qwik';
-import { SfDrawerPlacement } from '../../shared/SfDrawer';
-import { SfDrawerProps } from './types';
+import { SfDrawerPlacement, SfDrawerProps } from './types';
 
 const defaultDrawerTag = 'aside';
 

@@ -1,6 +1,5 @@
 import { component$, Slot } from '@builder.io/qwik';
-
-import { SfIconBaseProps } from './types';
+import { SfIconBaseProps, SfIconSize } from './types';
 
 const getSizeClasses = (size: SfIconBaseProps['size']) => {
   switch (size) {
