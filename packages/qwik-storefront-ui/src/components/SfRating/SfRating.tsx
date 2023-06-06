@@ -45,21 +45,21 @@ export const SfRating = component$<SfRatingProps>(
         data-testid="rating"
         {...attributes}
       >
-        {[...Array(filled).keys()].map((key) => (
+        {[...Array(filled).keys()].map((_, i) => (
           <SfIconStarFilled
             aria-hidden="true"
             class="w-[1.5em] h-[1.5em]"
-            key={key}
+            key={'1' + i}
           />
         ))}
         {Boolean(partiallyFilled) && (
           <SfIconStarHalf aria-hidden="true" class="w-[1.5em] h-[1.5em]" />
         )}
-        {[...Array(empty).keys()].map((key) => (
+        {[...Array(empty).keys()].map((_, i) => (
           <SfIconStar
             aria-hidden="true"
             class="text-disabled-500 w-[1.5em] h-[1.5em]"
-            key={key}
+            key={'2' + i}
           />
         ))}
       </div>
