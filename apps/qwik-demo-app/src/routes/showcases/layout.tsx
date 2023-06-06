@@ -1,11 +1,9 @@
 import { component$, Slot, useSignal } from '@builder.io/qwik';
 import { Link, useLocation } from '@builder.io/qwik-city';
 import {
+  SfButton,
   SfButtonSize,
   SfButtonVariant,
-} from 'packages/qwik-storefront-ui/src/shared/SfButton';
-import {
-  SfButton,
   SfIconChevronLeft,
   SfIconChevronRight,
   SfIconExpandMore,
@@ -38,7 +36,7 @@ export default component$(() => {
   const location = useLocation();
 
   const groupItemHref = (groupName: string, showcaseName: string) =>
-    `/${groupName}/${showcaseName}`;
+    `/showcases/${groupName}/${showcaseName}`;
 
   return (
     <div class="e-page-examples">

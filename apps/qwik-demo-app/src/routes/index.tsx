@@ -1,5 +1,5 @@
 import type { RequestHandler } from '@builder.io/qwik-city';
 
 export const onRequest: RequestHandler = async ({ redirect }) => {
-  throw redirect(308, '/AccordionItem/BasicAccordion/');
+  throw redirect(308, '/showcases/AccordionItem/BasicAccordion/');
 };
