@@ -1,4 +1,3 @@
-export * from './SfCounter';
 export * from './SfDrawer';
 export * from './SfIconBase';
 export * from './SfInput';
