@@ -1,6 +1,5 @@
 import { Slot, component$ } from '@builder.io/qwik';
-import { SfThumbnailSize } from '../../shared/SfThumbnail';
-import { SfThumbnailProps } from './types';
+import { SfThumbnailProps, SfThumbnailSize } from './types';
 
 const sizeClasses = {
   [SfThumbnailSize.sm]: 'w-5 h-5',

@@ -1,7 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import { SfRatingSize } from '../../shared/SfRating';
 import { SfIconStar, SfIconStarFilled, SfIconStarHalf } from '../SfIcons';
-import { SfRatingProps } from './types';
+import { SfRatingProps, SfRatingSize } from './types';
 
 const sizeClasses = {
   [SfRatingSize.xs]: 'text-xs',

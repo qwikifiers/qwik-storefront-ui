@@ -1,7 +1,6 @@
 import { Slot, component$, useSignal } from '@builder.io/qwik';
-import { SfSelectSize } from '../../shared/SfSelect';
 import { SfIconExpandMore } from '../SfIcons';
-import { SfSelectProps } from './types';
+import { SfSelectProps, SfSelectSize } from './types';
 
 export const SfSelect = component$<SfSelectProps>(
   ({

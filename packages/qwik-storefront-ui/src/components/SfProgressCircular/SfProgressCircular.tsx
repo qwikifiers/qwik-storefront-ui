@@ -1,6 +1,5 @@
 import { Slot, component$ } from '@builder.io/qwik';
-import { SfProgressSize } from '../../shared/SfProgress';
-import { SfProgressCircularProps } from './types';
+import { SfProgressCircularProps, SfProgressSize } from './types';
 
 const sizeClasses = {
   [SfProgressSize.xs]: 'h-4 w-4 ring-2',
@@ -49,7 +48,7 @@ export const SfProgressCircular = component$<SfProgressCircularProps>(
         {...attributes}
       >
         <circle
-          className={`origin-bottom-right -rotate-90 stroke-current fill-none ${strokeSizeClass[size]}`}
+          class={`origin-bottom-right -rotate-90 stroke-current fill-none ${strokeSizeClass[size]}`}
           cx="50"
           cy="50"
           r="24"

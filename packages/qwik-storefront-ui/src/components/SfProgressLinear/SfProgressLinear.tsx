@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import { SfProgressSize } from '../../shared/SfProgress';
 import { SfProgressLinearProps, SfProgressLinearSize } from './types';
+import { SfProgressSize } from '../SfProgressCircular';
 
 const sizeClasses = {
   [SfProgressLinearSize.minimal]: 'h-1',

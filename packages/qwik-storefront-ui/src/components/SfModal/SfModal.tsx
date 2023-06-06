@@ -4,7 +4,16 @@ import { SfModalProps } from './types';
 const defaultModalTag = 'div';
 
 export const SfModal = component$<SfModalProps>(
-  ({ as, ref, open, disableClickAway, disableEsc, onClose, class: _class, ...attributes }) => {
+  ({
+    as,
+    ref,
+    open,
+    disableClickAway,
+    disableEsc,
+    onClose,
+    class: _class,
+    ...attributes
+  }) => {
     const Tag = as || defaultModalTag;
 
     // TODO
@@ -18,7 +27,11 @@ export const SfModal = component$<SfModalProps>(
       if (!disableEsc && event.key === 'Escape') {
         onClose?.();
       }
-      if ('onKeyDown' in attributes && typeof attributes.onKeyDown === 'function') return attributes.onKeyDown?.(event);
+      if (
+        'onKeyDown' in attributes &&
+        typeof attributes.onKeyDown === 'function'
+      )
+        return attributes.onKeyDown?.(event);
     };
 
     // TODO
@@ -31,7 +44,7 @@ export const SfModal = component$<SfModalProps>(
     return open ? (
       <Tag
         {...(ref ? { ref } : {})}
-        className={`fixed inset-0 w-fit h-fit m-auto p-6 pt-10 lg:p-10 border border-neutral-100 bg-white shadow-xl rounded-xl outline-none 
+        class={`fixed inset-0 w-fit h-fit m-auto p-6 pt-10 lg:p-10 border border-neutral-100 bg-white shadow-xl rounded-xl outline-none 
           ${_class}`}
         tabIndex="-1"
         aria-modal="true"
@@ -42,7 +55,7 @@ export const SfModal = component$<SfModalProps>(
         <Slot />
       </Tag>
     ) : null;
-  },
+  }
 );
 
 export default SfModal;

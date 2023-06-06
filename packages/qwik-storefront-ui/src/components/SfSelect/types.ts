@@ -3,7 +3,6 @@ import {
   QwikChangeEvent,
   QwikIntrinsicElements,
 } from '@builder.io/qwik';
-import { SfSelectSize } from '../../shared/SfSelect';
 
 export type SfSelectProps = Omit<QwikIntrinsicElements['select'], 'size'> & {
   class?: string;
@@ -13,3 +12,9 @@ export type SfSelectProps = Omit<QwikIntrinsicElements['select'], 'size'> & {
   showSlotChevron?: boolean;
   onChange$?: PropFunction<(event: QwikChangeEvent<HTMLSelectElement>) => void>;
 };
+
+export enum SfSelectSize {
+  sm = 'sm',
+  base = 'base',
+  lg = 'lg',
+}
