@@ -1,4 +1,4 @@
-import { SfLoaderSize } from '../../shared/SfLoader';
+import { SfLoaderSize } from '../SfLoaderCircular';
 
 export enum SfLoaderLinearSize {
   minimal = 'minimal',
