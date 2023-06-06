@@ -1,4 +1,3 @@
-export * from './SfButton';
 export * from './SfChip';
 export * from './SfCounter';
 export * from './SfDrawer';

@@ -4,7 +4,6 @@ import {
   QwikMouseEvent,
   Signal,
 } from '@builder.io/qwik';
-import { SfButtonSize, SfButtonVariant } from '../../shared/SfButton';
 
 export type SfButtonProps = QwikIntrinsicElements['button'] &
   QwikIntrinsicElements['a'] & {
@@ -17,3 +16,15 @@ export type SfButtonProps = QwikIntrinsicElements['button'] &
       (event: QwikMouseEvent<HTMLButtonElement, MouseEvent>) => void
     >;
   };
+
+export enum SfButtonSize {
+  sm = 'sm',
+  base = 'base',
+  lg = 'lg',
+}
+
+export enum SfButtonVariant {
+  primary = 'primary',
+  secondary = 'secondary',
+  tertiary = 'tertiary',
+}
