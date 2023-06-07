@@ -1,6 +1,5 @@
 import { $, component$, useContext, useTask$ } from '@builder.io/qwik';
-import { SfPopoverPlacement, SfPopoverStrategy } from '@storefront-ui/shared';
-import { SfButton, SfDropdown } from 'qwik-storefront-ui';
+import { SfButton, SfDropdown, SfPopoverPlacement, SfPopoverStrategy } from 'qwik-storefront-ui';
 import { ComponentExample } from '../../../components/utils/ComponentExample';
 import { ControlsType } from '../../../components/utils/types';
 import { EXAMPLES_STATE } from '../layout';
@@ -50,10 +49,10 @@ export default component$(() => {
   );
   const toggle = $(
     () =>
-      (examplesState.data.state = {
-        ...examplesState.data.state,
-        open: !examplesState.data.state.open,
-      })
+    (examplesState.data.state = {
+      ...examplesState.data.state,
+      open: !examplesState.data.state.open,
+    })
   );
 
   return (
