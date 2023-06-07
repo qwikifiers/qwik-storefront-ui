@@ -17,5 +17,5 @@ export const ComponentExample = component$<ComponentExampleProps<any>>(
         <Controls />
       </div>
     );
-  },
+  }
 );

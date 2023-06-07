@@ -91,11 +91,7 @@ export default component$(() => {
         </ul>
       </div>
 
-      <div class="e-page">
-        <div class="e-page-component">
-          <Slot />
-        </div>
-      </div>
+      <Slot />
     </div>
   );
 });

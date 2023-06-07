@@ -5,8 +5,6 @@ import {
   useContext,
   useSignal,
 } from '@builder.io/qwik';
-import { EXAMPLES_STATE } from '../../routes/examples/layout';
-import { ControlOptionBind, ControlsType } from './types';
 import {
   SfButton,
   SfButtonSize,
@@ -14,22 +12,19 @@ import {
   SfIconExpandLess,
   SfIconExpandMore,
 } from 'qwik-storefront-ui';
+import { EXAMPLES_STATE } from '../../routes/examples/layout';
+import { ControlOptionBind, ControlsType } from './types';
 
 export const Controls = component$<any>(() => {
   const examplesState = useContext(EXAMPLES_STATE);
-  const previewBottomOpenSignal = useSignal(false);
+  const previewBottomOpenSignal = useSignal(true);
 
-  const handleOnChangeValue = $(
-    (
-      e: QwikChangeEvent<HTMLSelectElement | HTMLInputElement>,
-      name: string
-    ) => {
-      examplesState.data.state = {
-        ...examplesState.data.state,
-        [name]: e.target.value,
-      };
-    }
-  );
+  const handleOnChangeValue = $((name: string, value: string) => {
+    examplesState.data.state = {
+      ...examplesState.data.state,
+      [name]: value,
+    };
+  });
 
   const handleJsonOnChangeValue = $(
     (e: QwikChangeEvent<HTMLTextAreaElement>, name: string) => {
@@ -167,7 +162,10 @@ export const Controls = component$<any>(() => {
                         value={examplesState.data.state[control.modelName]}
                         aria-labelledby={control.modelName}
                         onChange$={(e) => {
-                          handleOnChangeValue(e, control.modelName);
+                          handleOnChangeValue(
+                            control.modelName,
+                            e.target.value
+                          );
                         }}
                       >
                         {(
@@ -236,10 +234,10 @@ export const Controls = component$<any>(() => {
                                       class="border rounded-md"
                                       type={control.type}
                                       aria-labelledby={control.modelName}
-                                      onChange$={(e) => {
+                                      onKeyDown$={(e: any) => {
                                         handleOnChangeValue(
-                                          e,
-                                          control.modelName
+                                          control.modelName,
+                                          e.target.value
                                         );
                                       }}
                                     />
@@ -261,8 +259,8 @@ export const Controls = component$<any>(() => {
                                               ]
                                             )
                                           : handleOnChangeValue(
-                                              e,
-                                              control.modelName
+                                              control.modelName,
+                                              e.target.value
                                             );
                                       }}
                                       name={`${control.modelName}-${index}`}
