@@ -1,4 +1,10 @@
-import { $, component$, useContext, useTask$ } from '@builder.io/qwik';
+import {
+  $,
+  QwikChangeEvent,
+  component$,
+  useContext,
+  useTask$,
+} from '@builder.io/qwik';
 import { SfSelect, SfSelectSize } from 'qwik-storefront-ui';
 import { ComponentExample } from '../../../components/utils/ComponentExample';
 import { ControlsType } from '../../../components/utils/types';
@@ -80,12 +86,22 @@ export default component$(() => {
     };
   });
 
-  const onChange$ = $((event: React.ChangeEvent) => {
+  const onChange$ = $((event: QwikChangeEvent<HTMLSelectElement>) => {
     examplesState.data.state = {
       ...examplesState.data.state,
       value: (event.target as HTMLSelectElement).value,
     };
   });
+
+  const attributes = {
+    value: examplesState.data.state.value,
+    placeholder: examplesState.data.state.placeholder,
+    disabled: examplesState.data.state.disabled,
+    required: examplesState.data.state.required,
+    invalid: examplesState.data.state.invalid,
+    label: examplesState.data.state.label,
+    size: examplesState.data.state.size,
+  };
 
   return (
     <ComponentExample>
@@ -101,8 +117,8 @@ export default component$(() => {
         >
           {examplesState.data.state.label}
         </span>
-        <SfSelect {...examplesState.data.state} onChange$={onChange$}>
-          {examplesState.data.state.options.map(
+        <SfSelect {...attributes} onChange$={onChange$}>
+          {(examplesState.data.state.options || []).map(
             (option: { label: string; value: string }) => (
               <option value={option.value} key={option.value}>
                 {option.label}

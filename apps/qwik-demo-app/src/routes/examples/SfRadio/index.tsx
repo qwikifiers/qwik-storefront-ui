@@ -61,7 +61,7 @@ export default component$(() => {
 
   return (
     <ComponentExample>
-      {examplesState.data.state.radioOptions.map(
+      {(examplesState.data.state.radioOptions || []).map(
         ({
           label,
           value,
