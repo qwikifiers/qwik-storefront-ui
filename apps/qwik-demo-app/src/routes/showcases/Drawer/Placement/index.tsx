@@ -1,6 +1,10 @@
 import { $, QwikChangeEvent, component$, useSignal } from '@builder.io/qwik';
-import { SfDrawerPlacement } from 'packages/qwik-storefront-ui/src/shared/SfDrawer';
-import { SfButton, SfDrawer, SfDrawerProps } from 'qwik-storefront-ui';
+import {
+  SfButton,
+  SfDrawer,
+  SfDrawerPlacement,
+  SfDrawerProps,
+} from 'qwik-storefront-ui';
 
 export default component$(() => {
   const openSignal = useSignal(false);
