@@ -22,7 +22,7 @@ export const EXAMPLES_STATE = createContextId<{
 }>('EXAMPLES_STATE');
 
 const files = import.meta.glob('./**');
-const paths = Object.keys(files);
+const paths = Object.keys(files).filter((f) => f.indexOf('./index.tsx') !== 0);
 const groups = paths.reduce(
   (prev: Record<string, { showcases: string[] }>, curr) => {
     const showcasePathArray = curr.slice(2).split('/');
