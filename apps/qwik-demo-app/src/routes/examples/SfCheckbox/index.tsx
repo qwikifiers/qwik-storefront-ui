@@ -34,6 +34,13 @@ export default component$(() => {
             '(not prop) example allows to add value attribute to input',
         },
         {
+          type: 'text',
+          modelName: 'label',
+          propType: 'string',
+          description:
+            'Text next to thumbnail',
+        },
+        {
           type: 'boolean',
           modelName: 'indeterminate',
           propType: 'boolean',
@@ -53,6 +60,7 @@ export default component$(() => {
       ] satisfies ControlsType,
       state: {
         value: 'label',
+        label: 'Label',
         indeterminate: false,
         disabled: false,
         invalid: false,
@@ -67,9 +75,9 @@ export default component$(() => {
     examplesState.data.state.invalid
       ? checkboxRef.value?.setAttribute('indeterminate', 'false')
       : checkboxRef.value?.setAttribute(
-          'indeterminate',
-          examplesState.data.state.indeterminate
-        );
+        'indeterminate',
+        examplesState.data.state.indeterminate
+      );
   });
 
   const onChange = $((event: QwikChangeEvent<HTMLInputElement>) => {
@@ -77,15 +85,15 @@ export default component$(() => {
     examplesState.data.state =
       examplesState.data.state.checkedValue.indexOf(value) > -1
         ? {
-            ...examplesState.data.state,
-            checkedValue: examplesState.data.state.checkedValue.filter(
-              (val: string) => val !== value
-            ),
-          }
+          ...examplesState.data.state,
+          checkedValue: examplesState.data.state.checkedValue.filter(
+            (val: string) => val !== value
+          ),
+        }
         : {
-            ...examplesState.data.state,
-            checkedValue: [...examplesState.data.state.checkedValue, value],
-          };
+          ...examplesState.data.state,
+          checkedValue: [...examplesState.data.state.checkedValue, value],
+        };
   });
 
   return (
@@ -107,7 +115,7 @@ export default component$(() => {
           for="checkbox"
           class="ml-3 text-base text-gray-900 cursor-pointer font-body peer-disabled:text-disabled-900"
         >
-          Label
+          {examplesState.data.state.label}
         </label>
       </div>
     </ComponentExample>
