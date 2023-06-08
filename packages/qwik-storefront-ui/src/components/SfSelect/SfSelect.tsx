@@ -5,7 +5,6 @@ import { SfSelectProps, SfSelectSize } from './types';
 export const SfSelect = component$<SfSelectProps>(
   ({
     size = SfSelectSize.base,
-    children,
     invalid,
     wrapperClass,
     showSlotChevron,
@@ -48,13 +47,12 @@ export const SfSelect = component$<SfSelectProps>(
           required={required}
           disabled={disabled}
           class={`
-          appearance-none disabled:cursor-not-allowed cursor-pointer pl-4 pr-3.5 text-neutral-900 focus:ring-primary-700 focus:ring-2 outline-none bg-transparent rounded-md ring-1 ring-inset ring-neutral-300 hover:ring-primary-700 active:ring-2 active:ring-primary-700 disabled:bg-disabled-100 disabled:text-disabled-900 disabled:ring-disabled-200 
+          appearance-none disabled:cursor-not-allowed cursor-pointer pl-4 pr-3.5 text-neutral-900 focus:ring-primary-700 focus:ring-2 outline-none bg-transparent rounded-md ring-1 ring-inset ring-neutral-300 hover:ring-primary-700 active:ring-2 active:ring-primary-700 disabled:bg-disabled-100 disabled:text-disabled-900 disabled:ring-disabled-200
           ${size === SfSelectSize.sm ? 'py-1.5' : ''}
           ${size === SfSelectSize.base ? 'py-2' : ''}
           ${size === SfSelectSize.lg ? 'py-3 text-base' : ''}
           ${invalid && !disabled ? '!ring-negative-600 ring-2' : ''}
           ${_class}`}
-          data-testid="select-input"
           onChange$={onChange$}
           // TODO
           // onBlur={composeHandlers(rotateDown, onBlur)}
