@@ -197,6 +197,17 @@ export const Controls = component$<any>(() => {
                           <label class="flex items-center">
                             {(() => {
                               switch (control.type) {
+                                case 'label':
+                                  return (
+                                    <span>
+                                      {
+                                        examplesState.data.state[
+                                          control.modelName
+                                        ]
+                                      }
+                                      &nbsp;
+                                    </span>
+                                  );
                                 case 'json':
                                   return (
                                     <textarea

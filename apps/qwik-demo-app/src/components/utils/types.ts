@@ -5,13 +5,23 @@ export interface ControlOptionBind {
 }
 
 export type ControlsType = {
-  type?: 'range' | 'radio' | 'checkbox' | 'text' | 'select' | 'boolean' | 'json';
+  type?:
+    | 'range'
+    | 'radio'
+    | 'checkbox'
+    | 'text'
+    | 'select'
+    | 'boolean'
+    | 'json'
+    | 'label';
   modelName: string;
   description?: string;
   propDefaultValue?: string | number | boolean;
   propType?: string;
   isRequired?: boolean;
-  options?: (ControlOptionBind | string)[] | readonly (ControlOptionBind | string)[];
+  options?:
+    | (ControlOptionBind | string)[]
+    | readonly (ControlOptionBind | string)[];
 }[];
 
 export type Models<T> = { [key: string]: T };

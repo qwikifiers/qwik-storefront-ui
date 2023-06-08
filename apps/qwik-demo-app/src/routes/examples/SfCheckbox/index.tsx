@@ -20,7 +20,7 @@ export default component$(() => {
     examplesState.data = {
       controls: [
         {
-          type: 'text',
+          type: 'label',
           modelName: 'checkedValue',
           propType: 'string',
           description: 'Example of getting values from group of checkboxes',
@@ -37,8 +37,7 @@ export default component$(() => {
           type: 'text',
           modelName: 'label',
           propType: 'string',
-          description:
-            'Text next to thumbnail',
+          description: 'Text next to thumbnail',
         },
         {
           type: 'boolean',
@@ -75,9 +74,9 @@ export default component$(() => {
     examplesState.data.state.invalid
       ? checkboxRef.value?.setAttribute('indeterminate', 'false')
       : checkboxRef.value?.setAttribute(
-        'indeterminate',
-        examplesState.data.state.indeterminate
-      );
+          'indeterminate',
+          examplesState.data.state.indeterminate
+        );
   });
 
   const onChange = $((event: QwikChangeEvent<HTMLInputElement>) => {
@@ -85,15 +84,15 @@ export default component$(() => {
     examplesState.data.state =
       examplesState.data.state.checkedValue.indexOf(value) > -1
         ? {
-          ...examplesState.data.state,
-          checkedValue: examplesState.data.state.checkedValue.filter(
-            (val: string) => val !== value
-          ),
-        }
+            ...examplesState.data.state,
+            checkedValue: examplesState.data.state.checkedValue.filter(
+              (val: string) => val !== value
+            ),
+          }
         : {
-          ...examplesState.data.state,
-          checkedValue: [...examplesState.data.state.checkedValue, value],
-        };
+            ...examplesState.data.state,
+            checkedValue: [...examplesState.data.state.checkedValue, value],
+          };
   });
 
   return (
