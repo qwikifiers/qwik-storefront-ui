@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "serve": "nx run qwik-demo-app:serve"
+    "serve": "nx run website:serve"
   },
   "private": false,
   "devDependencies": {
