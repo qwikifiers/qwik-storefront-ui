@@ -1,4 +1,4 @@
-import { $, component$, useContext, useTask$ } from '@builder.io/qwik';
+import { $, QwikChangeEvent, component$, useContext, useTask$ } from '@builder.io/qwik';
 import { SfSwitch } from 'qwik-storefront-ui';
 import { ComponentExample } from '../../../components/utils/ComponentExample';
 import { ControlsType } from '../../../components/utils/types';
@@ -37,7 +37,7 @@ export default component$(() => {
     };
   });
 
-  const onChange = $((event: React.ChangeEvent<HTMLInputElement>) => {
+  const onChange = $((event: QwikChangeEvent<HTMLInputElement>) => {
     const { checked } = event.target;
     examplesState.data.state = { ...examplesState.data.state, checked };
   });
