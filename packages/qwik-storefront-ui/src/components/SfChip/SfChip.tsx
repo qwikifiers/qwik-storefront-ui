@@ -24,9 +24,9 @@ export const SfChip = component$<SfChipProps>(
           return square
             ? 'px-1.5'
             : [
-                showSlotPrefix ? 'pl-1.5' : 'pl-3',
-                slotSuffix ? 'pr-1.5' : 'pr-3',
-              ];
+              showSlotPrefix ? 'pl-1.5' : 'pl-3',
+              slotSuffix ? 'pr-1.5' : 'pr-3',
+            ];
         default:
           return square
             ? 'px-2'
