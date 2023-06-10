@@ -38,6 +38,7 @@
     "ngx-deploy-npm": "^6.0.0",
     "node-fetch": "~3.3.1",
     "nx": "16.3.2",
+    "nx-cloud": "^16.0.5",
     "postcss": "~8.4.24",
     "prettier": "^2.8.8",
     "qwik-nx": "^1.0.4",
