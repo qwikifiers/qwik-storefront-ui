@@ -98,9 +98,6 @@ devDependencies:
   nx:
     specifier: 16.3.2
     version: 16.3.2
-  nx-cloud:
-    specifier: ^16.0.5
-    version: 16.0.5
   postcss:
     specifier: ~8.4.24
     version: 8.4.24
