@@ -27,6 +27,8 @@ export const RouterHead = component$(() => {
       {head.styles.map((s) => (
         <style {...s.props} dangerouslySetInnerHTML={s.style} />
       ))}
+
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
     </>
   );
 });
