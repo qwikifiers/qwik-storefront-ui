@@ -1,5 +1,10 @@
-import type { RequestHandler } from '@builder.io/qwik-city';
+import { component$ } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
 
-export const onRequest: RequestHandler = async ({ redirect }) => {
-  throw redirect(308, '/docs/');
+export default component$(() => {
+  return <h1>DOCS: Qwik Storefront UI </h1>;
+});
+
+export const head: DocumentHead = {
+  title: 'Qwik Storefront UI',
 };

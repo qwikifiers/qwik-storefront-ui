@@ -1,8 +1,8 @@
-import { qwikCity } from '@builder.io/qwik-city/vite';
 import { qwikVite } from '@builder.io/qwik/optimizer';
-import { qwikNxVite } from 'qwik-nx/plugins';
+import { qwikCity } from '@builder.io/qwik-city/vite';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import { qwikNxVite } from 'qwik-nx/plugins';
 
 export default defineConfig({
   plugins: [
@@ -10,10 +10,10 @@ export default defineConfig({
     qwikCity(),
     qwikVite({
       client: {
-        outDir: '../../dist/packages/website/client',
+        outDir: '../../dist/apps/website/client',
       },
       ssr: {
-        outDir: '../../dist/packages/website/server',
+        outDir: '../../dist/apps/website/server',
       },
     }),
     tsconfigPaths({ root: '../../' }),
