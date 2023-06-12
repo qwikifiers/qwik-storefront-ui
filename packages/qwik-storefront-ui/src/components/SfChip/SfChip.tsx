@@ -41,19 +41,31 @@ export const SfChip = component$<SfChipProps>(
           return 'text-base py-2 gap-2';
       }
     };
+
+    const getCheckedClasses = (checked: boolean | undefined) => {
+      return checked ? 'ring-2 ring-primary-700 hover:ring-primary-700' : ' hover:ring-primary-200 ring-neutral-200';
+    }
+
+
+    const getDisabledClasses = (disabled: boolean | undefined) => {
+      return disabled ? 'cursor-not-allowed bg-disabled-100 opacity-50 ring-1 ring-disabled-200 hover:ring-disabled-200' : 'hover:bg-primary-100 cursor-pointer';
+    }
+
     return (
       <>
         <input
           id={chipId}
           {...(ref ? { ref } : {})}
-          class="absolute w-0 outline-none appearance-none peer"
+          class='hidden'
           type="checkbox"
           {...inputProps}
         />
         <label
           for={chipId}
           class={[
-            'cursor-pointer ring-1 ring-neutral-200 ring-inset rounded-full inline-flex items-center transition duration-300 justify-center outline-offset-2 outline-secondary-600 peer-next-checked:ring-2 peer-next-checked:ring-primary-700 hover:bg-primary-100 peer-next-hover:ring-primary-200 active:bg-primary-200 peer-next-active:ring-primary-300 peer-next-disabled:cursor-not-allowed peer-next-disabled:bg-disabled-100 peer-next-disabled:opacity-50 peer-next-disabled:ring-1 peer-next-disabled:ring-disabled-200 peer-next-disabled:hover:ring-disabled-200 peer-next-checked:hover:ring-primary-700 peer-next-checked:active:ring-primary-700 peer-next-focus-visible:outline',
+            'ring-1 ring-inset rounded-full inline-flex items-center transition duration-200 justify-center outline-offset-2 outline-secondary-600  focus-visible:outline',
+            getCheckedClasses(inputProps?.checked),
+            getDisabledClasses(inputProps?.disabled),
             getSizeClasses(size),
             paddingForSize(size, square, !!showSlotPrefix, !!showSlotSuffix),
             _class,
