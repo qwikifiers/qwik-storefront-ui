@@ -1,4 +1,4 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { component$, Slot, useId } from '@builder.io/qwik';
 import { SfIconBaseProps, SfIconSize } from './types';
 
 const getSizeClasses = (size: SfIconBaseProps['size']) => {
@@ -23,9 +23,11 @@ const getSizeClasses = (size: SfIconBaseProps['size']) => {
 };
 
 export const SfIconBase = component$<SfIconBaseProps>(
-  ({ size = SfIconSize.base, class: _class, children = '', ...attributes }) => {
+  ({ size = SfIconSize.base, class: _class, ...attributes }) => {
+    const uniqueId = useId();
     return (
       <svg
+        key={uniqueId}
         {...attributes}
         xmlns="http://www.w3.org/2000/svg"
         class={`inline-block fill-current ${getSizeClasses(size)} ${_class}`}
