@@ -1,4 +1,4 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useId } from '@builder.io/qwik';
 import { SfIconStar, SfIconStarFilled, SfIconStarHalf } from '../SfIcons';
 import { SfRatingProps, SfRatingSize } from './types';
 
@@ -20,6 +20,7 @@ export const SfRating = component$<SfRatingProps>(
     class: _class,
     ...attributes
   }) => {
+    const uniqueId = useId();
     const clamp = (value: number, min: number, max: number) => {
       return Math.min(Math.max(value, min), max);
     };
@@ -48,7 +49,7 @@ export const SfRating = component$<SfRatingProps>(
           <SfIconStarFilled
             aria-hidden="true"
             class="w-[1.5em] h-[1.5em]"
-            key={'1' + i}
+            key={`${uniqueId}-filled-${i}`}
           />
         ))}
         {Boolean(partiallyFilled) && (
@@ -58,7 +59,7 @@ export const SfRating = component$<SfRatingProps>(
           <SfIconStar
             aria-hidden="true"
             class="text-disabled-500 w-[1.5em] h-[1.5em]"
-            key={'2' + i}
+            key={`${uniqueId}-${i}`}
           />
         ))}
       </div>
