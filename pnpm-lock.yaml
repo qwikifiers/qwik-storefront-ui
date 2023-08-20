@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -58,6 +58,9 @@ devDependencies:
   '@nrwl/workspace':
     specifier: ^16.3.2
     version: 16.3.2
+  '@storefront-ui/tw-plugin-peer-next':
+    specifier: ^2.3.1
+    version: 2.3.1(tailwindcss@3.3.2)
   '@types/node':
     specifier: 20.2.5
     version: 20.2.5
@@ -3393,6 +3396,14 @@ packages:
     deprecated: Use version 10.1.0. Version 10.2.0 has potential breaking issues
     dependencies:
       '@sinonjs/commons': 3.0.0
+    dev: true
+
+  /@storefront-ui/tw-plugin-peer-next@2.3.1(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-u7vZogjljmpMR/CoInQhNIOd9Cat8emj85GxEUjPbdYU+vSTWFtVBPJFrPm9+G7Ackl4iV1BS7epx+QqdrU67A==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
+    dependencies:
+      tailwindcss: 3.3.2(ts-node@10.9.1)
     dev: true
 
   /@swc/helpers@0.5.1:
