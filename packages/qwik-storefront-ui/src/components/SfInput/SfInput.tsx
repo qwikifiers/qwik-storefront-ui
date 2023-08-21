@@ -44,9 +44,9 @@ export const SfInput = component$<SfInputProps>(
           data-testid="input-field"
           size={1}
           value={value}
-          onChange$={onChange$}
           {...(ref ? { ref } : {})}
           {...attributes}
+          onChange$={onChange$}
         />
         {showSlotSuffix && (
           <span class="pl-2">
