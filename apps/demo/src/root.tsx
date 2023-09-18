@@ -5,8 +5,8 @@ import {
   ServiceWorkerRegister,
 } from '@builder.io/qwik-city';
 import { RouterHead } from './components/router-head/router-head';
-
-import globalStyles from './global.css?inline';
+import tailwindStyles from './styles/global.css?inline';
+import globalStyles from './styles/index.scss?inline';
 
 export default component$(() => {
   /**
@@ -16,6 +16,7 @@ export default component$(() => {
    * Don't remove the `<head>` and `<body>` elements.
    */
   useStyles$(globalStyles);
+  useStyles$(tailwindStyles);
 
   return (
     <QwikCityProvider>
