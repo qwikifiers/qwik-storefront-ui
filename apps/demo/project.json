@@ -31,8 +31,12 @@
         "preview": {
           "ssr": "src/entry.preview.tsx",
           "mode": "production"
+        },
+        "production": {
+          "configFile": "apps/demo/adapters/vercel-edge/vite.config.ts"
         }
-      }
+      },
+      "dependsOn": []
     },
     "preview": {
       "executor": "@nx/vite:preview-server",
@@ -69,6 +73,19 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/demo/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build -c adapters/vercel-edge/vite.config.ts"
+      },
+      "dependsOn": ["build-vercel"]
+    },
+    "build-vercel": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build -c adapters/vercel-edge/vite.config.ts"
       }
     }
   },
