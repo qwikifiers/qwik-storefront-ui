@@ -33,8 +33,10 @@ export default defineConfig({
   // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
     target: 'es2020',
+    emptyOutDir: true,
     lib: {
       entry: './src/index.ts',
+
       // Could also be a dictionary or array of multiple entry points.
       name: 'qwik-storefront-ui',
       fileName: (format) => `index.qwik.${format === 'es' ? 'mjs' : 'cjs'}`,
