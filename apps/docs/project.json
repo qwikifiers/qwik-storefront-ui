@@ -1,0 +1,44 @@
+{
+  "name": "docs",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/docs/src",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt build",
+        "cwd": "apps/docs"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt dev",
+        "cwd": "apps/docs"
+      }
+    },
+    "generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt generate",
+        "cwd": "apps/docs"
+      }
+    },
+    "preview": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt preview",
+        "cwd": "apps/docs"
+      }
+    },
+    "postinstall": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt prepare",
+        "cwd": "apps/docs"
+      }
+    }
+  },
+  "tags": []
+}
