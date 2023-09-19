@@ -5,7 +5,7 @@
   "main": "./index.qwik.cjs",
   "qwik": "./index.qwik.mjs",
   "module": "./index.qwik.mjs",
-  "types": "./qwik-storefront-ui/src/index.d.ts",
+  "types": "./index.d.ts",
   "type": "module",
   "repository": {
     "type": "git",
