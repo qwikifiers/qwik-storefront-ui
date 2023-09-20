@@ -6,10 +6,9 @@
 
 `SfInput` is a single-line text field allows users to enter any combination of letters, numbers, or symbols. It adds default styles to the native `<input type="text">` and supports supports adding content before/after the text input.
 
-<!-- todo -->
-<!-- ::info
+::info
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields).
-:: -->
+::
 
 ## Examples
 

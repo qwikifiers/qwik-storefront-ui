@@ -8,10 +8,9 @@
 
 The root element is an `<input>` so any attributes that can be used on an `<input>` can be used on `SfCheckbox`.
 
-<!-- todo -->
-<!-- ::info
+::info
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields.md).
-:: -->
+::
 
 ## Examples
 

@@ -45,6 +45,7 @@ watch(
 );
 
 function selectFramework(framework: Framework) {
+  isOpen.value = false;
   if (framework.name !== 'qwik') {
     location.href = `https://docs.storefrontui.io/v2/${framework.name}/getting-started.html`;
   }

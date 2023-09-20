@@ -11,10 +11,9 @@ hideBreadcrumbs: true
 
 `SfSelect` is a wrapper around the native `<select>` element. It provides additional styles for different states of `<select>` element.
 
-<!-- todo -->
-<!-- ::warning
+::warning
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields.html).
-:: -->
+::
 
 ## Examples
 

@@ -6,10 +6,9 @@
 
 `SfRadio` provides additional styles for different states of `<input type="radio">`. It can be used for choosing between a list of values when only one option can be selected at a time.
 
-<!-- todo -->
-<!-- ::tip
+::tip
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields.html).
-:: -->
+::
 
 ## Examples
 
