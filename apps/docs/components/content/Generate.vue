@@ -60,11 +60,7 @@ const framework = useCookie('framework', {
 });
 
 const urlBasePath = computed(() => {
-  return framework.value.name.toLowerCase() === 'qwik'
-    ? config.public.DOCS_EXAMPLES_QWIK_PATH
-    : framework.value.name.toLowerCase() === 'react'
-    ? config.public.DOCS_EXAMPLES_REACT_PATH
-    : config.public.DOCS_EXAMPLES_VUE_PATH;
+  return config.public.DOCS_EXAMPLES_QWIK_PATH;
 });
 
 const componentName = computed(() => {

@@ -5,6 +5,7 @@ By default, Storefront UI comes equipped with some styles that can help accelera
 ## Customization Methods
 
 ::vue-only
+
 <iframe src="https://www.youtube-nocookie.com/embed/WkOHltQGDas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" class="w-full max-w-lg mx-auto rounded aspect-video relative mt-8 custom-block"></iframe>
 ::
 
@@ -17,7 +18,6 @@ For example, the `SfLoaderCircular` component defaults to using `primary-700` as
 <Showcase showcase-name="LoaderCircular/LoaderCircularColors" :show-source="false">
 </Showcase>
 
-
 ::vue-only
 <<<../../../preview/nuxt/pages/showcases/LoaderCircular/LoaderCircularColors.vue
 ::
@@ -25,23 +25,20 @@ For example, the `SfLoaderCircular` component defaults to using `primary-700` as
 <<<../../../preview/next/pages/showcases/LoaderCircular/LoaderCircularColors.tsx
 ::
 
-
-
-
 ### Tailwind Configuration
 
 For global changes, you can customize the Tailwind configuration to make changes to some of our default styles.
 
 The most common use case for this is to change the default color palette to better match your design. Storefront UI adds additional colors to your Tailwind configuration, which can help you build out multiple themes for your site.
 
-:::read-more
+<!-- todo -->
+<!-- :::read-more
 Learn all about Storefront UI's color palette and how to customize it in our ::react-only[Theming](/react/customization/theming)::::vue-only[Theming](/vue/customization/theming)::  guide.
-:::
-
+::: -->
 
 ### Extracting Base Components
 
-If you want to make more extensive changes to the default styles, you can extract any of our base components into your project and customize them to your needs. 
+If you want to make more extensive changes to the default styles, you can extract any of our base components into your project and customize them to your needs.
 
 On each of our component pages, you'll find a tab containing the source code for the component. You can copy this code into your project and customize it as needed.
 
@@ -59,7 +56,7 @@ export default {
   theme: {
     extend: {
       outlineColor: {
-        DEFAULT: '#ff00ff', 
+        DEFAULT: '#ff00ff',
       },
       outlineOffset: {
         DEFAULT: '0px',
@@ -67,7 +64,7 @@ export default {
       outlineWidth: {
         DEFAULT: '2px',
       },
-    }
-  }
-}
+    },
+  },
+};
 ```

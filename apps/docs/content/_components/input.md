@@ -6,12 +6,12 @@
 
 `SfInput` is a single-line text field allows users to enter any combination of letters, numbers, or symbols. It adds default styles to the native `<input type="text">` and supports supports adding content before/after the text input.
 
-::info
+<!-- todo -->
+<!-- ::info
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields).
-::
+:: -->
 
 ## Examples
-
 
 ### Basic input component
 
@@ -29,7 +29,7 @@ If you need to make this field required, it is crucial to communicate this inten
 
 ### Input with icons
 
-You can insert content before and after your input using the ::vue-only `prefix` and `suffix` slots::::react-only`slotPrefix` and `slotSuffix` props::. 
+You can insert content before and after your input using the ::vue-only `prefix` and `suffix` slots::::react-only`slotPrefix` and `slotSuffix` props::.
 
 This can be useful for adding icons or buttons to your input.
 
@@ -101,7 +101,7 @@ This is an example of what `SfInput` might look like in your end code. It has a 
 
 ## Notes
 
-All non-prop attributes and styles added to `SfInput` component are passed directly to the native input element. This means that you can add all of the input attributes directly to `SfInput`. If you want to style the wrapper `div`, you can pass your classes via the ::vue-only`wrapperClass`::::react-only `wrapperClassName`::prop. 
+All non-prop attributes and styles added to `SfInput` component are passed directly to the native input element. This means that you can add all of the input attributes directly to `SfInput`. If you want to style the wrapper `div`, you can pass your classes via the ::vue-only`wrapperClass`::::react-only `wrapperClassName`::prop.
 
 Since, `size` is a specified prop of `SfInput`, you won't be able to pass the native `size` attribute to your input element. Instead, you can use the `width` property with `ch` unit instead (eg. `width: 10ch`).
 
@@ -120,44 +120,45 @@ Avoid adding `div` tags to slots. If an input element is wrapped in `label` tag 
 ## Props
 
 ::vue-only
-| Prop name    | Type            | Default value | Possible values                        |
-| ------------ | --------        | ------------- | -------------------------------------- |
-| `size`         | `SfInputSize`  | `'base'`          | `'sm'`, `'base'`, `'lg'`                           |
-| `invalid`      | `boolean`         | `false`         |                                        |
-| `wrapperTag`    | `string`         | `span`        | Any tag name for input wrapper         |
+| Prop name | Type | Default value | Possible values |
+| ------------ | -------- | ------------- | -------------------------------------- |
+| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `invalid` | `boolean` | `false` | |
+| `wrapperTag` | `string` | `span` | Any tag name for input wrapper |
 ::
 
 ::react-only
-| Prop name    | Type            | Default value | Possible values                        |
-| ------------ | --------        | ------------- | -------------------------------------- |
-| `size`         | `SfInputSize`  | `'base'`          | `'sm'`, `'base'`, `'lg'`                           |
-| `invalid`      | `boolean`         | `false`         |                                        |
-| `wrapperTag`    | `string`         | `span`        | Any tag name for input wrapper         |
-| `wrapperAs`    | `string`          | `span`        | Any tag name for input wrapper         |
-| `className`    | `string`          |               |                                        |
-| `slotPrefix`   | `ReactNode`       |               |                                        |
-| `slotSuffix`   | `ReactNode`       |               |                                        |
+| Prop name | Type | Default value | Possible values |
+| ------------ | -------- | ------------- | -------------------------------------- |
+| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `invalid` | `boolean` | `false` | |
+| `wrapperTag` | `string` | `span` | Any tag name for input wrapper |
+| `wrapperAs` | `string` | `span` | Any tag name for input wrapper |
+| `className` | `string` | | |
+| `slotPrefix` | `ReactNode` | | |
+| `slotSuffix` | `ReactNode` | | |
 ::
 
 ::vue-only
+
 ## Slots
 
 | Slot name | Description                        |
 | --------- | ---------------------------------- |
-| `prefix`    | Custom content for prefix in input |
-| `suffix`    | Custom content for suffix in input |
+| `prefix`  | Custom content for prefix in input |
+| `suffix`  | Custom content for suffix in input |
+
 ::
 
 ::vue-only
 
 ## Events
 
-| Event name        | Trigger                       |
-| ----------------- | ----------------------------- |
+| Event name          | Trigger                       |
+| ------------------- | ----------------------------- |
 | `update:modelValue` | triggers v-model update event |
 
 ::
-
 
 #tab-3
 ::vue-only

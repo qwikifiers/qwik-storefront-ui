@@ -4,9 +4,10 @@ The SelectDropdown is a visually customized version of the Select component, eli
 
 Please note that the example block provided can also serve as a base component, offering flexibility for implementation within the project based on specific requirements and design considerations.
 
-::tip
+<!-- todo -->
+<!-- ::tip
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields).
-::
+:: -->
 
 ## Accessibility notes
 

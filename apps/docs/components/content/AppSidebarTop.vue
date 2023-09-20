@@ -45,18 +45,8 @@ watch(
 );
 
 function selectFramework(framework: Framework) {
-  const previousFramework = selectedFramework.value.name.toLowerCase();
-  selectedFramework.value = framework;
-  isOpen.value = false;
-
   if (framework.name !== 'qwik') {
     location.href = `https://docs.storefrontui.io/v2/${framework.name}/getting-started.html`;
-  }
-
-  if (route.path.includes(previousFramework)) {
-    router.push(
-      route.path.replace(previousFramework, framework.name.toLowerCase())
-    );
   }
 }
 </script>
@@ -76,7 +66,6 @@ function selectFramework(framework: Framework) {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 mr-2"
-            v-if="selectedFramework.name === 'qwik'"
           >
             <path
               fill-rule="evenodd"

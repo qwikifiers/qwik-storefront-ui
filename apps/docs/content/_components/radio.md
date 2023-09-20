@@ -6,9 +6,10 @@
 
 `SfRadio` provides additional styles for different states of `<input type="radio">`. It can be used for choosing between a list of values when only one option can be selected at a time.
 
-::tip
+<!-- todo -->
+<!-- ::tip
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields.html).
-::
+:: -->
 
 ## Examples
 
@@ -108,31 +109,31 @@ If you have an element that is not an `<input type="radio">`, you should set the
 
 ## Props
 
-
 ::vue-only
-| Prop name  | Type                          | Default value | Possible values       |
+| Prop name | Type | Default value | Possible values |
 | ---------- | ----------------------------- | ------------- | --------------------- |
-| `name`\*       | `string`                        |               |                       |
-| `invalid`    | `boolean`                       | `false`         |                       |
-| `value`      | `string`                        |               |                       |
-| `modelValue` | `string`                        |               |                       |
-| `disabled`   | `boolean`                       | `false`         |                       |
+| `name`\* | `string` | | |
+| `invalid` | `boolean` | `false` | |
+| `value` | `string` | | |
+| `modelValue` | `string` | | |
+| `disabled` | `boolean` | `false` | |
 ::
 ::react-only
-| Prop name  | Type                          | Default value | Possible values       |
+| Prop name | Type | Default value | Possible values |
 | ---------- | ----------------------------- | ------------- | --------------------- |
-| `name`\*       | `string`                        |               |                       |
-| `invalid`    | `boolean`                       | `false`         |                       |
-| `checked`   | `boolean`                        |               |                       |
-| `onChange`   | `Function`     |               |                       |
-| `className` | `string`                         |               |                       |
+| `name`\* | `string` | | |
+| `invalid` | `boolean` | `false` | |
+| `checked` | `boolean` | | |
+| `onChange` | `Function` | | |
+| `className` | `string` | | |
 ::
 
 ::vue-only
+
 ## Events
 
-| Event name        | Trigger                   |
-| ----------------- | ------------------------- |
+| Event name          | Trigger                   |
+| ------------------- | ------------------------- |
 | `update:modelValue` | triggers radio event emit |
 
 ::

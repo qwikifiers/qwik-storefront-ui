@@ -4,13 +4,14 @@
 
 #tab-1
 
-`SfCheckbox` is a wrapper around `<input type="checkbox">` with additional styles for different states . It can be used for forms or expressing consents. 
+`SfCheckbox` is a wrapper around `<input type="checkbox">` with additional styles for different states . It can be used for forms or expressing consents.
 
 The root element is an `<input>` so any attributes that can be used on an `<input>` can be used on `SfCheckbox`.
 
-::info
+<!-- todo -->
+<!-- ::info
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields.md).
-::
+:: -->
 
 ## Examples
 
@@ -70,28 +71,29 @@ It's focusable and can be toggled with `Space`.
 
 ## Props
 
-
 ::vue-only
-| Prop name    | Type                     | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 | ------------ | ------------------------ | ------------- | -------------------------------------- |
-| `modelValue`   | `boolean | string[]`       | `undefined`     |                                        |
-| `invalid`      | `boolean`                  | `false`         |                                        |
+| `modelValue` | `boolean | string[]` | `undefined` | |
+| `invalid` | `boolean` | `false` | |
 
 ::
 
 ::react-only
-| Prop name    | Type                     | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 | ------------ | ------------------------ | ------------- | -------------------------------------- |
-| `className`    | `string`                   |               |                                        |
-| `invalid`      | `boolean`                  | `false`         |                                        |
+| `className` | `string` | | |
+| `invalid` | `boolean` | `false` | |
 ::
 
 ::vue-only
+
 ## Events
 
-| Event name        | Trigger                       |
-| ----------------- | ----------------------------- |
+| Event name          | Trigger                       |
+| ------------------- | ----------------------------- |
 | `update:modelValue` | triggers v-model update event |
+
 ::
 
 #tab-3

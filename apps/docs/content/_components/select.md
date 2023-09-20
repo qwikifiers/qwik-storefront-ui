@@ -2,6 +2,7 @@
 layout: AtomLayout
 hideBreadcrumbs: true
 ---
+
 # Select
 
 ::tabs{:titles='["Usage", "API", "Source Code"]' class="mt-8"}
@@ -10,9 +11,10 @@ hideBreadcrumbs: true
 
 `SfSelect` is a wrapper around the native `<select>` element. It provides additional styles for different states of `<select>` element.
 
-::warning
+<!-- todo -->
+<!-- ::warning
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields.html).
-::
+:: -->
 
 ## Examples
 
@@ -79,45 +81,45 @@ Since this component uses the native `<select>` element, it inherits its accessi
 
 ## Props
 
-
 ::vue-only
-| Prop name           | Type              | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 | ------------------- | ----------------- | ------------- | -------------------------------------- |
-| `modelValue`        | `boolean | string[]` |            |                                        |
-| `size`              | `SfSelectSize`    | `'base'`      | `'sm'`, `'base'`,`'lg'`                |
-| `disabled`          | `boolean`         | `false`       |                                        |
-| `invalid`           | `boolean`         | `false`       |                                        |
-| `required`          | `boolean`         | `false`       |                                        |
-| `placeholder`       | `string`          |               |                                        |
-| `wrapperClassName`  | `string`          |               |                                        |
+| `modelValue` | `boolean | string[]` | | |
+| `size` | `SfSelectSize` | `'base'` | `'sm'`, `'base'`,`'lg'` |
+| `disabled` | `boolean` | `false` | |
+| `invalid` | `boolean` | `false` | |
+| `required` | `boolean` | `false` | |
+| `placeholder` | `string` | | |
+| `wrapperClassName` | `string` | | |
 ::
 ::react-only
-| Prop name           | Type              | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 | ------------------- | ----------------- | ------------- | -------------------------------------- |
-| `value`             | `string`          |               |                                        |
-| `size`              | `SfSelectSize`    | `'base'`      | `'sm'`, `'base'`,`'lg'`                |
-| `disabled`          | `boolean`         | `false`       |                                        |
-| `invalid`           | `boolean`         | `false`       |                                        |
-| `required`          | `boolean`         | `false`       |                                        |
-| `placeholder`       | `string`          |               |                                        |
-| `wrapperClassName`  | `string`          |               |                                        |
-| `onChange`          | `Function`        |               |                                        |
-| `slotChevron`       | `ReactNode`       |               |                                        |
-| `children`          | `ReactNode`       |               |                                        |
+| `value` | `string` | | |
+| `size` | `SfSelectSize` | `'base'` | `'sm'`, `'base'`,`'lg'` |
+| `disabled` | `boolean` | `false` | |
+| `invalid` | `boolean` | `false` | |
+| `required` | `boolean` | `false` | |
+| `placeholder` | `string` | | |
+| `wrapperClassName` | `string` | | |
+| `onChange` | `Function` | | |
+| `slotChevron` | `ReactNode` | | |
+| `children` | `ReactNode` | | |
 ::
 
 ::vue-only
+
 ## Slots
 
 | Slot name | Description              |
 | --------- | ------------------------ |
-| `default`   | Place for select options |
-| `chevron`   | Custom chevron           |
+| `default` | Place for select options |
+| `chevron` | Custom chevron           |
 
 ## Events
 
-| Event name        | Trigger                       |
-| ----------------- | ----------------------------- |
+| Event name          | Trigger                       |
+| ------------------- | ----------------------------- |
 | `update:modelValue` | triggers v-model update event |
 
 ::
@@ -130,6 +132,5 @@ Since this component uses the native `<select>` element, it inherits its accessi
 ::react-only
 <<< ../../../../packages/sfui/frameworks/react/components/SfSelect/SfSelect.tsx
 ::
-
 
 ::
