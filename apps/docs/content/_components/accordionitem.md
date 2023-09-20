@@ -35,6 +35,9 @@ To control the state of the accordion, you can use the `open` prop. This prop is
 :::react-only
 <<<../../../preview/next/pages/showcases/AccordionItem/BasicAccordion.tsx
 :::
+:::qwik-only
+<<<../../../website/src/routes/showcases/AccordionItem/BasicAccordion/index.tsx
+:::
 
 </Showcase>
 
@@ -49,6 +52,9 @@ This example only allows one item to be open at a time.
 :::
 :::react-only
 <<<../../preview/next/pages/showcases/AccordionItem/CollapsableAccordion.tsx
+:::
+:::qwik-only
+<<<../../../website/src/routes/showcases/AccordionItem/CollapsableAccordion/index.tsx
 :::
 
 </Showcase>
@@ -65,6 +71,9 @@ Animate AccordionItem to give that nice feeling of smooth transition.
 
 :::react-only
 <<<../../../preview/next/pages/showcases/AccordionItem/AccordionAnimate.tsx
+:::
+:::qwik-only
+<<<../../../website/src/routes/showcases/AccordionItem/AccordionAnimate/index.tsx
 :::
 
 </Showcase>
@@ -101,6 +110,15 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 
 :::vue-only
 
+:::qwik-only
+| Prop name | Type | Default value | Possible values |
+| ----------------- | ------------------------- | ------------- | --------------- |
+| `open` | `boolean` | false | |
+| `summaryClassName` | `string` | | |
+| `onToggle` | `(open: boolean) => void` | | |
+| `children` | `ReactNode` | | |
+:::
+
 ## Slots
 
 | Slot name | Description           |
@@ -124,6 +142,9 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 <<<../../../../packages/sfui/frameworks/vue/components/SfAccordionItem/SfAccordionItem.vue
 :::
 :::react-only
+<<<../../../../packages/sfui/frameworks/react/components/SfAccordionItem/SfAccordionItem.tsx
+:::
+:::qwik-only
 <<<../../../../packages/sfui/frameworks/react/components/SfAccordionItem/SfAccordionItem.tsx
 :::
 
