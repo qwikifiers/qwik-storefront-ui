@@ -20,11 +20,11 @@ To control the state of the accordion, you can use the `modelValue` prop. This p
 :::
 
 :::react-only
-To rrrcontrol the state of the accordion, you can use the `open` prop. This prop is a boolean that indicates whether the accordion is open or closed.
+To control the state of the accordion, you can use the `open` prop. This prop is a boolean that indicates whether the accordion is open or closed.
 :::
 
 :::qwik-only
-To qqqqcontrol the state of the accordion, you can use the `open` prop. This prop is a boolean that indicates whether the accordion is open or closed.
+To control the state of the accordion, you can use the `open` prop. This prop is a boolean that indicates whether the accordion is open or closed.
 :::
 
 <Showcase showcase-name="AccordionItem/BasicAccordion" style="min-height:400px">
@@ -84,38 +84,40 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 ## Props
 
 :::react-only
-| Prop name         | Type                      | Default value | Possible values |
+| Prop name | Type | Default value | Possible values |
 | ----------------- | ------------------------- | ------------- | --------------- |
-| `open`              | `boolean`                 | false         |                 |
-| `summaryClassName`  | `string`                  |               |                 |
-| `onToggle`          | `(open: boolean) => void` |               |                 |
-| `children`          | `ReactNode`               |               |                 |
-:::
-
-
-:::vue-only
-| Prop name         | Type                      | Default value | Possible values |
-| ----------------- | ------------------------- | ------------- | --------------- |
-| `modelValue`        | `boolean`                 | false         |                 |
-| `summaryClass`      | `string`                  |               |                 |
+| `open` | `boolean` | false | |
+| `summaryClassName` | `string` | | |
+| `onToggle` | `(open: boolean) => void` | | |
+| `children` | `ReactNode` | | |
 :::
 
 :::vue-only
+| Prop name | Type | Default value | Possible values |
+| ----------------- | ------------------------- | ------------- | --------------- |
+| `modelValue` | `boolean` | false | |
+| `summaryClass` | `string` | | |
+:::
+
+:::vue-only
+
 ## Slots
 
 | Slot name | Description           |
 | --------- | --------------------- |
-| `default`   | content to expand     |
-| `summary`   | header with a summary |
+| `default` | content to expand     |
+| `summary` | header with a summary |
 
 ## Events
 
-| Event name            | Trigger                            |
-| --------------------- | ---------------------------------- |
-| `update:modelValue`     | Triggers when click on the summary |
+| Event name          | Trigger                            |
+| ------------------- | ---------------------------------- |
+| `update:modelValue` | Triggers when click on the summary |
+
 :::
 
 #tab-3
+
 ## Source code
 
 :::vue-only
