@@ -1,12 +1,9 @@
-import { fileURLToPath } from 'url';
-import { dirname, join, resolve } from 'path';
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['sf-docs-base'],
   alias: {
-    "micromark/lib/preprocess.js": "micromark",
-    "micromark/lib/postprocess.js": "micromark",
+    'micromark/lib/preprocess.js': 'micromark',
+    'micromark/lib/postprocess.js': 'micromark',
   },
   runtimeConfig: {
     public: {
@@ -14,7 +11,6 @@ export default defineNuxtConfig({
       DOCS_EXAMPLES_QWIK_PATH: process.env.DOCS_EXAMPLES_QWIK_PATH,
     },
   },
-
   vite: {
     server: {
       fs: {
@@ -22,8 +18,12 @@ export default defineNuxtConfig({
       },
     },
   },
-
   devtools: {
-    enabled: true,
+    enabled: false,
+  },
+  nitro: {
+    prerender: {
+      failOnError: false,
+    },
   },
 });
