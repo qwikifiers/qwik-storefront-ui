@@ -145,7 +145,7 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 <<<../../../../packages/sfui/frameworks/react/components/SfAccordionItem/SfAccordionItem.tsx
 :::
 :::qwik-only
-<<<../../../../packages/sfui/frameworks/react/components/SfAccordionItem/SfAccordionItem.tsx
+<<<../../../../dist/packages/qwik-storefront-ui/components/SfAccordionItem/index.tsx
 :::
 
 ::
