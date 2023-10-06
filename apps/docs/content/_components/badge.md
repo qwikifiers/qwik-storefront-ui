@@ -19,6 +19,11 @@ The badge component must be wrapped with a container that has `class="relative"`
 ::react-only
 <<<../../../preview/next/pages/showcases/Badge/BadgeBasic.tsx
 ::
+
+::qwik-only
+<<<../../../website/src/routes/showcases/Badge/BadgeBasic/index.tsx
+::
+
 </Showcase>
 
 ### Placement
@@ -32,6 +37,9 @@ You can align the Badge in every corner of the container.
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Badge/BadgePlacement.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Badge/BadgePlacement/index.tsx
 ::
 
 </Showcase>
@@ -48,6 +56,9 @@ A nifty effect that makes the Badge a bit more attractive is to add an outline t
 ::react-only
 <<<../../../preview/next/pages/showcases/Badge/BadgeOutline.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Badge/BadgeOutline/index.tsx
+::
 
 </Showcase>
 
@@ -62,6 +73,9 @@ A common use case for the Badge is to place it on a user's avatar.
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Badge/BadgeAvatar.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Badge/BadgeAvatar/index.tsx
 ::
 
 </Showcase>
@@ -80,7 +94,7 @@ The component itself does not provide any specific accessibility features. Pleas
 
 | Prop name   | Type               | Default value | Possible values                                        |
 | ----------- | ------------------ | ------------- | ------------------------------------------------------ |
-| `content`   | `string`            | `number`       |                                                        |
+| `content`   | `string`           | `number`      |                                                        |
 | `max`       | `number`           | `99`          |                                                        |
 | `placement` | `SfBadgePlacement` | `top-right`   | `top-right`, `top-left`, `bottom-right`, `bottom-left` |
 | `variant`   | `SfBadgeVariant`   | `standard`    | `standard`, `dot`                                      |
@@ -97,5 +111,8 @@ The component itself does not provide any specific accessibility features. Pleas
 <<<../../../../packages/sfui/frameworks/react/components/SfBadge/SfBadge.tsx
 
 ::
+:::qwik-only
+<<<../../../../dist/packages/qwik-storefront-ui/components/SfBadge/index.tsx
+:::
 
 ::
