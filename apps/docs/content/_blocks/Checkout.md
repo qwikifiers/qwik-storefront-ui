@@ -14,6 +14,9 @@ Ease the checkout process for users by providing them with well-structured addre
 ::react-only
 <<<../../preview/next/pages/showcases/Checkout/CheckoutAddressForm.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Checkout/CheckoutAddressForm/index.tsx
+::
 
 </Showcase>
 
@@ -28,6 +31,9 @@ Present possible delivery options in a way where your customers can easily see d
 ::
 ::react-only
 <<<../../preview/next/pages/showcases/Checkout/CheckoutDeliveryOptions.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Checkout/CheckoutDeliveryOptions/index.tsx
 ::
 
 </Showcase>
@@ -44,6 +50,9 @@ Let your users pick a payment method of their choice in a nice and clear way.
 ::react-only
 <<<../../preview/next/pages/showcases/Checkout/CheckoutPaymentMethod.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Checkout/CheckoutPaymentMethod/index.tsx
+::
 
 </Showcase>
 
@@ -58,6 +67,9 @@ The contact form for customers provides the way to send email (field with simple
 ::
 ::react-only
 <<<../../preview/next/pages/showcases/Checkout/CheckoutContactForm.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Checkout/CheckoutContactForm/index.tsx
 ::
 
 </Showcase>
