@@ -8,7 +8,7 @@
 
 It uses an `<input type="checkbox">` with additional stylings to give it the appearance of a switch.
 
-From a functional perspective, it is similar to the [`SfCheckbox`](/checkbox.html) component, except the checkbox can handle indeterminate states. The two possible values are true and false. 
+From a functional perspective, it is similar to the [`SfCheckbox`](/checkbox.html) component, except the checkbox can handle indeterminate states. The two possible values are true and false.
 
 ## Examples
 
@@ -24,6 +24,9 @@ Switch base component without a label.
 ::react-only
 <<<../../../preview/next/pages/showcases/Switch/SwitchWithoutLabel.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Switch/SwitchWithoutLabel/index.tsx
+::
 
 </Showcase>
 
@@ -36,6 +39,9 @@ Switch base component without a label.
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Switch/SwitchLeading.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Switch/SwitchLeading/index.tsx
 ::
 
 </Showcase>
@@ -51,6 +57,9 @@ Switch component with a label align on the left.
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Switch/SwitchTrailing.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Switch/SwitchTrailing/index.tsx
 ::
 
 </Showcase>
@@ -69,30 +78,37 @@ By default, it comes with a `role="switch"` attribute. This is useful for screen
 
 ## Props
 
-
-
 ::vue-only
-| Prop name    | Type                     | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 | ------------ | ------------------------ | ------------- | -------------------------------------- |
-| `modelValue`   | `boolean | string[]`       | `undefined`     |                                        |
-| `value`        | `string`                   |             |                                        |
+| `modelValue` | `boolean | string[]` | `undefined` | |
+| `value` | `string` | | |
 ::
 
 ::react-only
-| Prop name    | Type                     | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 | ------------ | ------------------------ | ------------- | -------------------------------------- |
-| `value`        | `string`                   |             |                                        |
-| `onChange`     | `Function`                 |               |                                        |
-| `className`    | `string`                   |               |                                        |
+| `value` | `string` | | |
+| `onChange` | `Function` | | |
+| `className` | `string` | | |
+::
+
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| ------------ | ------------------------ | ------------- | -------------------------------------- |
+| `value` | `string` | | |
+| `onChange` | `Function` | | |
+| `className` | `string` | | |
 ::
 
 ::vue-only
 
 ## Events
 
-| Event name        | Trigger                       |
-| ----------------- | ----------------------------- |
+| Event name          | Trigger                       |
+| ------------------- | ----------------------------- |
 | `update:modelValue` | triggers v-model update event |
+
 ::
 
 #tab-3
