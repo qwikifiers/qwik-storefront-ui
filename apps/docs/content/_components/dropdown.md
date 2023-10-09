@@ -4,8 +4,7 @@
 
 #tab-1
 
-The `SfDropdown` component is built on top of `useDropdown`  and accepts all its params.
-
+The `SfDropdown` component is built on top of `useDropdown` and accepts all its params.
 
 ::react-only
 Learn more about `useDropdown` hook in the [Hooks > useDropdown docs](/react/hooks/usedropdown).
@@ -13,7 +12,9 @@ Learn more about `useDropdown` hook in the [Hooks > useDropdown docs](/react/hoo
 ::vue-only
 Learn more about `useDropdown` composable in the [Composables > useDropdown docs](/vue/hooks/usedropdown).
 ::
-
+::qwik-only
+Learn more about `useDropdown` hook in the [Hooks > useDropdown docs](/react/hooks/usedropdown).
+::
 
 ## Examples
 
@@ -33,6 +34,9 @@ By default, the floating content of `SfDropdown` will be placed below your trigg
 <<<../../../preview/next/pages/showcases/Dropdown/BasicDropdown.tsx
 
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Dropdown/BasicDropdown/index.tsx
+::
 
 </Showcase>
 
@@ -47,7 +51,6 @@ The floating content area has an `aria-hidden` attribute that reflects the visib
 #tab-2
 
 ## Props
-
 
 ::react-only
 | Prop name | Type | Default value | Possible values |
@@ -70,6 +73,17 @@ The floating content area has an `aria-hidden` attribute that reflects the visib
 | `strategy` | `SfPopoverStrategy` | `'absolute'` | Positioning strategy (`absolute` or `fixed`) |
 ::
 
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| --------- | ---- | ------------- | --------------- |
+| `open` | `boolean` | | |
+| `onClose`\* | `() => void` | | |
+| `trigger`\* | `ReactNode` | | |
+| `children` | `ReactNode` | | |
+| `placement` | `SfPopoverPlacement` | `'bottom'` | Placement of floating element |
+| `middleware` | `UseFloatingProps['middleware']` | | Array of `@floating-ui` middlewares |
+| `strategy` | `SfPopoverStrategy` | `'absolute'` | Positioning strategy (`absolute` or `fixed`) |
+::
 
 ::vue-only
 
@@ -99,6 +113,9 @@ The floating content area has an `aria-hidden` attribute that reflects the visib
 
 <<< ../../../../packages/sfui/frameworks/react/components/SfDropdown/SfDropdown.tsx
 
+::
+::qwik-only
+<<<../../../../dist/packages/qwik-storefront-ui/components/SfDropdown/index.tsx
 ::
 
 ::
