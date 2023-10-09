@@ -8,7 +8,7 @@ This component is shipped in our NPM package, but its API might change based on 
 
 #tab-1
 
-`SfChip` is a toggleable input element. It can be a good alternative to toggle buttons, radio buttons, and single select menus. 
+`SfChip` is a toggleable input element. It can be a good alternative to toggle buttons, radio buttons, and single select menus.
 
 Internally, `SfChip` uses a hidden `<input type="checkbox">` element to handle the selection state. This means that `SfChip` can be used in a form alongside other form elements. If you want to add additional attributes to this hidden input, you can pass `inputProps` to the component.
 
@@ -26,12 +26,16 @@ Internally, `SfChip` uses a hidden `<input type="checkbox">` element to handle t
 ::react-only
 <<<../../../preview/next/pages/showcases/Chip/ChipSizes.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Chip/ChipSizes/index.tsx
+::
 
 </Showcase>
 
 ### Thumbnails
 
 <!-- TODO: Add linking to thumbnail component when ready -->
+
 `SfChip` provides ::vue-only`prefix` and `suffix` slots::::react-only`slotPrefix` and `slotSuffix` props:: that you can use to add custom content before/after your default content. This can be useful for adding things like icons, badges, or `SfThumbnail` to your toggleable chip.
 
 <Showcase showcase-name="Chip/ChipWithThumbnail">
@@ -41,13 +45,14 @@ Internally, `SfChip` uses a hidden `<input type="checkbox">` element to handle t
 ::react-only
 <<<../../../preview/next/pages/showcases/Chip/ChipWithThumbnail.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Chip/ChipWithThumbnail/index.tsx
+::
 </Showcase>
-
-
 
 ### List of chips
 
-We can set attributes in the hidden checkbox input by passing an object to the `inputProps` prop. 
+We can set attributes in the hidden checkbox input by passing an object to the `inputProps` prop.
 
 <Showcase showcase-name="Chip/ListOfChips">
 
@@ -57,9 +62,10 @@ We can set attributes in the hidden checkbox input by passing an object to the `
 ::react-only
 <<<../../../preview/next/pages/showcases/Chip/ListOfChips.tsx
 ::
-
+::qwik-only
+<<<../../../website/src/routes/showcases/Chip/ListOfChips/index.tsx
+::
 </Showcase>
-
 
 ### Deletable behaviour
 
@@ -72,6 +78,9 @@ By adding listeners for change events, we can make `SfChip` act as a deletable i
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Chip/Deletable.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Chip/Deletable/index.tsx
 ::
 
 </Showcase>
@@ -88,12 +97,14 @@ By adding listeners for change events, we can make `SfChip` act as a deletable i
 ::react-only
 <<<../../../preview/next/pages/showcases/Chip/WithoutLabel.tsx
 ::
-
+::qwik-only
+<<<../../../website/src/routes/showcases/Chip/WithoutLabel/index.tsx
+::
 </Showcase>
 
 ## Accessibility notes
 
-When using `SfChip` without any text label/description inside, you should specify an `aria-label` on the component so that it can be understood by people using screen readers. 
+When using `SfChip` without any text label/description inside, you should specify an `aria-label` on the component so that it can be understood by people using screen readers.
 
 ## Playground
 
@@ -104,34 +115,43 @@ When using `SfChip` without any text label/description inside, you should specif
 ## Props
 
 ::react-only
-| Prop name | Type      | Default value | Possible values   |
+| Prop name | Type | Default value | Possible values |
 |-----------|-----------|---------------|-------------------|
-| `size`      | `string`  | `'base'`        | `'sm'`, `'base'`      |
-| `square`    | `boolean` | `false`       |                   |
-| `inputProps`  | `InputHTMLAttributes`   |        |  `{ disabled: true }`                 |
-| `onSelected`| `Function` |`(event?: ChangeEvent<HTMLInputElement>) => void`|                         |
-| `children`  | `ReactNode`|              |                   |
+| `size` | `string` | `'base'` | `'sm'`, `'base'` |
+| `square` | `boolean` | `false` | |
+| `inputProps` | `InputHTMLAttributes` | | `{ disabled: true }` |
+| `onSelected`| `Function` |`(event?: ChangeEvent<HTMLInputElement>) => void`| |
+| `children` | `ReactNode`| | |
 ::
 
 ::vue-only
-| Prop name | Type      | Default value | Possible values   |
+| Prop name | Type | Default value | Possible values |
 |-----------|-----------|---------------|-------------------|
-| `size`      | `string`  | `'base'`        | `'sm'`, `'base'`      |
-| `square`    | `boolean` | `false`       |                   |
-| `inputProps`  | `InputHTMLAttributes`   |        |  `{ disabled: true }`                 |
-| `modelValue`| `boolean`  |  `false`     |                   |
+| `size` | `string` | `'base'` | `'sm'`, `'base'` |
+| `square` | `boolean` | `false` | |
+| `inputProps` | `InputHTMLAttributes` | | `{ disabled: true }` |
+| `modelValue`| `boolean` | `false` | |
 
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+|-----------|-----------|---------------|-------------------|
+| `size` | `string` | `'base'` | `'sm'`, `'base'` |
+| `square` | `boolean` | `false` | |
+| `inputProps` | `InputHTMLAttributes` | | `{ disabled: true }` |
+| `onSelected`| `Function` |`(event?: ChangeEvent<HTMLInputElement>) => void`| |
+| `children` | `ReactNode`| | |
+::
 
-## Slots 
+## Slots
 
 | Slot name | Description                  |
 | --------- | ---------------------------- |
-| `default`   | Replaces content inside chip |
+| `default` | Replaces content inside chip |
 
 ## Events
 
-| Event name        | Trigger                       |
-| ----------------- | ----------------------------- |
+| Event name          | Trigger                       |
+| ------------------- | ----------------------------- |
 | `update:modelValue` | triggers v-model update event |
 
 ::
@@ -142,6 +162,9 @@ When using `SfChip` without any text label/description inside, you should specif
 ::
 ::react-only
 <<< ../../../../packages/sfui/frameworks/react/components/SfChip/SfChip.tsx
+::
+::qwik-only
+<<<../../../../dist/packages/qwik-storefront-ui/components/SfChip/index.tsx
 ::
 
 ::
