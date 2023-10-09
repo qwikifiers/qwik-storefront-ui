@@ -1,4 +1,5 @@
 export * from './SfAccordionItem';
+export * from './SfBadge';
 export * from './SfButton';
 export * from './SfCheckbox';
 export * from './SfChip';
@@ -21,3 +22,4 @@ export * from './SfSelect';
 export * from './SfSwitch';
 export * from './SfThumbnail';
 export * from './SfTooltip';
+
