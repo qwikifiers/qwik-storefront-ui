@@ -111,7 +111,7 @@ The component itself does not provide any specific accessibility features. Pleas
 <<<../../../../packages/sfui/frameworks/react/components/SfBadge/SfBadge.tsx
 
 ::
-::react-only
+::qwik-only
 
 <<<../../../../dist/packages/qwik-storefront-ui/components/SfBadge/index.tsx
 
