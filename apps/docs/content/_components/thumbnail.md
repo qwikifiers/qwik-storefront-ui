@@ -20,6 +20,9 @@ Thumbnail supports various sizes that can be set with the `size` prop: `'sm'`, `
 ::react-only
 <<<../../../preview/next/pages/showcases/Thumbnail/Sizes.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Thumbnail/Sizes/index.tsx
+::
 </Showcase>
 
 ### Single color
@@ -33,6 +36,9 @@ The most simple use case of thumbnail can be achieved by seting a single color w
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Thumbnail/Color.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Thumbnail/Color/index.tsx
 ::
 </Showcase>
 
@@ -48,11 +54,14 @@ Gradients can be applied with any of Tailwind's `bg-gradient-` classes.
 ::react-only
 <<<../../../preview/next/pages/showcases/Thumbnail/Gradient.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Thumbnail/Gradient/index.tsx
+::
 </Showcase>
 
 ### Image
 
-You can pass an image ::vue-onlyinto the default slot:: ::react-onlyas children:: to achieve avatar-like look of thumbnail.
+You can pass an image ::vue-onlyinto the default slot:: ::react-onlyas children:: ::qwik-onlyinto the default slot:: to achieve avatar-like look of thumbnail.
 
 <Showcase showcase-name="Thumbnail/Image">
 
@@ -61,6 +70,9 @@ You can pass an image ::vue-onlyinto the default slot:: ::react-onlyas children:
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Thumbnail/Image.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Thumbnail/Image/index.tsx
 ::
 </Showcase>
 
@@ -74,6 +86,9 @@ Similar to images, you can also pass an icon into the default slot.
 Similar to images, you can also pass an icon as children.
 
 ::
+::qwik-only
+Similar to images, you can also pass an icon into the default slot.
+::
 <Showcase showcase-name="Thumbnail/Icon">
 
 ::vue-only
@@ -82,9 +97,12 @@ Similar to images, you can also pass an icon as children.
 ::react-only
 <<<../../../preview/next/pages/showcases/Thumbnail/Icon.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Thumbnail/Icon/index.tsx
+::
 </Showcase>
 
-## Playground 
+## Playground
 
 <Generate style="height: 450px" />
 
@@ -93,25 +111,35 @@ Similar to images, you can also pass an icon as children.
 ## Props
 
 ::vue-only
-| Prop name         | Type                       | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 |------------------ |----------------------------|---------------|----------------------------------------|
-| `size`              | `SfChip`                    | `'base'`          | `'sm'`, `'base'`, `'lg'`                           |
+| `size` | `SfChip` | `'base'` | `'sm'`, `'base'`, `'lg'` |
 ::
 
 ::react-only
-| Prop name         | Type                       | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 |------------------ |----------------------------|---------------|----------------------------------------|
-| `size`              | `SfChip`                    | `'base'`          | `'sm'`, `'base'`, `'lg'`                           |
-| `className`         | `string`                     |               |                                        |
-| `children`          | `ReactNode`                  |               |            |
+| `size` | `SfChip` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `className` | `string` | | |
+| `children` | `ReactNode` | | |
+::
+
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+|------------------ |----------------------------|---------------|----------------------------------------|
+| `size` | `SfChip` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `className` | `string` | | |
+| `children` | `ReactNode` | | |
 ::
 
 ::vue-only
+
 ## Slots
 
-| Slot name |            Description          |
-| --------- | ------------------------------- |
-| `default`   |  allows to pass icon or image   |
+| Slot name | Description                  |
+| --------- | ---------------------------- |
+| `default` | allows to pass icon or image |
+
 ::
 
 #tab-3
