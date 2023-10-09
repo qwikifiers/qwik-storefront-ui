@@ -14,6 +14,9 @@ The most popular option for presenting detailed product information in a group.
 ::react-only
 <<<../../../preview/next/pages/showcases/ProductCard/ProductCardVertical.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/ProductCard/ProductCardVertical/index.tsx
+::
 
 </Showcase>
 
@@ -29,6 +32,9 @@ Present products in checkout summary in a way that customers can have an easy ac
 ::react-only
 <<<../../../preview/next/pages/showcases/ProductCard/ProductCardHorizontal.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/ProductCard/ProductCardHorizontal/index.tsx
+::
 
 </Showcase>
 
@@ -43,6 +49,9 @@ ProductCard details can be used in product details page or to build component us
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/ProductCard/Details.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/ProductCard/Details/index.tsx
 ::
 
 </Showcase>
