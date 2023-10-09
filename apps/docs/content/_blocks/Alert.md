@@ -31,6 +31,9 @@ Green color indicates that an action went successful.
 ::react-only
 <<<../../../preview/next/pages/showcases/Alert/AlertPositive.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Alert/AlertPositive/index.tsx
+::
 </Showcase>
 
 ## Alert secondary
@@ -43,6 +46,9 @@ This type is informative just like neutral except that its palette is more notic
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Alert/AlertSecondary.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Alert/AlertSecondary/index.tsx
 ::
 </Showcase>
 
@@ -58,7 +64,9 @@ Alert can be more descriptive and its content can be splitted into title and des
 ::react-only
 <<<../../../preview/next/pages/showcases/Alert/AlertWarning.tsx
 ::
-
+::qwik-only
+<<<../../../website/src/routes/showcases/Alert/AlertWarning/index.tsx
+::
 </Showcase>
 
 ## Alert error
@@ -73,5 +81,7 @@ This type is usually used for information displayed when an important problem oc
 ::react-only
 <<<../../../preview/next/pages/showcases/Alert/AlertError.tsx
 ::
-
+::qwik-only
+<<<../../../website/src/routes/showcases/Alert/AlertError/index.tsx
+::
 </Showcase>
