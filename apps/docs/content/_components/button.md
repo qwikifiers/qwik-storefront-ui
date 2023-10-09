@@ -188,7 +188,7 @@ If you need to use Button with non-`<button>` tags like `<div>` you need to add 
 ::react-only
 <<<../../../../packages/sfui/frameworks/react/components/SfButton/SfButton.tsx
 ::
-::react-only
+::qwik-only
 <<<../../../../dist/packages/qwik-storefront-ui/components/SfButton/index.tsx
 ::
 
