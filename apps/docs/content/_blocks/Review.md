@@ -14,6 +14,9 @@ Basic Review usage with avatar and [Rating](../components/rating) base component
 ::react-only
 <<<../../../preview/next/pages/showcases/Review/WithAvatar.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Review/WithAvatar/index.tsx
+::
 
 </Showcase>
 
@@ -28,6 +31,9 @@ When description is too long we can truncate it for certain count characters.
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Review/ShowMore.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Review/ShowMore/index.tsx
 ::
 
 </Showcase>
