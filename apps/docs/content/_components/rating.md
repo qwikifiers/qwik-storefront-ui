@@ -22,6 +22,9 @@ If you need to support partial stars, you can show half-filled star icons by pas
 ::react-only
 <<<../../../preview/next/pages/showcases/Rating/RatingValues.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Rating/RatingValues/index.tsx
+::
 
 </Showcase>
 
@@ -36,6 +39,9 @@ If you need to support partial stars, you can show half-filled star icons by pas
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Rating/RatingSizes.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Rating/RatingSizes/index.tsx
 ::
 
 </Showcase>
@@ -52,6 +58,9 @@ Rating by default uses a `warning-500` for filled and partially filled stars and
 ::react-only
 <<<../../../preview/next/pages/showcases/Rating/RatingColors.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Rating/RatingColors/index.tsx
+::
 
 </Showcase>
 
@@ -66,6 +75,9 @@ For a more minimal look, you can also present ratings a single star icon with a 
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Rating/SingleStar.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Rating/SingleStar/index.tsx
 ::
 
 </Showcase>
@@ -82,12 +94,12 @@ For better out-of-the-box accessibility, `SfRating` adds `role="img"` and an `ar
 
 ## Props
 
-| Prop name     | Type                | Default value | Possible values            |
-| ------------- | ------------------- | ------------- | -------------------------- |
-| `size`          | `SfRatingSize`    | `'base'`        | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'` |
-| `value`         | `number`            | `0`           |                            |
-| `max`           | `number`            | `5`           |                            |
-| `halfIncrement` | `boolean`           | `false`       |                            |
+| Prop name       | Type           | Default value | Possible values                      |
+| --------------- | -------------- | ------------- | ------------------------------------ |
+| `size`          | `SfRatingSize` | `'base'`      | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'` |
+| `value`         | `number`       | `0`           |                                      |
+| `max`           | `number`       | `5`           |                                      |
+| `halfIncrement` | `boolean`      | `false`       |                                      |
 
 #tab-3
 
