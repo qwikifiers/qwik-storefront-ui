@@ -20,6 +20,9 @@
 ::react-only
 <<<../../../preview/next/pages/showcases/LoaderCircular/LoaderCircularSizes.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/LoaderCircular/LoaderCircularSizes/index.tsx
+::
 
 </Showcase>
 
@@ -39,6 +42,9 @@ Learn more about [overriding default styles](/customization/overriding-default-s
 ::react-only
 <<<../../../preview/next/pages/showcases/LoaderCircular/LoaderCircularColors.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/LoaderCircular/LoaderCircularColors/index.tsx
+::
 
 </Showcase>
 
@@ -47,7 +53,6 @@ Learn more about [overriding default styles](/customization/overriding-default-s
 `SfLoaderCircular` uses `aria-live="polite"` to allow screen readers to read the loading status. This can be overriden by passing your own `aria-live` value to the component.
 
 It's important to properly set `aria-label` for screen readers to read proper information while target component is loading. Default value is set to `loading`.
-
 
 ## Playground
 
@@ -58,17 +63,24 @@ It's important to properly set `aria-label` for screen readers to read proper in
 ## Props
 
 ::vue-only
-| Prop name             | Type                       | Default value                 | Possible values                      |
+| Prop name | Type | Default value | Possible values |
 |-----------------------|----------------------------|-------------------------------|--------------------------------------|
-| `size`                |      `SfLoaderSize`        | `'base'`           | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
-| `ariaLabel`    |      `string`                | `'loading'`                     |                                      |
+| `size` | `SfLoaderSize` | `'base'` | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'loading'` | |
 ::
 ::react-only
-| Prop name             | Type                       | Default value                 | Possible values                      |
+| Prop name | Type | Default value | Possible values |
 |-----------------------|----------------------------|-------------------------------|--------------------------------------|
-| `size`                |      `SfLoaderSize`        | `'base'`           | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
-| `ariaLabel`    |      `string`                | `'loading'`                     |                                      |
-| `className`             |  `string`                    |               |                                  |            |
+| `size` | `SfLoaderSize` | `'base'` | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'loading'` | |
+| `className` | `string` | | | |
+::
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+|-----------------------|----------------------------|-------------------------------|--------------------------------------|
+| `size` | `SfLoaderSize` | `'base'` | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'loading'` | |
+| `className` | `string` | | | |
 ::
 
 #tab-3
