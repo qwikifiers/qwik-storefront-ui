@@ -4,7 +4,7 @@
 
 #tab-1
 
-`SfProgressCircular` can be used provide feedback about the duration and progression of a process. 
+`SfProgressCircular` can be used provide feedback about the duration and progression of a process.
 
 ## Examples
 
@@ -19,6 +19,9 @@
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/ProgressCircular/ProgressCircularSizes.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/ProgressCircular/ProgressCircularSizes/index.tsx
 ::
 
 </Showcase>
@@ -39,6 +42,9 @@ Learn more about [overriding default styles](/customization/overriding-default-s
 ::react-only
 <<<../../../preview/next/pages/showcases/ProgressCircular/ProgressCircularColors.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/ProgressCircular/ProgressCircularColors/index.tsx
+::
 
 </Showcase>
 
@@ -49,6 +55,9 @@ You can add text to the center of the Progress Circle by providing content to th
 ::
 ::react-only
 You can add text to the center of the Progress Circle by providing content to the component via the `children`.
+::
+::qwik-only
+You can add text to the center of the Progress Circle by providing content to the component via the `Slot`.
 ::
 
 ::warning
@@ -63,6 +72,9 @@ You can add text to the center of the Progress Circle by providing content to th
 ::react-only
 <<<../../../preview/next/pages/showcases/ProgressCircular/ProgressCircularFloatingLabel.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/ProgressCircular/ProgressCircularFloatingLabel/index.tsx
+::
 
 </Showcase>
 
@@ -70,37 +82,48 @@ You can add text to the center of the Progress Circle by providing content to th
 
 This component sets the `role="progressbar"` to [allow screen readers treat it as an indicator of progress status](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/progressbar_role).
 
-
 ## Playground
 
 <Generate />
 
 #tab-2
+
 ## Props
 
 ::vue-only
-| Prop name             | Type                       | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 |-----------------------|----------------------------|---------------|----------------------------------------|
-|  `value`                |  `number`                    | `0`             |                                        |
-|  `size`              |  `SfProgressSize` |   `'base'`        |   `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'`  |
-|  `ariaLabel`         |  `string`                    |   `'Progress element'`  |   
+| `value` | `number` | `0` | |
+| `size` | `SfProgressSize` | `'base'` | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'Progress element'` |  
 ::
 ::react-only
-| Prop name             | Type                       | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 |-----------------------|----------------------------|---------------|----------------------------------------|
-|  `value`                |  `number`                    | `0`             |                                        |
-|  `size`              |  `SfProgressSize` |   `'base'`        |   `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'`  |
-|  `ariaLabel`         |  `string`                    |   `'Progress element'`  |   
-|  `className`            |  `string`                    |               |                                        |
-| `children`   | `ReactNode`          |               | Default slotted content            |
+| `value` | `number` | `0` | |
+| `size` | `SfProgressSize` | `'base'` | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'Progress element'` |  
+| `className` | `string` | | |
+| `children` | `ReactNode` | | Default slotted content |
+::
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+|-----------------------|----------------------------|---------------|----------------------------------------|
+| `value` | `number` | `0` | |
+| `size` | `SfProgressSize` | `'base'` | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'Progress element'` |  
+| `className` | `string` | | |
+| `children` | `ReactNode` | | Default slotted content |
 ::
 
 ::vue-only
+
 ## Slots
 
 | Slot name | Description                     |
 | --------- | ------------------------------- |
-| `default`   | adds content within svg element |
+| `default` | adds content within svg element |
+
 ::
 
 #tab-3
