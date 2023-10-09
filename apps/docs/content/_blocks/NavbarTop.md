@@ -12,6 +12,9 @@ The NavbarTop block is used as navigation. Usually it's at the top of a page and
 ::react-only
 <<<../../../preview/next/pages/showcases/NavbarTop/NavbarTop.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/NavbarTop/NavbarTop/index.tsx
+::
 
 </Showcase>
 
@@ -25,6 +28,9 @@ The NavbarTop block is used as navigation. Usually it's at the top of a page and
 ::react-only
 <<<../../../preview/next/pages/showcases/NavbarTop/NavbarTopFilled.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/NavbarTop/NavbarTopFilled/index.tsx
+::
 
 </Showcase>
 
@@ -32,7 +38,7 @@ The NavbarTop block is used as navigation. Usually it's at the top of a page and
 
 The alternate NavbarTop variant designed to work seamlessly with the NavbarBottom, providing a cohesive mobile navigation experience.
 
-By combining with the NavbarBottom, you can create a unified navigation structure that accommodates both top and bottom navigation elements on mobile devices. This ensures a smooth and intuitive user experience, allowing users to access important navigation options easily. 
+By combining with the NavbarBottom, you can create a unified navigation structure that accommodates both top and bottom navigation elements on mobile devices. This ensures a smooth and intuitive user experience, allowing users to access important navigation options easily.
 
 <Showcase showcase-name="NavbarTop/NavbarTopSimpleMobile" no-paddings style="min-height: 150px;">
 
@@ -41,6 +47,9 @@ By combining with the NavbarBottom, you can create a unified navigation structur
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/NavbarTop/NavbarTopSimpleMobile.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/NavbarTop/NavbarTopSimpleMobile/index.tsx
 ::
 
 </Showcase>
@@ -54,6 +63,9 @@ By combining with the NavbarBottom, you can create a unified navigation structur
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/NavbarTop/NavbarTopFilledSimpleMobile.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/NavbarTop/NavbarTopFilledSimpleMobile/index.tsx
 ::
 
 </Showcase>
