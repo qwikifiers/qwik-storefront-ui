@@ -20,5 +20,8 @@ The Basic block offers essential tab functionality. This particular variant auto
 ::react-only
 <<<../../../preview/next/pages/showcases/Tabs/TabsBasic.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Tabs/TabsBasic/index.tsx
+::
 
 </Showcase>
