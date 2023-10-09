@@ -1,6 +1,5 @@
 # Drawer
 
-
 ::tabs{:titles='["Usage", "API", "Source Code"]'}
 
 #tab-1
@@ -11,13 +10,16 @@
 
 ### Basic Usage
 
-`SfDrawer` supports 4 different placements that can be set via `placement` prop: `top`, `right`, `bottom`, `left`. 
+`SfDrawer` supports 4 different placements that can be set via `placement` prop: `top`, `right`, `bottom`, `left`.
 
 ::vue-only
 To open/close the drawer, you can use `v-model`.
 ::
 
 ::react-only
+To open/close the drawer, you can use the the `open` prop and the `onClose` event
+::
+::qwik-only
 To open/close the drawer, you can use the the `open` prop and the `onClose` event
 ::
 
@@ -35,6 +37,9 @@ By default, `SfDrawer` will trigger the close event when the user clicks outside
 <<<../../../preview/next/pages/showcases/Drawer/Placement.tsx
 
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Drawer/Placement/index.tsx
+::
 
 </Showcase>
 
@@ -42,11 +47,14 @@ By default, `SfDrawer` will trigger the close event when the user clicks outside
 
 ::vue-only
 
-You can wrap `SfDrawer` in a [`<transition>`](https://vuejs.org/guide/built-ins/transition.html#the-transition-component) component to add enter/exit animations. 
+You can wrap `SfDrawer` in a [`<transition>`](https://vuejs.org/guide/built-ins/transition.html#the-transition-component) component to add enter/exit animations.
 ::
 
 ::react-only
-You can wrap `SfDrawer` in a [`<CSSTransition>`](https://reactcommunity.org/react-transition-group/css-transition) component to add enter/exit animations. 
+You can wrap `SfDrawer` in a [`<CSSTransition>`](https://reactcommunity.org/react-transition-group/css-transition) component to add enter/exit animations.
+::
+::qwik-only
+You can wrap `SfDrawer` in a [`<CSSTransition>`](https://reactcommunity.org/react-transition-group/css-transition) component to add enter/exit animations.
 ::
 
 Additionally, you can use the `useTrapFocus` utility for better control of focusable elements inside.
@@ -63,6 +71,9 @@ Additionally, you can use the `useTrapFocus` utility for better control of focus
 <<<../../../preview/next/pages/showcases/Drawer/TransitionAndCloseButton.tsx
 
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Drawer/TransitionAndCloseButton/index.tsx
+::
 </Showcase>
 
 ## Accessibility notes
@@ -77,7 +88,6 @@ The component is providing keyboard accessibility with `@keydown.esc="onEscKeyDo
 
 ## Props
 
-
 ::vue-only
 | Prop name | Type | Default value | Possible values |
 | --------- | ---- | ------------- | --------------- |
@@ -88,6 +98,17 @@ The component is providing keyboard accessibility with `@keydown.esc="onEscKeyDo
 | `disableEsc` | `boolean` | `false` | |
 ::
 ::react-only
+| Prop name | Type | Default value | Possible values |
+| --------- | ---- | ------------- | --------------- |
+| `open`\* | `boolean` | `false` | |
+| `as` | `ReactElement` | `'aside'` | |
+| `placement` | `SfDrawerPlacement` | `'left'` | `'top'`, `'bottom'`, `'left'`, `'right'` |  
+| `disableClickAway` | `boolean` | `false` | |
+| `disableEsc` | `boolean` | `false` | |
+| `onClose` | `Function` | | |
+| `children` | `ReactNode` | | |
+::
+::qwik-only
 | Prop name | Type | Default value | Possible values |
 | --------- | ---- | ------------- | --------------- |
 | `open`\* | `boolean` | `false` | |
@@ -126,6 +147,9 @@ The component is providing keyboard accessibility with `@keydown.esc="onEscKeyDo
 
 <<<../../../../packages/sfui/frameworks/react/components/SfDrawer/SfDrawer.tsx
 
+::
+::qwik-only
+<<<../../../../dist/packages/qwik-storefront-ui/components/SfDrawer/index.tsx
 ::
 
 ::
