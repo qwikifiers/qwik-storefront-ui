@@ -24,6 +24,10 @@
 <<<../../../preview/next/pages/showcases/Link/LinkVariants.tsx
 
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Link/LinkVariants/index.tsx
+::
+
 </Showcase>
 
 ### Customization
@@ -44,6 +48,10 @@ You can [customize your color palette](../customization/theming.html) as a part 
 <<<../../../preview/next/pages/showcases/Link/Customization.tsx
 
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Link/Customization/index.tsx
+::
+
 </Showcase>
 
 ::tip Need more customization?
@@ -51,23 +59,24 @@ You can [customize your color palette](../customization/theming.html) as a part 
 If you need more customization beyond the built-in variants, we recommend copying the `SfLink` [source code](#source) and modifying it to your needs. This way, you can have all the custom styles for your design system, but still be able to easily use all of our [Blocks](./blocks.html).
 ::
 
-
-
 ## Accessibility notes
 
 ::vue-only
-Link component can be rendered as an `<a>`, `<NuxtLink>`, or any other tag by providing it with prop `tag`. 
+Link component can be rendered as an `<a>`, `<NuxtLink>`, or any other tag by providing it with prop `tag`.
 ::
 
 ::react-only
-Link component can be rendered as an `<a>`, `<NextLink>`, or any other tag by providing it with prop `as`. 
+Link component can be rendered as an `<a>`, `<NextLink>`, or any other tag by providing it with prop `as`.
 ::
 
-
+::qwik-only
+Link component can be rendered as an `<a>`, `<Link>`, or any other tag by providing it with prop `as`.
+::
 
 When no tag provided, the component will render as an `<a>`. To achieve proper accessibility it is important to implement required properties depending on the passed tag.
 
 ::react-only
+
 ### Usage with NextJS Link
 
 `SfLink` can be composed together with `NextJS` link component.
@@ -88,6 +97,17 @@ You can use the `tag` prop to render component as `NuxtLink`.
 </Showcase>
 ::
 
+::qwik-only
+
+### Usage with Qwik Link
+
+`SfLink` can be composed together with `Qwik` link component.
+
+<Showcase showcase-name="Link/QwikLink">
+<<<../../../website/src/routes/showcases/Link/QwikLink/index.tsx
+</Showcase>
+::
+
 ## Playground
 
 <Generate />
@@ -97,24 +117,33 @@ You can use the `tag` prop to render component as `NuxtLink`.
 ## Props
 
 ::vue-only
-| Prop name | Type            | Default value | Possible values            |
+| Prop name | Type | Default value | Possible values |
 | --------- | --------------- | ------------- | -------------------------- |
-| `variant` | `SfLinkVariant` | `'primary'`   | `'primary'`, `'secondary'` |
+| `variant` | `SfLinkVariant` | `'primary'` | `'primary'`, `'secondary'` |
 | `tag` | `string` | `'a'` | |
 ::
 ::react-only
-| Prop name | Type            | Default value | Possible values            |
+| Prop name | Type | Default value | Possible values |
 | --------- | --------------- | ------------- | -------------------------- |
-| `variant` | `SfLinkVariant` | `'primary'`   | `'primary'`, `'secondary'` |
+| `variant` | `SfLinkVariant` | `'primary'` | `'primary'`, `'secondary'` |
+| `as` | `ReactElement` | `'a'` | any tag name |
+| `children` | `ReactNode` | | Default slotted content |
+::
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| --------- | --------------- | ------------- | -------------------------- |
+| `variant` | `SfLinkVariant` | `'primary'` | `'primary'`, `'secondary'` |
 | `as` | `ReactElement` | `'a'` | any tag name |
 | `children` | `ReactNode` | | Default slotted content |
 ::
 ::vue-only
 
 ## Slots
+
 | Slot name | Description                  |
 | --------- | ---------------------------- |
 | `default` | replaces the default content |
+
 ::
 
 #tab-3
