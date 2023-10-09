@@ -10,7 +10,7 @@
 
 ### Button sizes
 
-`SfButton`  supports 3 sizes that can be set with the `size` prop: `'sm'`, `'base'`, `'lg'`.
+`SfButton` supports 3 sizes that can be set with the `size` prop: `'sm'`, `'base'`, `'lg'`.
 
 <Showcase showcase-name="Button/ButtonSizes" style="min-height:250px">
 
@@ -19,6 +19,9 @@
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Button/ButtonSizes.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Button/ButtonSizes/index.tsx
 ::
 </Showcase>
 
@@ -34,11 +37,15 @@
 ::react-only
 <<<../../../preview/next/pages/showcases/Button/ButtonVariants.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Button/ButtonVariants/index.tsx
+::
 </Showcase>
 
 ### Button as a link
 
 <!-- TODO: only one name per framework -->
+
 This component can be used as a link (or any other tag) that can be set via ::vue-only`tag`::::react-only`as`:: prop.
 
 <Showcase showcase-name="Button/ButtonAsLink" style="min-height:250px">
@@ -48,6 +55,9 @@ This component can be used as a link (or any other tag) that can be set via ::vu
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Button/ButtonAsLink.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Button/ButtonAsLink/index.tsx
 ::
 </Showcase>
 
@@ -63,6 +73,9 @@ You can create a full-width button with Tailwind's `w-full` class.
 ::react-only
 <<<../../../preview/next/pages/showcases/Button/ButtonBlock.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Button/ButtonBlock/index.tsx
+::
 </Showcase>
 
 ### Button truncation
@@ -77,11 +90,14 @@ You can truncate button content with Tailwind using `max-w-` and `truncate` clas
 ::react-only
 <<<../../../preview/next/pages/showcases/Button/ButtonTruncation.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Button/ButtonTruncation/index.tsx
+::
 </Showcase>
 
 ### Button content
 
-`SfButton` provides ::vue-only`prefix` and `suffix` slots::::react-only`slotPrefix` and `slotSuffix` props:: that you can use to add custom content before/after your default content. This can be useful for adding icons or badges to your buttons. 
+`SfButton` provides ::vue-only`prefix` and `suffix` slots::::react-only`slotPrefix` and `slotSuffix` props:: that you can use to add custom content before/after your default content. This can be useful for adding icons or badges to your buttons.
 
 <Showcase showcase-name="Button/ButtonContent" style="min-height:250px">
 
@@ -90,6 +106,9 @@ You can truncate button content with Tailwind using `max-w-` and `truncate` clas
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Button/ButtonContent.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Button/ButtonContent/index.tsx
 ::
 </Showcase>
 
@@ -103,7 +122,6 @@ Avoid using buttons to navigate the page. Use links or tabs.
 
 If you need to use Button with non-`<button>` tags like `<div>` you need to add `role='button'`. When this role is added to an element, the browser will send out an accessible alert event to assistive technology products which can then notify the user. You can override this behaviour by passing `role` prop by yourself.
 
-
 ## Playground
 
 <Generate />
@@ -112,40 +130,54 @@ If you need to use Button with non-`<button>` tags like `<div>` you need to add 
 
 ## Props
 
-
-
 ::vue-only
-| Prop name | Type                | Default value | Possible values                    |
+| Prop name | Type | Default value | Possible values |
 | --------- | ------------------- | ------------- | ---------------------------------- |
-| `variant`   | `SfButtonVariant`    | `'primary'`       | `'primary'`, `'secondary'`, `'tertiary'`       |
-| `size`      | `VsfButtonSize`       | `'base'`          | `'sm'`, `'base'`, `'lg'`                       |
-| `disabled`  | `boolean`             | `false`         |                                    |
-| `square`    | `boolean`             | `false`         |                                    |
-| `tag`       | `string`              | `'button'`        |                                    |
+| `variant` | `SfButtonVariant` | `'primary'` | `'primary'`, `'secondary'`, `'tertiary'` |
+| `size` | `VsfButtonSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `disabled` | `boolean` | `false` | |
+| `square` | `boolean` | `false` | |
+| `tag` | `string` | `'button'` | |
 ::
 
 ::react-only
-| Prop name | Type                | Default value | Possible values                    |
+| Prop name | Type | Default value | Possible values |
 | --------- | ------------------- | ------------- | ---------------------------------- |
-| `variant`   | `SfButtonVariant`    | `'primary'`       | `'primary'`, `'secondary'`, `'tertiary'`       |
-| `size`      | `VsfButtonSize`       | `'base'`          | `'sm'`, `'base'`, `'lg'`                       |
-| `disabled`  | `boolean`             | `false`         |                                    |
-| `square`    | `boolean`             | `false`         |                                    |
-| `children`   | `ReactNode`          |               | Default slotted content            |
-| `as`         | `ReactElement`       | `'button'`        | any tag name                       |
-| `slotPrefix` | `ReactNode`          |               | Left side slotted content          |
-| `slotSuffix` | `ReactNode`          |               | Right side slotted content         |
-| `onClick`    | `Function`           |               |                                    |
+| `variant` | `SfButtonVariant` | `'primary'` | `'primary'`, `'secondary'`, `'tertiary'` |
+| `size` | `VsfButtonSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `disabled` | `boolean` | `false` | |
+| `square` | `boolean` | `false` | |
+| `children` | `ReactNode` | | Default slotted content |
+| `as` | `ReactElement` | `'button'` | any tag name |
+| `slotPrefix` | `ReactNode` | | Left side slotted content |
+| `slotSuffix` | `ReactNode` | | Right side slotted content |
+| `onClick` | `Function` | | |
+::
+
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| --------- | ------------------- | ------------- | ---------------------------------- |
+| `variant` | `SfButtonVariant` | `'primary'` | `'primary'`, `'secondary'`, `'tertiary'` |
+| `size` | `VsfButtonSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `disabled` | `boolean` | `false` | |
+| `square` | `boolean` | `false` | |
+| `children` | `ReactNode` | | Default slotted content |
+| `as` | `ReactElement` | `'button'` | any tag name |
+| `slotPrefix` | `ReactNode` | | Left side slotted content |
+| `slotSuffix` | `ReactNode` | | Right side slotted content |
+| `onClick` | `Function` | | |
 ::
 
 ::vue-only
+
 ## Slots
 
 | Slot name | Description                  |
 | --------- | ---------------------------- |
-| `prefix`    | before default slot          |
-| `default`   | replaces the default content |
-| `suffix`    | after default slot           |
+| `prefix`  | before default slot          |
+| `default` | replaces the default content |
+| `suffix`  | after default slot           |
+
 ::
 
 #tab-3
@@ -155,6 +187,9 @@ If you need to use Button with non-`<button>` tags like `<div>` you need to add 
 ::
 ::react-only
 <<<../../../../packages/sfui/frameworks/react/components/SfButton/SfButton.tsx
+::
+::react-only
+<<<../../../../dist/packages/qwik-storefront-ui/components/SfButton/index.tsx
 ::
 
 ::
