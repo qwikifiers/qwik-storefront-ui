@@ -18,6 +18,9 @@ This block contain empty `anchor` element, this specific manipulation adds possi
 ::react-only
 <<<../../../preview/next/pages/showcases/Card/CardDefault.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Card/CardDefault/index.tsx
+::
 
 </Showcase>
 
@@ -33,6 +36,9 @@ The category card view with a circle shaped image, and category title, clickable
 ::react-only
 <<<../../../preview/next/pages/showcases/Card/CategoryCard.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Card/CategoryCard/index.tsx
+::
 
 </Showcase>
 
@@ -47,6 +53,9 @@ This type of card has only button to interact.
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Card/CardFeature.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Card/CardFeature/index.tsx
 ::
 
 </Showcase>
