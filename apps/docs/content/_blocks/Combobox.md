@@ -25,5 +25,8 @@ The Basic Combobox block shows how to select one of the country's names from the
 ::react-only
 <<<../../preview/next/pages/showcases/Combobox/ComboboxBasic.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Combobox/ComboboxBasic/index.tsx
+::
 
 </Showcase>
