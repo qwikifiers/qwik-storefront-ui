@@ -14,5 +14,8 @@ It is a good idea to use pagination when there are lots of elements to show on t
 ::react-only
 <<<../../../preview/next/pages/showcases/Pagination/Pagination.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Pagination/Pagination/index.tsx
+::
 
 </Showcase>
