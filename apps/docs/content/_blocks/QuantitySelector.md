@@ -12,7 +12,9 @@ QuantitySelector allows the selection of a numeric value and the display of any 
 ::vue-only
 <<<../../../preview/nuxt/pages/showcases/QuantitySelector/QuantitySelector.vue
 ::
-
+::qwik-only
+<<<../../../website/src/routes/showcases/QuantitySelector/QuantitySelector/index.tsx
+::
 </Showcase>
 
 ## With rounded buttons
@@ -24,6 +26,9 @@ QuantitySelector allows the selection of a numeric value and the display of any 
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/QuantitySelector/Rounded.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/QuantitySelector/Rounded/index.tsx
 ::
 
 </Showcase>
@@ -37,6 +42,9 @@ QuantitySelector allows the selection of a numeric value and the display of any 
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/QuantitySelector/OutOfStock.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/QuantitySelector/OutOfStock/index.tsx
 ::
 
 </Showcase>
