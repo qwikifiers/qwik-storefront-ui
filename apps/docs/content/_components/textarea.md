@@ -18,6 +18,10 @@ The Textarea is a multi-line text input control allows users to enter any combin
 ::react-only
 <<<../../../preview/next/pages/showcases/Textarea/TextareaDisabled.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Textarea/TextareaDisabled/index.tsx
+::
+
 </Showcase>
 
 ### Readonly Textarea
@@ -31,6 +35,9 @@ The Textarea is a multi-line text input control allows users to enter any combin
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Textarea/TextareaReadonly.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Textarea/TextareaReadonly/index.tsx
 ::
 </Showcase>
 
@@ -46,6 +53,9 @@ If you pass the `invalid` prop, the Textarea will be styled to indicate an inval
 ::react-only
 <<<../../../preview/next/pages/showcases/Textarea/TextareaInvalid.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Textarea/TextareaInvalid/index.tsx
+::
 </Showcase>
 
 ### Textarea with characters counter
@@ -60,11 +70,14 @@ The Textarea component provides the option to display a character count, allowin
 ::react-only
 <<<../../../preview/next/pages/showcases/Textarea/TextareaCharacters.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Textarea/TextareaCharacters/index.tsx
+::
 </Showcase>
 
 ### Textarea with autoresize
 
-The Textarea component supports autoresizing based on the content entered by the user. As the user types or deletes text, the height of the textarea adjusts automatically to fit the content, eliminating the need for scrollbars. In the example below we use [`@frsource/autoresize-textarea`](https://www.frsource.org/autoresize-textarea/) library to provide this feature. 
+The Textarea component supports autoresizing based on the content entered by the user. As the user types or deletes text, the height of the textarea adjusts automatically to fit the content, eliminating the need for scrollbars. In the example below we use [`@frsource/autoresize-textarea`](https://www.frsource.org/autoresize-textarea/) library to provide this feature.
 
 <Showcase showcase-name="Textarea/TextareaAutoresize">
 
@@ -74,8 +87,10 @@ The Textarea component supports autoresizing based on the content entered by the
 ::react-only
 <<<../../../preview/next/pages/showcases/Textarea/TextareaAutoresize.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Textarea/TextareaAutoresize/index.tsx
+::
 </Showcase>
-
 
 ## Accessibility notes
 
@@ -90,33 +105,39 @@ Textarea is multi-line input, so Return or Enter key inserts a line break.
 ## Props
 
 ::vue-only
-| Prop name    | Type            | Default value | Possible values                        |
-| ------------ | --------        | ------------- | -------------------------------------- |
-| `size`         | `SfInputSize`  | `'base'`          | `'sm'`, `'base'`, `'lg'`                           |
-| `invalid`      | `boolean`         | `false`         |  
+| Prop name | Type | Default value | Possible values |
+| ------------ | -------- | ------------- | -------------------------------------- |
+| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `invalid` | `boolean` | `false` |  
 ::
 
-
 ::react-only
-| Prop name    | Type            | Default value | Possible values                        |
-| ------------ | --------        | ------------- | -------------------------------------- |
-| `size`         | `SfInputSize`  | `'base'`          | `'sm'`, `'base'`, `'lg'`                           |
-| `invalid`      | `boolean`         | `false`         |  
-| `className`      | `string`         |          |      
-:: 
+| Prop name | Type | Default value | Possible values |
+| ------------ | -------- | ------------- | -------------------------------------- |
+| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `invalid` | `boolean` | `false` |  
+| `className` | `string` | |  
+::
+
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| ------------ | -------- | ------------- | -------------------------------------- |
+| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `invalid` | `boolean` | `false` |  
+| `className` | `string` | |  
+::
 
 ::vue-only
 
 ## Events
 
-| Event name        | Trigger                       |
-| ----------------- | ----------------------------- |
+| Event name          | Trigger                       |
+| ------------------- | ----------------------------- |
 | `update:modelValue` | triggers v-model update event |
 
-:: 
+::
 
 #tab-3
-
 
 ::vue-only
 <<<../../../../packages/sfui/frameworks/vue/components/SfTextarea/SfTextarea.vue
