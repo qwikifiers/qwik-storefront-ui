@@ -25,6 +25,9 @@ Select Dropdown with preselected option.
 ::react-only
 <<<../../preview/next/pages/showcases/SelectDropdown/SelectDropdownPreselected.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/SelectDropdown/SelectDropdownPreselected/index.tsx
+::
 
 </Showcase>
 
@@ -38,6 +41,9 @@ Adding placeholder might be helpful and informative for end users.
 ::
 ::react-only
 <<<../../preview/next/pages/showcases/SelectDropdown/SelectDropdownWithPlaceholder.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/SelectDropdown/SelectDropdownWithPlaceholder/index.tsx
 ::
 </Showcase>
 
@@ -53,6 +59,9 @@ Provide visual cues for end users to indicate occuring error.
 ::react-only
 <<<../../preview/next/pages/showcases/SelectDropdown/SelectDropdownError.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/SelectDropdown/SelectDropdownError/index.tsx
+::
 
 </Showcase>
 
@@ -67,6 +76,9 @@ Differentiate disabled state to smooth UX experience. In such case, keyboard nav
 ::
 ::react-only
 <<<../../preview/next/pages/showcases/SelectDropdown/SelectDropdownDisabled.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/SelectDropdown/SelectDropdownDisabled/index.tsx
 ::
 
 </Showcase>
