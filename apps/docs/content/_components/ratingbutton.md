@@ -1,4 +1,3 @@
-
 # RatingButton
 
 The RatingButton component is an interactive input element specifically designed for evaluations on product pages. It provides users with the ability to select a rating by choosing an icon using either the cursor or keyboard input. The number of icons displayed and the actual icon used can be customized based on your specific requirements. The rating scale within the component operates from left to right.
@@ -22,6 +21,9 @@ To make the RatingButton work you just have to provide a state.
 ::react-only
 <<<../../../preview/next/pages/showcases/RatingButton/Basic.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/RatingButton/Basic/index.tsx
+::
 
 </Showcase>
 
@@ -41,6 +43,9 @@ RatingButton comes with three different sizes which are compatible with Storefro
 ::react-only
 <<<../../../preview/next/pages/showcases/RatingButton/Sizes.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/RatingButton/Sizes/index.tsx
+::
 
 </Showcase>
 
@@ -58,6 +63,10 @@ Set any number of stars using `max` prop. For example, if you increase the maxim
 <<<../../../preview/next/pages/showcases/RatingButton/MaxNumber.tsx
 ::
 
+::qwik-only
+<<<../../../website/src/routes/showcases/RatingButton/MaxNumber/index.tsx
+::
+
 </Showcase>
 
 ### Custom icon
@@ -66,6 +75,9 @@ Set any number of stars using `max` prop. For example, if you increase the maxim
 You can customize an icon of the RatingButton using a render function
 ::
 ::vue-only
+You can customize an icon of the RatingButton using a scoped slot.
+::
+::qwik-only
 You can customize an icon of the RatingButton using a scoped slot.
 ::
 
@@ -79,6 +91,9 @@ You can customize an icon of the RatingButton using a scoped slot.
 
 ::react-only
 <<<../../../preview/next/pages/showcases/RatingButton/CustomIcon.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/RatingButton/CustomIcon/index.tsx
 ::
 </Showcase>
 
@@ -99,26 +114,36 @@ The RatingButton uses hidden radio input elements to satisfy all keyboard functi
 ## Props
 
 ::vue-only
-| Prop name        | Type                                              | Default value      | Possible values    |
+| Prop name | Type | Default value | Possible values |
 | ---------------- | ------------------------------------------------- | ------------------ | ------------------ |
-| `name`           | `string`                                          | `sf-rating-button` |                    |
-| `max`            | `number`                                          | `5`                |                    |
-| `size`           | `SfRatingButtonSize`                              | `base`             | `sm`, `base`, `lg` |
-| `disabled`       | `boolean`                                         | `false`            |                    |
-| `getLabelText`   | `(value: number) => string`                       |                    |                    |
+| `name` | `string` | `sf-rating-button` | |
+| `max` | `number` | `5` | |
+| `size` | `SfRatingButtonSize` | `base` | `sm`, `base`, `lg` |
+| `disabled` | `boolean` | `false` | |
+| `getLabelText` | `(value: number) => string` | | |
 
 ::
-| Prop name        | Type                                              | Default value      | Possible values    |
+| Prop name | Type | Default value | Possible values |
 | ---------------- | ------------------------------------------------- | ------------------ | ------------------ |
 ::react-only
-| `value`          | `number`                                          | `0`                |                    |
-| `onChange`       | `(value: number) => void`                         |                    |                    |
-| `name`           | `string`                                          | `sf-rating-button` |                    |
-| `max`            | `number`                                          | `5`                |                    |
-| `size`           | `SfRatingButtonSize`                              | `base`             | `sm`, `base`, `lg` |
-| `disabled`       | `boolean`                                         | `false`            |                    |
-| `getLabelText`   | `(value: number) => string`                       |                    |                    |
-| `children`       | `(state: SfRatingButtonRenderProps) => ReactNode` |                    |                    |
+| `value` | `number` | `0` | |
+| `onChange` | `(value: number) => void` | | |
+| `name` | `string` | `sf-rating-button` | |
+| `max` | `number` | `5` | |
+| `size` | `SfRatingButtonSize` | `base` | `sm`, `base`, `lg` |
+| `disabled` | `boolean` | `false` | |
+| `getLabelText` | `(value: number) => string` | | |
+| `children` | `(state: SfRatingButtonRenderProps) => ReactNode` | | |
+::
+::qwik-only
+| `value` | `number` | `0` | |
+| `onChange` | `(value: number) => void` | | |
+| `name` | `string` | `sf-rating-button` | |
+| `max` | `number` | `5` | |
+| `size` | `SfRatingButtonSize` | `base` | `sm`, `base`, `lg` |
+| `disabled` | `boolean` | `false` | |
+| `getLabelText` | `(value: number) => string` | | |
+| `children` | `(state: SfRatingButtonRenderProps) => ReactNode` | | |
 ::
 
 ::react-only
@@ -127,11 +152,11 @@ The RatingButton uses hidden radio input elements to satisfy all keyboard functi
 
 SfRatingButtonRenderProps
 
-| Prop name  | Type                 | Default value | Possible values    |
-| ---------- | -------------------- | ------------- | ------------------ |
-| `isFilled` | `boolean`            |               |                    |
-| `max`      | `number`             |               |                    |
-| `iconSize` | `SfIconSize`         |               | `base`, `lg`, `xl` |
+| Prop name  | Type         | Default value | Possible values    |
+| ---------- | ------------ | ------------- | ------------------ |
+| `isFilled` | `boolean`    |               |                    |
+| `max`      | `number`     |               |                    |
+| `iconSize` | `SfIconSize` |               | `base`, `lg`, `xl` |
 
 ::
 
@@ -145,11 +170,11 @@ SfRatingButtonRenderProps
 
 ### Slot props
 
-| Prop name  | Type                 | Default value | Possible values    |
-| ---------- | -------------------- | ------------- | ------------------ |
-| `isFilled` | `boolean`            |               |                    |
-| `max`      | `number`             |               |                    |
-| `iconSize` | `SfIconSize`         |               | `base`, `lg`, `xl` |
+| Prop name  | Type         | Default value | Possible values    |
+| ---------- | ------------ | ------------- | ------------------ |
+| `isFilled` | `boolean`    |               |                    |
+| `max`      | `number`     |               |                    |
+| `iconSize` | `SfIconSize` |               | `base`, `lg`, `xl` |
 
 ## Events
 
@@ -158,10 +183,21 @@ SfRatingButtonRenderProps
 | `update:modelValue` | triggers v-model update event |
 
 ::
+::qwik-only
 
+## Render function props
+
+SfRatingButtonRenderProps
+
+| Prop name  | Type         | Default value | Possible values    |
+| ---------- | ------------ | ------------- | ------------------ |
+| `isFilled` | `boolean`    |               |                    |
+| `max`      | `number`     |               |                    |
+| `iconSize` | `SfIconSize` |               | `base`, `lg`, `xl` |
+
+::
 
 #tab-3
-
 
 ::vue-only
 <<<../../../../packages/sfui/frameworks/vue/components/SfRatingButton/SfRatingButton.vue
@@ -169,6 +205,5 @@ SfRatingButtonRenderProps
 ::react-only
 <<<../../../../packages/sfui/frameworks/react/components/SfRatingButton/SfRatingButton.tsx
 ::
-
 
 ::
