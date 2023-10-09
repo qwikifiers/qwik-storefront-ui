@@ -28,6 +28,9 @@ You can use `v-model` with `SfCheckbox` to bind the value to a variable in your 
 ::react-only
 <<<../../../preview/next/pages/showcases/Checkbox/CheckboxWithoutLabel.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Checkbox/CheckboxWithoutLabel/index.tsx
+::
 </Showcase>
 
 ### Checkbox aligned to the left
@@ -42,6 +45,9 @@ When using `SfCheckbox` with a label, you can use Tailwind's `peer` modifiers to
 ::react-only
 <<<../../../preview/next/pages/showcases/Checkbox/CheckboxLeading.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Checkbox/CheckboxLeading/index.tsx
+::
 </Showcase>
 
 ### Checkbox aligned to the right
@@ -53,6 +59,9 @@ When using `SfCheckbox` with a label, you can use Tailwind's `peer` modifiers to
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Checkbox/CheckboxTrailing.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Checkbox/CheckboxTrailing/index.tsx
 ::
 </Showcase>
 
@@ -85,6 +94,13 @@ It's focusable and can be toggled with `Space`.
 | `invalid` | `boolean` | `false` | |
 ::
 
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| ------------ | ------------------------ | ------------- | -------------------------------------- |
+| `className` | `string` | | |
+| `invalid` | `boolean` | `false` | |
+::
+
 ::vue-only
 
 ## Events
@@ -101,5 +117,8 @@ It's focusable and can be toggled with `Space`.
 ::
 ::react-only
 <<< ../../../../packages/sfui/frameworks/react/components/SfCheckbox/SfCheckbox.tsx
+::
+::qwik-only
+<<<../../../../dist/packages/qwik-storefront-ui/components/SfCheckbox/index.tsx
 ::
 ::
