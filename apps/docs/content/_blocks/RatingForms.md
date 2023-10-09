@@ -16,6 +16,9 @@ This block is implemented using `SfRatingButton` and `SfModal` components. If yo
 ::react-only
 <<<../../../preview/next/pages/showcases/RatingForms/ProductRating.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/RatingForms/ProductRating/index.tsx
+::
 
 </Showcase>
 
@@ -31,5 +34,8 @@ The Product Rating With Review block provides users with the ability to rate a p
 ::react-only
 <<<../../../preview/next/pages/showcases/RatingForms/ProductRatingWithReview.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/RatingForms/ProductRatingWithReview/index.tsx
+::
 
-</Showcase> 
+</Showcase>
