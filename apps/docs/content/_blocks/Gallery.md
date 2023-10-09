@@ -24,6 +24,9 @@ Changing an image is provided by hover on the thumbnail or dragging the main ima
 ::react-only
 <<<../../../preview/next/pages/showcases/Gallery/GalleryVertical.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Gallery/GalleryVertical/index.tsx
+::
 
 </Showcase>
 
@@ -38,6 +41,9 @@ Changing an image is provided by click on the thumbnail or dragging the main ima
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Gallery/GalleryHorizontal.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Gallery/GalleryHorizontal/index.tsx
 ::
 
 </Showcase>
@@ -54,12 +60,15 @@ Changing an image is provided by click on the buttons which are visible after ho
 ::react-only
 <<<../../../preview/next/pages/showcases/Gallery/GalleryWithBullets.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Gallery/GalleryWithBullets/index.tsx
+::
 
 </Showcase>
 
 ## Product Gallery with arrow key navigation
 
-In this block there is added arrow key navigation. When focus is on one of the thumbnails it's possible to change currently displayed image by pressing arrow keys - arrow up and arrow right will show a next image and arrow down and arrow left will show a  previous image.
+In this block there is added arrow key navigation. When focus is on one of the thumbnails it's possible to change currently displayed image by pressing arrow keys - arrow up and arrow right will show a next image and arrow down and arrow left will show a previous image.
 
 <Showcase showcase-name="Gallery/GalleryHorizontalArrowKeyNavigation" style="min-height:700px">
 
@@ -68,6 +77,9 @@ In this block there is added arrow key navigation. When focus is on one of the t
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Gallery/GalleryHorizontalArrowKeyNavigation.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Gallery/GalleryHorizontalArrowKeyNavigation/index.tsx
 ::
 
 </Showcase>
