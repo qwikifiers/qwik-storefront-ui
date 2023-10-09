@@ -14,7 +14,9 @@ Learn more about `useTooltip` hook in the [Hooks > useTooltip docs](/react/hooks
 ::vue-only
 Learn more about `useTooltip` composable in the [Composables > useTooltip docs](/vue/hooks/useTooltip.html).
 ::
-
+::qwik-only
+Learn more about `useTooltip` hook in the [Hooks > useTooltip docs](/qwik/hooks/useTooltip.html).
+::
 
 ## Examples
 
@@ -28,12 +30,14 @@ Learn more about `useTooltip` composable in the [Composables > useTooltip docs](
 ::react-only
 <<<../../../preview/next/pages/showcases/Tooltip/BasicTooltip.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Tooltip/BasicTooltip/index.tsx
+::
 </Showcase>
 
 ## Accessibility notes
 
 By default, this component sets `role="tooltip"`.
-
 
 ## Playground
 
@@ -44,29 +48,40 @@ By default, this component sets `role="tooltip"`.
 ## Props
 
 ::vue-only
-| Prop name | Type                                                     | Default value | Possible values |
+| Prop name | Type | Default value | Possible values |
 | --------- | -------------------------------------------------------- | ------------- | --------------- |
-| `label`\*   | `string`                                                 |               |                 |
-| `showArrow` | `boolean`                                                | `false`       |                 |
-| `placement` | `SfPopoverPlacement`                                    |               |                 |
-| `arrowSize` | `${number}px` &#124; `${number}em` &#124; `${number}rem` |               |                 |
+| `label`\* | `string` | | |
+| `showArrow` | `boolean` | `false` | |
+| `placement` | `SfPopoverPlacement` | | |
+| `arrowSize` | `${number}px` &#124; `${number}em` &#124; `${number}rem` | | |
 ::
 ::react-only
-| Prop name | Type                                                     | Default value | Possible values |
+| Prop name | Type | Default value | Possible values |
 | --------- | -------------------------------------------------------- | ------------- | --------------- |
-| `label`\*   | `string`                                                 |               |                 |
-| `showArrow` | `boolean`                                                | `false`       |                 |
-| `placement` | `SfPopoverPlacement`                                    |               |                 |
-| `arrowSize` | `${number}px` &#124; `${number}em` &#124; `${number}rem` |               |                 |
+| `label`\* | `string` | | |
+| `showArrow` | `boolean` | `false` | |
+| `placement` | `SfPopoverPlacement` | | |
+| `arrowSize` | `${number}px` &#124; `${number}em` &#124; `${number}rem` | | |
+| `children` | `ReactNode` | | |
+::
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| --------- | -------------------------------------------------------- | ------------- | --------------- |
+| `label`\* | `string` | | |
+| `showArrow` | `boolean` | `false` | |
+| `placement` | `SfPopoverPlacement` | | |
+| `arrowSize` | `${number}px` &#124; `${number}em` &#124; `${number}rem` | | |
 | `children` | `ReactNode` | | |
 ::
 
 ::vue-only
+
 ## Slots
 
-| Slot name |            Description            |
-| --------- | ------------------------------- |
-| `default`   | Content being described by the tooltip   |
+| Slot name | Description                            |
+| --------- | -------------------------------------- |
+| `default` | Content being described by the tooltip |
+
 ::
 #tab-3
 
