@@ -8,9 +8,7 @@ This component is shipped in our NPM package, but its API might change based on 
 
 #tab-1
 
-`SfScrollable` is a component that allows to build interactive slider. It uses the `useScrollable` utility under the hood. 
-
-
+`SfScrollable` is a component that allows to build interactive slider. It uses the `useScrollable` utility under the hood.
 
 ::react-only
 Learn more about `useScrollable` hook in the [Hooks > useScrollable docs](/react/hooks/useScrollable.html).
@@ -18,8 +16,9 @@ Learn more about `useScrollable` hook in the [Hooks > useScrollable docs](/react
 ::vue-only
 Learn more about `useScrollable` composable in the [Composables > useScrollable docs](/vue/hooks/useScrollable.html).
 ::
-
-
+::qwik-only
+Learn more about `useScrollable` hook in the [Hooks > useScrollable docs](/react/hooks/useScrollable.html).
+::
 
 ## Examples
 
@@ -34,6 +33,9 @@ Can be setup that will be without scrollbar
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Scrollable/HideScrollbar.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Scrollable/HideScrollbar/index.tsx
 ::
 
 </Showcase>
@@ -50,6 +52,9 @@ Can be setup that will be without scrollbar
 ::react-only
 <<<../../../preview/next/pages/showcases/Scrollable/SnapCenter.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Scrollable/SnapCenter/index.tsx
+::
 
 </Showcase>
 
@@ -64,6 +69,9 @@ By default `SfScrollable` scroll by one page of items, but can be modified that 
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Scrollable/ScrollByOneItem.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Scrollable/ScrollByOneItem/index.tsx
 ::
 
 </Showcase>
@@ -81,35 +89,59 @@ The previous and next buttons have `aria-label` attributes (`buttonPrevAriaLabel
 ## Props
 
 ::vue-only
-| Prop name               | Type                                               | Default value  | Possible values                   |
+| Prop name | Type | Default value | Possible values |
 | ----------------------- | -------------------------------------------------- | -------------- | --------------------------------- |
-| `direction`             | `SfScrollableDirection`                            | `'horizontal'` | `'horizontal'`, `'vertical'`      |
-| `buttonsPlacement`      | `SfScrollableButtonsPlacement`                     | `'block'`      | `'block'`, `'floating'`, `'none'` |
-| `activeIndex`           | `number`                                           |                |                                   |
-| `reduceMotion`          | `boolean`                                          |                |                                   |
-| `drag`                  | `{ sensitivity: number; containerWidth: boolean; } | boolean`       |                                   |
-| `prevDisabled`          | `boolean`                                          |                |                                   |
-| `nextDisabled`          | `boolean`                                          |                |                                   |
-| `isActiveIndexCentered` | `boolean`                                          |                |                                   |
-| `buttonPrevAriaLabel`   | `string`                                           | `'Previous'`   |                                   |
-| `buttonNextAriaLabel`   | `string`                                           | `'Next'`       |                                   |
+| `direction` | `SfScrollableDirection` | `'horizontal'` | `'horizontal'`, `'vertical'` |
+| `buttonsPlacement` | `SfScrollableButtonsPlacement` | `'block'` | `'block'`, `'floating'`, `'none'` |
+| `activeIndex` | `number` | | |
+| `reduceMotion` | `boolean` | | |
+| `drag` | `{ sensitivity: number; containerWidth: boolean; } | boolean` | |
+| `prevDisabled` | `boolean` | | |
+| `nextDisabled` | `boolean` | | |
+| `isActiveIndexCentered` | `boolean` | | |
+| `buttonPrevAriaLabel` | `string` | `'Previous'` | |
+| `buttonNextAriaLabel` | `string` | `'Next'` | |
 | `tag` | `string` | `'div'` | |
 ::
 
-
 ::react-only
-| Prop name               | Type                                               | Default value  | Possible values                   |
+| Prop name | Type | Default value | Possible values |
 | ----------------------- | -------------------------------------------------- | -------------- | --------------------------------- |
-| `direction`             | `SfScrollableDirection`                            | `'horizontal'` | `'horizontal'`, `'vertical'`      |
-| `buttonsPlacement`      | `SfScrollableButtonsPlacement`                     | `'block'`      | `'block'`, `'floating'`, `'none'` |
-| `activeIndex`           | `number`                                           |                |                                   |
-| `reduceMotion`          | `boolean`                                          |                |                                   |
-| `drag`                  | `{ sensitivity: number; containerWidth: boolean; } | boolean`       |                                   |
-| `prevDisabled`          | `boolean`                                          |                |                                   |
-| `nextDisabled`          | `boolean`                                          |                |                                   |
-| `isActiveIndexCentered` | `boolean`                                          |                |                                   |
-| `buttonPrevAriaLabel`   | `string`                                           | `'Previous'`   |                                   |
-| `buttonNextAriaLabel`   | `string`                                           | `'Next'`       |                                   |
+| `direction` | `SfScrollableDirection` | `'horizontal'` | `'horizontal'`, `'vertical'` |
+| `buttonsPlacement` | `SfScrollableButtonsPlacement` | `'block'` | `'block'`, `'floating'`, `'none'` |
+| `activeIndex` | `number` | | |
+| `reduceMotion` | `boolean` | | |
+| `drag` | `{ sensitivity: number; containerWidth: boolean; } | boolean` | |
+| `prevDisabled` | `boolean` | | |
+| `nextDisabled` | `boolean` | | |
+| `isActiveIndexCentered` | `boolean` | | |
+| `buttonPrevAriaLabel` | `string` | `'Previous'` | |
+| `buttonNextAriaLabel` | `string` | `'Next'` | |
+| `as` | `ReactElement` | `'div'` | any tag name |
+| `children` | `ReactNode` | | Default slotted content |
+| `wrapperClassName` | `string` | | |
+| `slotPreviousButton` | `ReactNode` | | Previous button |
+| `slotNextButton` | `ReactNode` | | Next button |
+| `onDragStart` | `(data: SfScrollableOnDragStartData) => void` | | |
+| `onDragEnd` | `(data: SfScrollableOnDragEndData) => void` | | |
+| `onScroll` | `(data: SfScrollableOnScrollData) => void` | | |
+| `onPrev` | `(data: SfScrollableOnPrevData) => void` | | |
+| `onNext` | `(data: SfScrollableOnNextData) => void` | | |
+::
+
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| ----------------------- | -------------------------------------------------- | -------------- | --------------------------------- |
+| `direction` | `SfScrollableDirection` | `'horizontal'` | `'horizontal'`, `'vertical'` |
+| `buttonsPlacement` | `SfScrollableButtonsPlacement` | `'block'` | `'block'`, `'floating'`, `'none'` |
+| `activeIndex` | `number` | | |
+| `reduceMotion` | `boolean` | | |
+| `drag` | `{ sensitivity: number; containerWidth: boolean; } | boolean` | |
+| `prevDisabled` | `boolean` | | |
+| `nextDisabled` | `boolean` | | |
+| `isActiveIndexCentered` | `boolean` | | |
+| `buttonPrevAriaLabel` | `string` | `'Previous'` | |
+| `buttonNextAriaLabel` | `string` | `'Next'` | |
 | `as` | `ReactElement` | `'div'` | any tag name |
 | `children` | `ReactNode` | | Default slotted content |
 | `wrapperClassName` | `string` | | |
@@ -147,7 +179,6 @@ The `drag` prop is setting whether and how elements in a scrollable element can 
 ::
 
 #tab-3
-
 
 ::vue-only
 <<<../../../../packages/sfui/frameworks/vue/components/SfScrollable/SfScrollable.vue
