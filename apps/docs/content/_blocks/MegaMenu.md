@@ -10,7 +10,7 @@ MegaMenu complies with the WCAG guidelines for accessibility for menus and menu 
 
 ## Base Mega Menu
 
- When the user clicks on the trigger element (such as one of the menu items), the mega menu opens. On mobile screens, clicking on hamburger button will trigger a drawer opening from the left side with menu content.
+When the user clicks on the trigger element (such as one of the menu items), the mega menu opens. On mobile screens, clicking on hamburger button will trigger a drawer opening from the left side with menu content.
 
 <Showcase showcase-name="MegaMenu/BaseMegaMenu" no-paddings style="min-height: 500px;">
 
@@ -19,6 +19,9 @@ MegaMenu complies with the WCAG guidelines for accessibility for menus and menu 
 ::
 ::vue-only
 <<<../../../preview/nuxt/pages/showcases/MegaMenu/BaseMegaMenu.vue
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/MegaMenu/BaseMegaMenu/index.tsx
 ::
 
 </Showcase>
@@ -34,6 +37,9 @@ Additional navigation bar under the main header helps to find general categories
 ::
 ::vue-only
 <<<../../../preview/nuxt/pages/showcases/MegaMenu/MegaMenuNavigation.vue
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/MegaMenu/MegaMenuNavigation/index.tsx
 ::
 
 </Showcase>
