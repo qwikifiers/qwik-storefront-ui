@@ -24,6 +24,9 @@
 <<<../../../preview/next/pages/showcases/ListItem/ListItemSizes.tsx
 
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/ListItem/ListItemSizes/index.tsx
+::
 </Showcase>
 
 ### ListItem slots
@@ -32,6 +35,9 @@
 `SfListItem` provides `prefix` and `suffix` slots that you can use to add custom content before/after your default content. This can be useful for adding inputs, thumbnails, icons, or any other content to your list items.
 ::
 ::react-only
+`SfListItem` provides `slotPrefix` and `slotSuffix` props that you can use to add custom content before/after your default content. This can be useful for adding inputs, thumbnails, icons, or any other content to your list items.
+::
+::qwik-only
 `SfListItem` provides `slotPrefix` and `slotSuffix` props that you can use to add custom content before/after your default content. This can be useful for adding inputs, thumbnails, icons, or any other content to your list items.
 ::
 <Showcase showcase-name="ListItem/ListItemSlots" >
@@ -45,6 +51,9 @@
 
 <<<../../../preview/next/pages/showcases/ListItem/ListItemSlots.tsx
 
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/ListItem/ListItemSlots/index.tsx
 ::
 </Showcase>
 
@@ -64,18 +73,23 @@ For items with a lot of text content, you can use Tailwind's `truncate` class.
 <<<../../../preview/next/pages/showcases/ListItem/ListItemTruncated.tsx
 
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/ListItem/ListItemTruncated/index.tsx
+::
 </Showcase>
 
 ## Accessibility notes
 
 ::vue-only
-ListItem component can be rendered as an `<li>` or `<a>` or any other tag by providing it with prop `tag`. 
+ListItem component can be rendered as an `<li>` or `<a>` or any other tag by providing it with prop `tag`.
 
 ::
 ::react-only
 ListItem component can be rendered as an `<li>` or `<a>` or any other tag by providing it with prop `as`.
 ::
-
+::qwik-only
+ListItem component can be rendered as an `<li>` or `<a>` or any other tag by providing it with prop `as`.
+::
 
 When no tag provided, the component will render as an `<li>`. To achieve proper accessibility it is important to implement required properties depending on the passed tag.
 
@@ -87,28 +101,40 @@ When no tag provided, the component will render as an `<li>`. To achieve proper 
 
 ## Props
 
-
 ::vue-only
-| Prop name   | Type             | Default value | Possible values          |
+| Prop name | Type | Default value | Possible values |
 | ----------- | ---------------- | ------------- | ------------------------ |
-| `size`      | `SfListItemSize` | `'base'`      | `'sm'`, `'base'`, `'lg'` |
-| `disabled ` | `boolean`        | `false`       |                          |
-| `selected`  | `boolean`        | `false`       |                          |
-| `tag`                | `string`        | `'li'`           | any tag name               |
-| `childrenTag`        | `string`        | `'span'`            | any tag name               |
+| `size` | `SfListItemSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `disabled ` | `boolean` | `false` | |
+| `selected` | `boolean` | `false` | |
+| `tag` | `string` | `'li'` | any tag name |
+| `childrenTag` | `string` | `'span'` | any tag name |
 ::
 ::react-only
-| Prop name   | Type             | Default value | Possible values          |
+| Prop name | Type | Default value | Possible values |
 | ----------- | ---------------- | ------------- | ------------------------ |
-| `size`      | `SfListItemSize` | `'base'`      | `'sm'`, `'base'`, `'lg'` |
-| `disabled ` | `boolean`        | `false`       |                          |
-| `selected`  | `boolean`        | `false`       |                          |
-| `as`                 | `ReactElement`  | `'li'`            | any tag name               |
-| `children`           | `ReactNode`     |               | label content              |
-| `childrenTag`        | `ReactElement`  | `'span'`            | any tag name               |
-| `slotPrefix`         | `ReactNode`     |               | right side content         |
-| `slotSuffix`         | `ReactNode`     |               | left side content          |
-| `className`          | `string`        |               |                            |
+| `size` | `SfListItemSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `disabled ` | `boolean` | `false` | |
+| `selected` | `boolean` | `false` | |
+| `as` | `ReactElement` | `'li'` | any tag name |
+| `children` | `ReactNode` | | label content |
+| `childrenTag` | `ReactElement` | `'span'` | any tag name |
+| `slotPrefix` | `ReactNode` | | right side content |
+| `slotSuffix` | `ReactNode` | | left side content |
+| `className` | `string` | | |
+::
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| ----------- | ---------------- | ------------- | ------------------------ |
+| `size` | `SfListItemSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
+| `disabled ` | `boolean` | `false` | |
+| `selected` | `boolean` | `false` | |
+| `as` | `ReactElement` | `'li'` | any tag name |
+| `children` | `ReactNode` | | label content |
+| `childrenTag` | `ReactElement` | `'span'` | any tag name |
+| `slotPrefix` | `ReactNode` | | right side content |
+| `slotSuffix` | `ReactNode` | | left side content |
+| `className` | `string` | | |
 ::
 
 ::vue-only
@@ -124,7 +150,6 @@ When no tag provided, the component will render as an `<li>`. To achieve proper 
 ::
 
 #tab-3
-
 
 ::vue-only
 
