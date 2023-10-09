@@ -20,6 +20,9 @@ Simple search with an autocomplete functionality. Give your users hints of what 
 ::react-only
 <<<../../../preview/next/pages/showcases/Search/SearchBasic.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Search/SearchBasic/index.tsx
+::
 
 </Showcase>
 
@@ -35,6 +38,9 @@ This block enhances search functionality with a custom icon and categorized resu
 ::react-only
 <<<../../../preview/next/pages/showcases/Search/SearchWithIcon.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Search/SearchWithIcon/index.tsx
+::
 
 </Showcase>
 
@@ -49,6 +55,9 @@ This block enhances search functionality with a custom button, categorized resul
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Search/SearchWithButton.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Search/SearchWithButton/index.tsx
 ::
 
 </Showcase>
