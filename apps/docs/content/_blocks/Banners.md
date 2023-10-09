@@ -12,7 +12,9 @@ Banners are components that deliver main image and content in various configurat
 ::react-only
 <<<../../../preview/next/pages/showcases/Banners/DisplayHorizontal.tsx
 ::
-
+::qwik-only
+<<<../../../website/src/routes/showcases/Banners/DisplayHorizontal/index.tsx
+::
 </Showcase>
 
 ## Vertical Display
@@ -26,6 +28,9 @@ Vertical display block with image and content below or above it.
 ::react-only
 <<<../../../preview/next/pages/showcases/Banners/DisplayVertical.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Banners/DisplayVertical/index.tsx
+::
 </Showcase>
 
 ## Multiple vertical Displays
@@ -38,6 +43,9 @@ Four vertical displays in row on desktop.
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Banners/DisplayVerticalMultiple.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Banners/DisplayVerticalMultiple/index.tsx
 ::
 </Showcase>
 
@@ -53,5 +61,7 @@ Hero acts like a layout for your hero section. You can provide main image and an
 ::react-only
 <<<../../../preview/next/pages/showcases/Banners/Hero.tsx
 ::
-
+::qwik-only
+<<<../../../website/src/routes/showcases/Banners/Hero/index.tsx
+::
 </Showcase>
