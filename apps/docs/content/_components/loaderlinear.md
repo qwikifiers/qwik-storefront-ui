@@ -20,6 +20,9 @@
 ::react-only
 <<<../../../preview/next/pages/showcases/LoaderLinear/LoaderLinearSizes.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/LoaderLinear/LoaderLinearSizes/index.tsx
+::
 
 </Showcase>
 
@@ -31,7 +34,6 @@ By default, `SfLoaderLinear` uses `primary-700` as the color of the bar (customi
 Learn more about [overriding default styles](/customization/overriding-default-styles) in Storefront UI.
 ::
 
-
 <Showcase showcase-name="LoaderLinear/LoaderLinearColors">
 
 ::vue-only
@@ -39,6 +41,9 @@ Learn more about [overriding default styles](/customization/overriding-default-s
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/LoaderLinear/LoaderLinearColors.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/LoaderLinear/LoaderLinearColors/index.tsx
 ::
 
 </Showcase>
@@ -58,17 +63,24 @@ It's important to properly set `aria-label` for screen readers to read proper in
 ## Props
 
 ::vue-only
-| Prop name             | Type                       | Default value                 | Possible values                      |
+| Prop name | Type | Default value | Possible values |
 |-----------------------|----------------------------|-------------------------------|--------------------------------------|
-| `size`                |      `SfLoaderLinearSize` | `SfLoaderSize`        | `'base'`           |  `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
-| `ariaLabel`    |      `string`                | `'loading'`                     |                                      |
+| `size` | `SfLoaderLinearSize` | `SfLoaderSize` | `'base'` | `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'loading'` | |
 ::
 ::react-only
-| Prop name             | Type                       | Default value                 | Possible values                      |
+| Prop name | Type | Default value | Possible values |
 |-----------------------|----------------------------|-------------------------------|--------------------------------------|
-| `size`                |      `SfLoaderLinearSize` | `SfLoaderSize`        | `'base'`           |  `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
-| `ariaLabel`    |      `string`                | `'loading'`                     |                                      |
-| `className`             |  `string`                    |               |                                  |            |
+| `size` | `SfLoaderLinearSize` | `SfLoaderSize` | `'base'` | `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'loading'` | |
+| `className` | `string` | | | |
+::
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+|-----------------------|----------------------------|-------------------------------|--------------------------------------|
+| `size` | `SfLoaderLinearSize` | `SfLoaderSize` | `'base'` | `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'loading'` | |
+| `className` | `string` | | | |
 ::
 #tab-3
 ::vue-only
