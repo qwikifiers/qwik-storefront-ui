@@ -23,7 +23,9 @@ The visibility of the modal is controlled by `v-model`.
 ::
 ::react-only
 The visibility of the modal is controlled by the `open` prop.
-
+::
+::qwik-only
+The visibility of the modal is controlled by the `open` prop.
 ::
 This example also uses the [`useDisclosure`](../hooks/useDisclosure.html) function to provide nice controls for handling the modal's visibility.
 
@@ -34,6 +36,9 @@ This example also uses the [`useDisclosure`](../hooks/useDisclosure.html) functi
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Modal/ModalBasic.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Modal/ModalBasic/index.tsx
 ::
 
 </Showcase>
@@ -49,6 +54,9 @@ You can make smooth transitions when the modal pops up.
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Modal/ModalTransition.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Modal/ModalTransition/index.tsx
 ::
 
 </Showcase>
@@ -74,40 +82,49 @@ Both techniques can be seen in the code examples above.
 
 ## Props
 
-
 ::vue-only
-| Prop name             | Type                       | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 |-----------------------|----------------------------|---------------|----------------------------------------|
-| `modelValue`            | `boolean`                    | `false`         |                                        |
-| `tag`                   | `string`                     | `'div'`         |                                        |
-|  `disableClickAway`     | `boolean`                    | `false`        |                                        |
-|  `disableEsc`           |  `boolean`                   | `false`        |                                        |
+| `modelValue` | `boolean` | `false` | |
+| `tag` | `string` | `'div'` | |
+| `disableClickAway` | `boolean` | `false` | |
+| `disableEsc` | `boolean` | `false` | |
 ::
 ::react-only
-| Prop name             | Type                       | Default value | Possible values                        |
+| Prop name | Type | Default value | Possible values |
 |-----------------------|----------------------------|---------------|----------------------------------------|
-| `open`                  | `boolean`                    | `false`         |                                        |
-| `as`                    | `ReactElement`               | `div`         |                                        |
-|  `disableClickAway`     | `boolean`                    | `false`        |                                        |
-|  `disableEsc`           |  `boolean`                   | `false`        |                                        |
-|  `children`             |  `ReactNode`                 |               |                                        |
-|  `onClose`              |  `Function`                  |               |                                        |
+| `open` | `boolean` | `false` | |
+| `as` | `ReactElement` | `div` | |
+| `disableClickAway` | `boolean` | `false` | |
+| `disableEsc` | `boolean` | `false` | |
+| `children` | `ReactNode` | | |
+| `onClose` | `Function` | | |
 ::
-
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+|-----------------------|----------------------------|---------------|----------------------------------------|
+| `open` | `boolean` | `false` | |
+| `as` | `ReactElement` | `div` | |
+| `disableClickAway` | `boolean` | `false` | |
+| `disableEsc` | `boolean` | `false` | |
+| `children` | `ReactNode` | | |
+| `onClose` | `Function` | | |
+::
 
 ::vue-only
 
 ## Slots
 
-| Slot name | Description             |
-| --------- | ----------------------- |
-| `default`   | place content of modal |
+| Slot name | Description            |
+| --------- | ---------------------- |
+| `default` | place content of modal |
 
 ## Events
 
-| Event name        | Trigger                        |
-| ----------------- | ------------------------------ |
+| Event name          | Trigger                                                                                                                             |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `update:modelValue` | emits when hitting `esc` key (when `disableEsc` is set to `false`) and on click outside (when `disableClickAway` is set to `false`) |
+
 ::
 #tab-3
 ::vue-only
