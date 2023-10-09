@@ -20,6 +20,9 @@
 ::react-only
 <<<../../../preview/next/pages/showcases/ProgressLinear/ProgressLinearSizes.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/ProgressLinear/ProgressLinearSizes/index.tsx
+::
 
 </Showcase>
 
@@ -39,6 +42,9 @@ Learn more about [overriding default styles](/customization/overriding-default-s
 ::react-only
 <<<../../../preview/next/pages/showcases/ProgressLinear/ProgressLinearColors.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/ProgressLinear/ProgressLinearColors/index.tsx
+::
 
 </Showcase>
 
@@ -53,6 +59,9 @@ Learn more about [overriding default styles](/customization/overriding-default-s
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/ProgressLinear/ProgressLinearLabel.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/ProgressLinear/ProgressLinearLabel/index.tsx
 ::
 
 </Showcase>
@@ -70,19 +79,27 @@ ProgressLinear uses native [`<progress>`](https://developer.mozilla.org/en-US/do
 ## Props
 
 ::vue-only
-| Prop name             | Type                       | Default value | Possible values                              |
-|-----------------------|----------------------------|---------------|----------------------------------------      |
-|  `value`                |  `number`                    | `0`            |                                        |
-| `size`                |      `SfProgressLinearSize | SfProgressSize`        | `'base'`           |  `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
-| `ariaLabel`    |      `string`                | `'Progress linear'`                     |                                      |
+| Prop name | Type | Default value | Possible values |
+|-----------------------|----------------------------|---------------|---------------------------------------- |
+| `value` | `number` | `0` | |
+| `size` | `SfProgressLinearSize | SfProgressSize` | `'base'` | `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'Progress linear'` | |
 ::
 ::react-only
-| Prop name             | Type                       | Default value | Possible values                              |
-|-----------------------|----------------------------|---------------|----------------------------------------      |
-|  `value`                |  `number`                    | `0`            |                                        |
-| `size`                |      `SfProgressLinearSize | SfProgressSize`        | `'base'`           |  `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
-| `ariaLabel`    |      `string`                | `'Progress linear'`                     |                                      |
-| `className`             |  `string`                    |               |                                  |            |
+| Prop name | Type | Default value | Possible values |
+|-----------------------|----------------------------|---------------|---------------------------------------- |
+| `value` | `number` | `0` | |
+| `size` | `SfProgressLinearSize | SfProgressSize` | `'base'` | `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'Progress linear'` | |
+| `className` | `string` | | | |
+::
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+|-----------------------|----------------------------|---------------|---------------------------------------- |
+| `value` | `number` | `0` | |
+| `size` | `SfProgressLinearSize | SfProgressSize` | `'base'` | `'minimal'`,`'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
+| `ariaLabel` | `string` | `'Progress linear'` | |
+| `className` | `string` | | | |
 ::
 
 #tab-3
