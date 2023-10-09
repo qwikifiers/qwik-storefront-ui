@@ -14,6 +14,9 @@ Color filters are a type of product filter that allow online shoppers to narrow 
 ::react-only
 <<<../../../preview/next/pages/showcases/Filters/Color.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Filters/Color/index.tsx
+::
 </Showcase>
 
 ## Size
@@ -27,6 +30,9 @@ Sizes in category pages are a feature that allows online shoppers to filter thei
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Filters/Size.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Filters/Size/index.tsx
 ::
 </Showcase>
 
@@ -42,6 +48,9 @@ Brand in category pages are a feature that allows online shoppers to filter thei
 ::react-only
 <<<../../../preview/next/pages/showcases/Filters/Brand.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Filters/Brand/index.tsx
+::
 </Showcase>
 
 ## Price
@@ -56,6 +65,9 @@ Price in category pages are a feature that allows online shoppers to filter thei
 ::react-only
 <<<../../../preview/next/pages/showcases/Filters/Price.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Filters/Price/index.tsx
+::
 </Showcase>
 
 ## Sorting
@@ -69,6 +81,9 @@ Sorting in category pages is a feature that allows online shoppers to arrange an
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Filters/Sorting.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Filters/Sorting/index.tsx
 ::
 
 </Showcase>
@@ -85,6 +100,9 @@ Category list allows users to browse and select categories of content or product
 ::react-only
 <<<../../../preview/next/pages/showcases/Filters/Category.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Filters/Category/index.tsx
+::
 
 </Showcase>
 
@@ -100,6 +118,9 @@ Ratings allows users to filter out specific ratings of products in category. Onl
 ::react-only
 <<<../../../preview/next/pages/showcases/Filters/Rating.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Filters/Rating/index.tsx
+::
 
 </Showcase>
 
@@ -114,6 +135,9 @@ Filters panel can be customized to suit the specific needs of different applicat
 ::
 ::react-only
 <<<../../../preview/next/pages/showcases/Filters/FiltersSidepanel.tsx
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Filters/FiltersSidepanel/index.tsx
 ::
 
 </Showcase>
