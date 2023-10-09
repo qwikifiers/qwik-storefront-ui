@@ -12,5 +12,8 @@ The Footer block is used as navigation. Usually it's at the bottom of a page and
 ::react-only
 <<<../../../preview/next/pages/showcases/Footer/FooterBasic.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Footer/FooterBasic/index.tsx
+::
 
 </Showcase>
