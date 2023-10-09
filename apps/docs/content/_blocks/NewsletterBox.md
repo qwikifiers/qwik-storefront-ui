@@ -12,5 +12,8 @@ In this example there are two types of alerts: `positive` and `negative`. The fi
 ::react-only
 <<<../../../preview/next/pages/showcases/NewsletterBox/NewsletterBox.tsx
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/NewsletterBox/NewsletterBox/index.tsx
+::
 
 </Showcase>
