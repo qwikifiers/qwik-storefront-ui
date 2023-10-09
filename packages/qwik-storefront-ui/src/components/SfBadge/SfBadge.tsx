@@ -6,6 +6,7 @@ export const SfBadge = component$<SfBadgeProps>(
   content,
   variant,
   max = 99,
+  class: className,
   placement = SfBadgePlacement['top-right'],
   ...attributes
 }: SfBadgeProps) => {
@@ -28,6 +29,7 @@ export const SfBadge = component$<SfBadgeProps>(
           'bottom-0 right-0 -translate-x-0.5 -translate-y-0.5': placement === 'bottom-right',
           'bottom-0 left-0 translate-x-0.5 -translate-y-0.5': placement === 'bottom-left',
         },
+        className
       ]}
       data-testid="badge"
       {...attributes}

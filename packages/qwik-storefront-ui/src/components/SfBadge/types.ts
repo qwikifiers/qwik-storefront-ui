@@ -1,6 +1,7 @@
 export type SfBadgeProps = {
   content?: string | number;
   max?: number;
+  class?: string;
   placement?: `${SfBadgePlacement}`;
   variant?: `${SfBadgeVariant}`;
 }
