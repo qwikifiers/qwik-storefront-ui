@@ -26,6 +26,9 @@ By default, `SfCounter` will put parentheses around its children.
 <<<../../../preview/next/pages/showcases/Counter/Counter.tsx
 
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Counter/Counter/index.tsx
+::
 
 </Showcase>
 
@@ -44,6 +47,9 @@ By default, `SfCounter` will put parentheses around its children.
 
 <<<../../../preview/next/pages/showcases/Counter/CounterPill.tsx
 
+::
+::qwik-only
+<<<../../../website/src/routes/showcases/Counter/CounterPill/index.tsx
 ::
 
 </Showcase>
@@ -64,6 +70,9 @@ You can customize the colors of `SfCounter` by passing Tailwind classes.
 <<<../../../preview/next/pages/showcases/Counter/CounterCustomBackground.tsx
 
 ::
+::qwik-only
+<<<../../../website/src/routes/showcases/Counter/CounterCustomBackground/index.tsx
+::
 
 </Showcase>
 
@@ -79,13 +88,11 @@ The root element of `SfCounter` is a `<span>`. Since a `<span>` is an inline ele
 
 ## Props
 
-
-
 ::react-only
-| Prop name | Type            | Default value | Possible values                                    |
+| Prop name | Type | Default value | Possible values |
 | --------- | --------------- | ------------- | -------------------------------------------------- |
-| `size`    | `SfCounterSize` | `'base'`      | `'3xs'`, `'2xs'`, `'xs'`, `'sm'`, `'base'`, `'lg'` |
-| `pill`    | `boolean`       | `false`       |                                                    |
+| `size` | `SfCounterSize` | `'base'` | `'3xs'`, `'2xs'`, `'xs'`, `'sm'`, `'base'`, `'lg'` |
+| `pill` | `boolean` | `false` | |
 | `className` | `string` | | |
 | `children` | `ReactNode` | | |
 ::
@@ -96,6 +103,15 @@ The root element of `SfCounter` is a `<span>`. Since a `<span>` is an inline ele
 | --------- | --------------- | ------------- | -------------------------------------------------- |
 | `size`    | `SfCounterSize` | `'base'`      | `'3xs'`, `'2xs'`, `'xs'`, `'sm'`, `'base'`, `'lg'` |
 | `pill`    | `boolean`       | `false`       |                                                    |
+
+::qwik-only
+| Prop name | Type | Default value | Possible values |
+| --------- | --------------- | ------------- | -------------------------------------------------- |
+| `size` | `SfCounterSize` | `'base'` | `'3xs'`, `'2xs'`, `'xs'`, `'sm'`, `'base'`, `'lg'` |
+| `pill` | `boolean` | `false` | |
+| `className` | `string` | | |
+| `children` | `ReactNode` | | |
+::
 
 ## Slots
 
@@ -116,6 +132,9 @@ The root element of `SfCounter` is a `<span>`. Since a `<span>` is an inline ele
 
 <<< ../../../../packages/sfui/frameworks/react/components/SfCounter/SfCounter.tsx
 
+::
+::qwik-only
+<<<../../../../dist/packages/qwik-storefront-ui/components/SfCounter/index.tsx
 ::
 
 ::
