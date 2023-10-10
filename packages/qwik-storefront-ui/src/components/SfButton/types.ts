@@ -11,6 +11,8 @@ export type SfButtonProps = QwikIntrinsicElements['button'] &
     ref?: Signal<Element | undefined>;
     size?: `${SfButtonSize}`;
     variant?: `${SfButtonVariant}`;
+    slotPrefix?: boolean,
+    slotSuffix?: boolean,
     square?: boolean;
     onClick$?: PropFunction<
       (event: QwikMouseEvent<HTMLButtonElement, MouseEvent>) => void
