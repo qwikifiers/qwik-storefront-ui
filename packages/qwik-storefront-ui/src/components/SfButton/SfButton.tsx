@@ -32,6 +32,8 @@ export const SfButton = component$<SfButtonProps>(
     ref,
     class: className,
     size = SfButtonSize.base,
+    slotPrefix,
+    slotSuffix,
     variant = SfButtonVariant.primary,
     square,
     ...attributes
@@ -55,9 +57,9 @@ export const SfButton = component$<SfButtonProps>(
         data-testid="button"
         {...attributes}
       >
-        <Slot name="prefix" />
+        {slotPrefix && <Slot name="prefix" />}
         <Slot />
-        <Slot name="suffix" />
+        {slotSuffix && <Slot name="suffix" />}
       </Tag>
     );
   }

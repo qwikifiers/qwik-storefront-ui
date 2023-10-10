@@ -1,4 +1,4 @@
-import { component$, useContext, useTask$ } from '@builder.io/qwik';
+import { component$, useContext, useSignal, useTask$ } from '@builder.io/qwik';
 import {
   SfButton,
   SfButtonSize,
@@ -7,11 +7,26 @@ import {
   SfIconSearch,
 } from 'qwik-storefront-ui';
 import { ComponentExample } from '../../../components/utils/ComponentExample';
+import { createControlsOptions } from '../../../components/utils/ControlsOptions';
 import { ControlsType } from '../../../components/utils/types';
 import { EXAMPLES_STATE } from '../layout';
 
+
+const prefixSlotOptions = createControlsOptions({
+  none: undefined,
+  'Search icon': <SfIconSearch />,
+});
+const suffixSlotOptions = createControlsOptions({
+  none: undefined,
+  'Lock icon': <SfIconLock />,
+});
+
 export default component$(() => {
+  const selectPrefix = useSignal<boolean>()
+  const selectSuffix = useSignal<boolean>()
+
   const examplesState = useContext(EXAMPLES_STATE);
+
 
   useTask$(() => {
     examplesState.data = {
@@ -20,6 +35,19 @@ export default component$(() => {
           type: 'text',
           modelName: 'slot',
           description: 'Only for demonstration purposes. Default slot',
+        },
+        {
+          type: 'select',
+          modelName: 'slotPrefix',
+          description: 'slotPrefix',
+          options: prefixSlotOptions.controlsOptions,
+
+        },
+        {
+          type: 'select',
+          modelName: 'slotSuffix',
+          description: 'slotSuffix',
+          options: suffixSlotOptions.controlsOptions,
         },
         {
           type: 'text',
@@ -52,14 +80,31 @@ export default component$(() => {
         disabled: undefined,
         variant: SfButtonVariant.primary,
         size: SfButtonSize.base,
+        slotPrefix: false,
+        slotSuffix: false,
         square: undefined,
       },
     };
   });
 
+  useTask$(({ track }) => {
+    track(() => examplesState.data.state);
+    if (selectPrefix.value === null) return;
+    selectPrefix.value = prefixSlotOptions.getValue(examplesState.data.state.slotPrefix)
+  });
+
+  useTask$(({ track }) => {
+    track(() => examplesState.data.state);
+    if (selectSuffix.value === null) return;
+    selectSuffix.value = suffixSlotOptions.getValue(examplesState.data.state.slotSuffix)
+  });
+
   return (
     <ComponentExample componentContainerClass="space-x-2">
-      <SfButton {...examplesState.data.state} class="max-w-[200px]">
+      <SfButton
+        slotPrefix={selectPrefix.value}
+        slotSuffix={selectSuffix.value}
+        {...examplesState.data.state} class="max-w-[200px]">
         <div q:slot="prefix">
           <SfIconSearch />
         </div>
