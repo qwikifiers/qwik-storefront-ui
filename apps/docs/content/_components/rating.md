@@ -16,15 +16,7 @@ If you need to support partial stars, you can show half-filled star icons by pas
 
 <Showcase showcase-name="Rating/RatingValues">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Rating/RatingValues.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Rating/RatingValues.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Rating/RatingValues/index.tsx
-::
 
 </Showcase>
 
@@ -34,33 +26,21 @@ If you need to support partial stars, you can show half-filled star icons by pas
 
 <Showcase showcase-name="Rating/RatingSizes" style="min-height:250px">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Rating/RatingSizes.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Rating/RatingSizes.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Rating/RatingSizes/index.tsx
-::
 
 </Showcase>
 
 ### Colors
 
-Rating by default uses a `warning-500` for filled and partially filled stars and `disabled-500` as an empty icon color. You can change these values in your [Tailwind configuration](https://tailwindcss.com/docs/configuration#theme) or override them for a single element using [`important modifier`](https://tailwindcss.com/docs/configuration#important-modifier).
+Rating by default uses a `warning-500` for filled and partially filled stars and `disabled-500` as an empty icon color.
+
+<!--
+You can change these values in your [Tailwind configuration](https://tailwindcss.com/docs/configuration#theme) or override them for a single element using [`important modifier`](https://tailwindcss.com/docs/configuration#important-modifier).
+ -->
 
 <Showcase showcase-name="Rating/RatingColors">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Rating/RatingColors.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Rating/RatingColors.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Rating/RatingColors/index.tsx
-::
 
 </Showcase>
 
@@ -70,44 +50,29 @@ For a more minimal look, you can also present ratings a single star icon with a 
 
 <Showcase showcase-name="Rating/SingleStar" style="min-height:220px">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Rating/SingleStar.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Rating/SingleStar.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Rating/SingleStar/index.tsx
-::
 
 </Showcase>
 
+<!--
 ## Accessibility notes
 
 For better out-of-the-box accessibility, `SfRating` adds `role="img"` and an `aria-label` property with value `Rating: [Avg value] out of [Max value] stars` where the values are replaced with the actual values. This can be overridden by passing an `aria-label` property to the component.
+ -->
 
 ## Playground
 
-<Generate style="height:400px" />
+<Generate class="playground" />
 
 #tab-2
 
 ## Props
 
-| Prop name       | Type           | Default value | Possible values                      |
-| --------------- | -------------- | ------------- | ------------------------------------ |
-| `size`          | `SfRatingSize` | `'base'`      | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'` |
-| `value`         | `number`       | `0`           |                                      |
-| `max`           | `number`       | `5`           |                                      |
-| `halfIncrement` | `boolean`      | `false`       |                                      |
-
-#tab-3
-
-::vue-only
-<<<../../../../packages/sfui/frameworks/vue/components/SfRating/SfRating.vue
-::
-::react-only
-<<<../../../../packages/sfui/frameworks/react/components/SfRating/SfRating.tsx
-::
-
-::
+| Prop name        | Type           | Default value | Possible values                      |
+| ---------------- | -------------- | ------------- | ------------------------------------ |
+| `class?`         | `string`       |               |                                      |
+| `value?`         | `number`       | `0`           |                                      |
+| `max?`           | `number`       | `5`           |                                      |
+| `size?`          | `SfRatingSize` | `'base'`      | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'` |
+| `halfIncrement?` | `boolean`      | `false`       |                                      |
+| `ariaLabel?`     | `string`       |               |                                      |
