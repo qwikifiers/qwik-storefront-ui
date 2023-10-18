@@ -13,8 +13,8 @@ export type SfInputProps = Omit<
   size?: `${SfInputSize}`;
   invalid?: boolean;
   wrapperClass?: string;
-  showSlotPrefix?: boolean;
-  showSlotSuffix?: boolean;
+  slotPrefix?: boolean;
+  slotSuffix?: boolean;
   ref?: Signal<Element | undefined>;
   onChange$?: PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>;
 };

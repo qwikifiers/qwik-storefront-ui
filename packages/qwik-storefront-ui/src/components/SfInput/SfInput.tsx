@@ -13,8 +13,8 @@ export const SfInput = component$<SfInputProps>(
     onChange$,
     size = SfInputSize.base,
     invalid,
-    showSlotPrefix,
-    showSlotSuffix,
+    slotPrefix,
+    slotSuffix,
     class: _class,
     wrapperClass,
     ref,
@@ -30,7 +30,7 @@ export const SfInput = component$<SfInputProps>(
         ]}
         data-testid="input"
       >
-        {showSlotPrefix && (
+        {slotPrefix && (
           <span class="pr-2">
             <Slot name="prefix" />
           </span>
@@ -48,7 +48,7 @@ export const SfInput = component$<SfInputProps>(
           {...attributes}
           onChange$={onChange$}
         />
-        {showSlotSuffix && (
+        {slotSuffix && (
           <span class="pl-2">
             <Slot name="suffix" />
           </span>
