@@ -75,12 +75,7 @@ export const components = {
     'SfProgressLinear',
     'SfRadio',
     'SfRating',
-    'SfRatingButton',
-    'SfScrollable',
     'SfSelect',
     'SfSwitch',
-    'SfTextarea',
-    'SfThumbnail',
-    'SfTooltip',
   ],
 };
