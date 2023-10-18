@@ -84,7 +84,7 @@ If you need to use Button with non-`<button>` tags like `<div>` you need to add 
 
 | Prop name    | Type                                   | Default value | Possible values                             |
 | ------------ | -------------------------------------- | ------------- | ------------------------------------------- |
-| `as`         | `ReactElement`                         | `'button'`    | Change button tag to a tag or any other tag |
+| `as`         |                                        | `'button'`    | Change button tag to a tag or any other tag |
 | `ref?`       | `Signal<Element>`                      |               |                                             |
 | `size`       | `VsfButtonSize`                        | `'base'`      | `'sm'`, `'base'`, `'lg'`                    |
 | `variant`    | `SfButtonVariant`                      | `'primary'`   | `'primary'`, `'secondary'`, `'tertiary'`    |
