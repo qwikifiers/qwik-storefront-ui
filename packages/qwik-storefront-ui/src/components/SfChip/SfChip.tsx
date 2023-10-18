@@ -5,8 +5,8 @@ export const SfChip = component$<SfChipProps>(
   ({
     size = SfChipSize.base,
     class: _class,
-    showSlotPrefix,
-    showSlotSuffix,
+    slotPrefix,
+    slotSuffix,
     inputProps,
     square = false,
     ref,
@@ -24,9 +24,9 @@ export const SfChip = component$<SfChipProps>(
           return square
             ? 'px-1.5'
             : [
-              showSlotPrefix ? 'pl-1.5' : 'pl-3',
-              slotSuffix ? 'pr-1.5' : 'pr-3',
-            ];
+                showSlotPrefix ? 'pl-1.5' : 'pl-3',
+                slotSuffix ? 'pr-1.5' : 'pr-3',
+              ];
         default:
           return square
             ? 'px-2'
@@ -43,20 +43,23 @@ export const SfChip = component$<SfChipProps>(
     };
 
     const getCheckedClasses = (checked: boolean | undefined) => {
-      return checked ? 'ring-2 ring-primary-700 hover:ring-primary-700' : ' hover:ring-primary-200 ring-neutral-200';
-    }
-
+      return checked
+        ? 'ring-2 ring-primary-700 hover:ring-primary-700'
+        : ' hover:ring-primary-200 ring-neutral-200';
+    };
 
     const getDisabledClasses = (disabled: boolean | undefined) => {
-      return disabled ? 'cursor-not-allowed bg-disabled-100 opacity-50 ring-1 ring-disabled-200 hover:ring-disabled-200' : 'hover:bg-primary-100 cursor-pointer';
-    }
+      return disabled
+        ? 'cursor-not-allowed bg-disabled-100 opacity-50 ring-1 ring-disabled-200 hover:ring-disabled-200'
+        : 'hover:bg-primary-100 cursor-pointer';
+    };
 
     return (
       <>
         <input
           id={chipId}
           {...(ref ? { ref } : {})}
-          class='hidden'
+          class="hidden"
           type="checkbox"
           {...inputProps}
         />
@@ -67,15 +70,15 @@ export const SfChip = component$<SfChipProps>(
             getCheckedClasses(inputProps?.checked),
             getDisabledClasses(inputProps?.disabled),
             getSizeClasses(size),
-            paddingForSize(size, square, !!showSlotPrefix, !!showSlotSuffix),
+            paddingForSize(size, square, !!slotPrefix, !!slotSuffix),
             _class,
           ]}
           data-testid="chip"
           {...attributes}
         >
-          {showSlotPrefix && <Slot name="prefix" />}
+          {slotPrefix && <Slot name="prefix" />}
           <Slot />
-          {showSlotSuffix && <Slot name="suffix" />}
+          {slotSuffix && <Slot name="suffix" />}
         </label>
       </>
     );

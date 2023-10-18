@@ -6,8 +6,8 @@ export type SfChipProps = {
   size?: `${SfChipSize}`;
   square?: boolean;
   inputProps?: QwikIntrinsicElements['input'];
-  showSlotPrefix?: boolean;
-  showSlotSuffix?: boolean;
+  slotPrefix?: boolean;
+  slotSuffix?: boolean;
 };
 
 export enum SfChipSize {

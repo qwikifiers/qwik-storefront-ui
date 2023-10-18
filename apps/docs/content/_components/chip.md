@@ -4,7 +4,7 @@
 This component is shipped in our NPM package, but its API might change based on user feedback.
 :::
 
-::tabs{:titles='["Usage", "API", "Source Code"]' class="mt-8"}
+::tabs{:titles='["Usage", "API"]' class="mt-8"}
 
 #tab-1
 
@@ -20,34 +20,18 @@ Internally, `SfChip` uses a hidden `<input type="checkbox">` element to handle t
 
 <Showcase showcase-name="Chip/ChipSizes">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Chip/ChipSizes.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Chip/ChipSizes.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Chip/ChipSizes/index.tsx
-::
 
 </Showcase>
 
 ### Thumbnails
 
-<!-- TODO: Add linking to thumbnail component when ready -->
-
 `SfChip` provides ::vue-only`prefix` and `suffix` slots::::react-only`slotPrefix` and `slotSuffix` props:: that you can use to add custom content before/after your default content. This can be useful for adding things like icons, badges, or `SfThumbnail` to your toggleable chip.
 
 <Showcase showcase-name="Chip/ChipWithThumbnail">
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Chip/ChipWithThumbnail.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Chip/ChipWithThumbnail.tsx
-::
-::qwik-only
+
 <<<../../../website/src/routes/showcases/Chip/ChipWithThumbnail/index.tsx
-::
+
 </Showcase>
 
 ### List of chips
@@ -56,15 +40,8 @@ We can set attributes in the hidden checkbox input by passing an object to the `
 
 <Showcase showcase-name="Chip/ListOfChips">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Chip/ListOfChips.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Chip/ListOfChips.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Chip/ListOfChips/index.tsx
-::
+
 </Showcase>
 
 ### Deletable behaviour
@@ -73,15 +50,7 @@ By adding listeners for change events, we can make `SfChip` act as a deletable i
 
 <Showcase showcase-name="Chip/Deletable">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Chip/Deletable.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Chip/Deletable.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Chip/Deletable/index.tsx
-::
 
 </Showcase>
 
@@ -91,20 +60,13 @@ By adding listeners for change events, we can make `SfChip` act as a deletable i
 
 <Showcase showcase-name="Chip/WithoutLabel">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Chip/WithoutLabel.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Chip/WithoutLabel.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Chip/WithoutLabel/index.tsx
-::
+
 </Showcase>
 
-## Accessibility notes
+<!-- ## Accessibility notes
 
-When using `SfChip` without any text label/description inside, you should specify an `aria-label` on the component so that it can be understood by people using screen readers.
+When using `SfChip` without any text label/description inside, you should specify an `aria-label` on the component so that it can be understood by people using screen readers. -->
 
 ## Playground
 
@@ -114,57 +76,12 @@ When using `SfChip` without any text label/description inside, you should specif
 
 ## Props
 
-::react-only
-| Prop name | Type | Default value | Possible values |
-|-----------|-----------|---------------|-------------------|
-| `size` | `string` | `'base'` | `'sm'`, `'base'` |
-| `square` | `boolean` | `false` | |
-| `inputProps` | `InputHTMLAttributes` | | `{ disabled: true }` |
-| `onSelected`| `Function` |`(event?: ChangeEvent<HTMLInputElement>) => void`| |
-| `children` | `ReactNode`| | |
-::
-
-::vue-only
-| Prop name | Type | Default value | Possible values |
-|-----------|-----------|---------------|-------------------|
-| `size` | `string` | `'base'` | `'sm'`, `'base'` |
-| `square` | `boolean` | `false` | |
-| `inputProps` | `InputHTMLAttributes` | | `{ disabled: true }` |
-| `modelValue`| `boolean` | `false` | |
-
-::qwik-only
-| Prop name | Type | Default value | Possible values |
-|-----------|-----------|---------------|-------------------|
-| `size` | `string` | `'base'` | `'sm'`, `'base'` |
-| `square` | `boolean` | `false` | |
-| `inputProps` | `InputHTMLAttributes` | | `{ disabled: true }` |
-| `onSelected`| `Function` |`(event?: ChangeEvent<HTMLInputElement>) => void`| |
-| `children` | `ReactNode`| | |
-::
-
-## Slots
-
-| Slot name | Description                  |
-| --------- | ---------------------------- |
-| `default` | Replaces content inside chip |
-
-## Events
-
-| Event name          | Trigger                       |
-| ------------------- | ----------------------------- |
-| `update:modelValue` | triggers v-model update event |
-
-::
-#tab-3
-
-::vue-only
-<<<../../../../packages/sfui/frameworks/vue/components/SfChip/SfChip.vue
-::
-::react-only
-<<< ../../../../packages/sfui/frameworks/react/components/SfChip/SfChip.tsx
-::
-::qwik-only
-<<<../../../../dist/packages/qwik-storefront-ui/components/SfChip/index.tsx
-::
-
-::
+| Prop name     | Type                             | Default value | Possible values  |
+| ------------- | -------------------------------- | ------------- | ---------------- |
+| `ref?`        | `Signal<Element>`                |               |                  |
+| `class?`      | `string`                         |               |                  |
+| `size?`       | `string`                         | `'base'`      | `'sm'`, `'base'` |
+| `square?`     | `boolean`                        |               |                  |
+| `inputProps?` | `QwikIntrinsicElements['input']` |               |                  |
+| `slotPrefix?` | `boolean`                        |               |                  |
+| `slotSuffix?` | `boolean`                        |               |                  |
