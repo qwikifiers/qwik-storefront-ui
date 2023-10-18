@@ -2,6 +2,15 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.0.7](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.6...qwik-storefront-ui-0.0.7) (2023-10-18)
+
+
+### Reverts
+
+* Revert "chore: change vite.config" ([d41a21e](https://github.com/qwikifiers/qwik-storefront-ui/commit/d41a21e9a53dd3e1aa9c7f24bdd2dc6b3c76a280))
+
+
+
 ## [0.0.6](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.5...qwik-storefront-ui-0.0.6) (2023-10-18)
 
 
