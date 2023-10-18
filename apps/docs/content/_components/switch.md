@@ -1,6 +1,6 @@
 # Switch
 
-::tabs{:titles='["Usage", "API", "Source Code"]' class="mt-8"}
+::tabs{:titles='["Usage", "API"]' class="mt-8"}
 
 #tab-1
 
@@ -18,15 +18,7 @@ Switch base component without a label.
 
 <Showcase showcase-name="Switch/SwitchWithoutLabel">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Switch/SwitchWithoutLabel.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Switch/SwitchWithoutLabel.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Switch/SwitchWithoutLabel/index.tsx
-::
 
 </Showcase>
 
@@ -34,15 +26,7 @@ Switch base component without a label.
 
 <Showcase showcase-name="Switch/SwitchLeading">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Switch/SwitchLeading.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Switch/SwitchLeading.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Switch/SwitchLeading/index.tsx
-::
 
 </Showcase>
 
@@ -52,71 +36,29 @@ Switch component with a label align on the left.
 
 <Showcase showcase-name="Switch/SwitchTrailing">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Switch/SwitchTrailing.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Switch/SwitchTrailing.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Switch/SwitchTrailing/index.tsx
-::
 
 </Showcase>
 
+<!--
 ## Accessibility notes
 
 `SfSwitch` is built using the native `<input type="checkbox">` element. This means that has all of the same keyboard navigation and accessibility features as a native checkbox.
 
 By default, it comes with a `role="switch"` attribute. This is useful for screen readers, which can announce the element as a switch.
+ -->
 
 ## Playground
 
-<Generate style="height: 380px" />
+<Generate class="playground" />
 
 #tab-2
 
 ## Props
 
-::vue-only
-| Prop name | Type | Default value | Possible values |
-| ------------ | ------------------------ | ------------- | -------------------------------------- |
-| `modelValue` | `boolean | string[]` | `undefined` | |
-| `value` | `string` | | |
-::
-
-::react-only
-| Prop name | Type | Default value | Possible values |
-| ------------ | ------------------------ | ------------- | -------------------------------------- |
-| `value` | `string` | | |
-| `onChange` | `Function` | | |
-| `className` | `string` | | |
-::
-
-::qwik-only
-| Prop name | Type | Default value | Possible values |
-| ------------ | ------------------------ | ------------- | -------------------------------------- |
-| `value` | `string` | | |
-| `onChange` | `Function` | | |
-| `className` | `string` | | |
-::
-
-::vue-only
-
-## Events
-
-| Event name          | Trigger                       |
-| ------------------- | ----------------------------- |
-| `update:modelValue` | triggers v-model update event |
-
-::
-
-#tab-3
-
-::vue-only
-<<<../../../../packages/sfui/frameworks/vue/components/SfSwitch/SfSwitch.vue
-::
-::react-only
-<<<../../../../packages/sfui/frameworks/react/components/SfSwitch/SfSwitch.tsx
-::
-::
+| Prop name   | Type                                                               | Default value | Possible values |
+| ----------- | ------------------------------------------------------------------ | ------------- | --------------- |
+| `ref?`      | `Signal<Element>`                                                  |               |                 |
+| `class?`    | `string`                                                           |               |                 |
+| `invalid?`  | `boolean`                                                          |               |                 |
+| `onChange$` | `PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>` |               |                 |
