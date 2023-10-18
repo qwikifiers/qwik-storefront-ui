@@ -80,8 +80,8 @@ export default component$(() => {
       <SfListItem
         class="max-w-sm"
         {...examplesState.data.state}
-        showSlotPrefix={true}
-        showSlotSuffix={true}
+        slotPrefix={true}
+        slotSuffix={true}
         onClick$={() => {
           examplesState.data.state = {
             ...examplesState.data.state,

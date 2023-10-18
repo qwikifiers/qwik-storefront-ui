@@ -5,7 +5,7 @@ export default component$(() => {
   return (
     <label>
       <span class="text-sm font-medium">Label</span>
-      <SfInput showSlotPrefix={true} showSlotSuffix={true}>
+      <SfInput slotPrefix={true} slotSuffix={true}>
         <div q:slot="prefix">
           <SfIconPerson />
         </div>

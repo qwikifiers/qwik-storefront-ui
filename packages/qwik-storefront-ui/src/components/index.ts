@@ -22,4 +22,3 @@ export * from './SfSelect';
 export * from './SfSwitch';
 export * from './SfThumbnail';
 export * from './SfTooltip';
-

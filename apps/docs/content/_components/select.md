@@ -64,14 +64,14 @@ Since this component uses the native `<select>` element, it inherits its accessi
 
 ## Props
 
-| Prop name          | Type                                                                | Default value | Possible values         |
-| ------------------ | ------------------------------------------------------------------- | ------------- | ----------------------- |
-| `class?`           | `string`                                                            |               |                         |
-| `size?`            | `SfSelectSize`                                                      | `'base'`      | `'sm'`, `'base'`,`'lg'` |
-| `invalid?`         | `boolean`                                                           | `false`       |                         |
-| `wrapperClass?`    | `string`                                                            |               |                         |
-| `showSlotChevron?` | `boolean`                                                           |               |                         |
-| `onChange$?`       | `PropFunction<(event: QwikChangeEvent<HTMLSelectElement>) => void>` |               |                         |
+| Prop name       | Type                                                                | Default value | Possible values         |
+| --------------- | ------------------------------------------------------------------- | ------------- | ----------------------- |
+| `class?`        | `string`                                                            |               |                         |
+| `size?`         | `SfSelectSize`                                                      | `'base'`      | `'sm'`, `'base'`,`'lg'` |
+| `invalid?`      | `boolean`                                                           | `false`       |                         |
+| `wrapperClass?` | `string`                                                            |               |                         |
+| `slotChevron?`  | `boolean`                                                           |               |                         |
+| `onChange$?`    | `PropFunction<(event: QwikChangeEvent<HTMLSelectElement>) => void>` |               |                         |
 
 ## Slots
 

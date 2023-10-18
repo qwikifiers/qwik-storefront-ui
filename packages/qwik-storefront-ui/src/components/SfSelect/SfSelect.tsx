@@ -7,7 +7,7 @@ export const SfSelect = component$<SfSelectProps>(
     size = SfSelectSize.base,
     invalid,
     wrapperClass,
-    showSlotChevron,
+    slotChevron,
     required,
     disabled,
     class: _class,
@@ -74,7 +74,7 @@ export const SfSelect = component$<SfSelectProps>(
           )}
           <Slot />
         </select>
-        {showSlotChevron ? (
+        {slotChevron ? (
           <Slot name="chevron" />
         ) : (
           <SfIconExpandMore

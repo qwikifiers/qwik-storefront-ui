@@ -133,8 +133,8 @@ export default component$(() => {
           placeholder={examplesState.data.state.placeholder}
           disabled={examplesState.data.state.disabled}
           readOnly={examplesState.data.state.readonly}
-          showSlotPrefix={true}
-          showSlotSuffix={true}
+          slotPrefix={true}
+          slotSuffix={true}
           onChange$={onChange}
           wrapperClass={
             examplesState.data.state.disabled ||

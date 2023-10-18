@@ -48,48 +48,50 @@ export default component$(() => {
 
   return (
     <div class="e-page-examples">
-      <div class={`sidebar ${isOpenSignal.value ? '' : 'sidebar-collapsed'}`}>
-        <header class="sidebar-heading">
-          <h2>StorefrontUI v2</h2>
-          <h3>Qwik Blocks</h3>
-        </header>
-        <SfButton
-          class="sidebar-toggle"
-          variant={SfButtonVariant.tertiary}
-          size={SfButtonSize.sm}
-          onClick$={() => {
-            isOpenSignal.value = !isOpenSignal.value;
-          }}
-          aria-label={isOpenSignal.value ? 'Hide sidebar' : 'Open sidebar'}
-        >
-          <div q:slot="prefix">
-            {isOpenSignal.value ? (
-              <SfIconChevronLeft />
-            ) : (
-              <SfIconChevronRight />
-            )}
-          </div>
-        </SfButton>
-        <ul class="sidebar-list flex flex-col">
-          {Object.keys(groups).map((group) => (
-            <li key={group} data-sidebar-component={group}>
-              <Link href={groupItemHref(group)}>
-                <SfListItem
-                  selected={location.url.pathname === groupItemHref(group)}
-                  class={
-                    location.url.pathname === groupItemHref(group)
-                      ? 'font-medium'
-                      : ''
-                  }
-                  as="span"
-                >
-                  {group}
-                </SfListItem>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      {location.url.searchParams.get('show') === 'true' && (
+        <div class={`sidebar ${isOpenSignal.value ? '' : 'sidebar-collapsed'}`}>
+          <header class="sidebar-heading">
+            <h2>StorefrontUI v2</h2>
+            <h3>Qwik Blocks</h3>
+          </header>
+          <SfButton
+            class="sidebar-toggle"
+            variant={SfButtonVariant.tertiary}
+            size={SfButtonSize.sm}
+            onClick$={() => {
+              isOpenSignal.value = !isOpenSignal.value;
+            }}
+            aria-label={isOpenSignal.value ? 'Hide sidebar' : 'Open sidebar'}
+          >
+            <div q:slot="prefix">
+              {isOpenSignal.value ? (
+                <SfIconChevronLeft />
+              ) : (
+                <SfIconChevronRight />
+              )}
+            </div>
+          </SfButton>
+          <ul class="sidebar-list flex flex-col">
+            {Object.keys(groups).map((group) => (
+              <li key={group} data-sidebar-component={group}>
+                <Link href={groupItemHref(group) + '?show=true'}>
+                  <SfListItem
+                    selected={location.url.pathname === groupItemHref(group)}
+                    class={
+                      location.url.pathname === groupItemHref(group)
+                        ? 'font-medium'
+                        : ''
+                    }
+                    as="span"
+                  >
+                    {group}
+                  </SfListItem>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <Slot />
     </div>

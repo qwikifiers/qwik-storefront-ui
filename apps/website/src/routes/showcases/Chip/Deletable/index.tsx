@@ -25,8 +25,8 @@ export default component$(() => {
               checked: true,
               onChange$: $(() => handleRemoveChip(value)),
             }}
-            showSlotPrefix={true}
-            showSlotSuffix={true}
+            slotPrefix={true}
+            slotSuffix={true}
           >
             <div q:slot="prefix">
               <SfThumbnail class={`bg-${value}-500`} />

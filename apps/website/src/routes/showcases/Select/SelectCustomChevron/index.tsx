@@ -17,7 +17,7 @@ export default component$(() => {
       <span class="pb-1 text-sm font-medium text-neutral-900 font-body">
         Label
       </span>
-      <SfSelect placeholder="-- Select --" showSlotChevron={true}>
+      <SfSelect placeholder="-- Select --" slotChevron={true}>
         <div q:slot="chevron">
           <SfIconUnfoldMore class="absolute pointer-events-none top-2 right-4 text-neutral-500" />
         </div>

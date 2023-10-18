@@ -16,21 +16,18 @@ export const SfChip = component$<SfChipProps>(
     const paddingForSize = (
       size: `${SfChipSize}`,
       square: boolean,
-      showSlotPrefix: boolean,
+      slotPrefix: boolean,
       slotSuffix: boolean
     ) => {
       switch (size) {
         case SfChipSize.sm:
           return square
             ? 'px-1.5'
-            : [
-                showSlotPrefix ? 'pl-1.5' : 'pl-3',
-                slotSuffix ? 'pr-1.5' : 'pr-3',
-              ];
+            : [slotPrefix ? 'pl-1.5' : 'pl-3', slotSuffix ? 'pr-1.5' : 'pr-3'];
         default:
           return square
             ? 'px-2'
-            : [showSlotPrefix ? 'pl-2' : 'pl-4', slotSuffix ? 'pr-2' : 'pr-4'];
+            : [slotPrefix ? 'pl-2' : 'pl-4', slotSuffix ? 'pr-2' : 'pr-4'];
       }
     };
     const getSizeClasses = (size: SfChipProps['size']) => {

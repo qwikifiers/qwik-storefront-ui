@@ -11,7 +11,7 @@ export default component$(() => {
     <ul class="flex flex-wrap gap-4 sm:flex-row">
       {chipValues.map(({ label, value }, index) => (
         <li key={index}>
-          <SfChip key={value} class="mr-2" showSlotPrefix={true}>
+          <SfChip key={value} class="mr-2" slotPrefix={true}>
             <div q:slot="prefix">
               <SfThumbnail
                 class={`

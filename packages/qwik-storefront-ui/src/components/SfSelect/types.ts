@@ -9,7 +9,7 @@ export type SfSelectProps = Omit<QwikIntrinsicElements['select'], 'size'> & {
   size?: `${SfSelectSize}`;
   invalid?: boolean;
   wrapperClass?: string;
-  showSlotChevron?: boolean;
+  slotChevron?: boolean;
   onChange$?: PropFunction<(event: QwikChangeEvent<HTMLSelectElement>) => void>;
 };
 

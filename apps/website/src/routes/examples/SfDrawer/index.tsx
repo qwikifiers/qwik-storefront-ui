@@ -1,8 +1,9 @@
 import { component$, useContext, useTask$ } from '@builder.io/qwik';
-import { SfButton, SfDrawer, SfDrawerPlacement } from 'qwik-storefront-ui';
+import { SfButton, SfDrawer } from 'qwik-storefront-ui';
 import { ComponentExample } from '../../../components/utils/ComponentExample';
-import { ControlsType } from '../../../components/utils/types';
+import type { ControlsType } from '../../../components/utils/types';
 import { EXAMPLES_STATE } from '../layout';
+import { SfDrawerPlacement } from 'qwik-storefront-ui';
 
 export default component$(() => {
   const examplesState = useContext(EXAMPLES_STATE);

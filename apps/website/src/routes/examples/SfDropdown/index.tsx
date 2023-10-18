@@ -1,5 +1,5 @@
 import { $, component$, useContext, useTask$ } from '@builder.io/qwik';
-import { SfButton, SfDropdown, SfPopoverPlacement, SfPopoverStrategy } from 'qwik-storefront-ui';
+import { SfButton, SfDropdown, SfPopoverPlacement, SfPopoverStrategy, } from 'qwik-storefront-ui';
 import { ComponentExample } from '../../../components/utils/ComponentExample';
 import { ControlsType } from '../../../components/utils/types';
 import { EXAMPLES_STATE } from '../layout';

@@ -6,7 +6,7 @@ import {
   SfThumbnailSize,
 } from 'qwik-storefront-ui';
 import { ComponentExample } from '../../../components/utils/ComponentExample';
-import { ControlsType } from '../../../components/utils/types';
+import type { ControlsType } from '../../../components/utils/types';
 import { EXAMPLES_STATE } from '../layout';
 
 export default component$(() => {
@@ -79,7 +79,7 @@ export default component$(() => {
           value: examplesState.data.state.value,
           onChange$: selectHandler,
         }}
-        showSlotPrefix={true}
+        slotPrefix={true}
       >
         <div q:slot="prefix">
           <SfThumbnail

@@ -8,7 +8,7 @@ import {
 
 export default component$(() => {
   return (
-    <SfListItem class="max-w-sm" showSlotPrefix={true} showSlotSuffix={true}>
+    <SfListItem class="max-w-sm" slotPrefix={true} slotSuffix={true}>
       <div q:slot="prefix">
         <SfIconTune />
       </div>
