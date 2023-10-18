@@ -1,32 +1,10 @@
-export const hooks = {
-  vue: [
-    'useDisclosure',
-    'useDropdown',
-    'useFocusVisible',
-    'usePagination',
-    'usePopover',
-    'useScrollable',
-    'useTooltip',
-    'useTrapFocus',
-  ],
-  react: [
-    'useDisclosure',
-    'useDropdown',
-    'useFocusVisible',
-    'usePagination',
-    'usePopover',
-    'useScrollable',
-    'useTooltip',
-    'useTrapFocus',
-  ],
-  qwik: [
-    'useDisclosure',
-    'useDropdown',
-    'useFocusVisible',
-    'usePagination',
-    'usePopover',
-    'useScrollable',
-    'useTooltip',
-    'useTrapFocus',
-  ],
-};
+export const hooks = [
+  // 'useDisclosure',
+  // 'useDropdown',
+  // 'useFocusVisible',
+  // 'usePagination',
+  // 'usePopover',
+  // 'useScrollable',
+  // 'useTooltip',
+  // 'useTrapFocus',
+];

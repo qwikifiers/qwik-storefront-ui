@@ -29,7 +29,6 @@ const selectedFramework = useCookie('framework', {
 });
 
 const route = useRoute();
-const router = useRouter();
 
 watch(
   () => route,
