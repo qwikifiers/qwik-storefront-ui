@@ -251,6 +251,12 @@ export const Controls = component$<any>(() => {
                                           e.target.value
                                         );
                                       }}
+                                      onChange$={(e: any) => {
+                                        handleOnChangeValue(
+                                          control.modelName,
+                                          e.target.value
+                                        );
+                                      }}
                                     />
                                   );
                                 default:
