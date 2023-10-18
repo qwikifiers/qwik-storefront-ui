@@ -12,17 +12,7 @@ The badge component must be wrapped with a container that has `class="relative"`
 
 <Showcase showcase-name="Badge/BadgeBasic">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Badge/BadgeBasic.vue
-::
-
-::react-only
-<<<../../../preview/next/pages/showcases/Badge/BadgeBasic.tsx
-::
-
-::qwik-only
 <<<../../../website/src/routes/showcases/Badge/BadgeBasic/index.tsx
-::
 
 </Showcase>
 
@@ -32,15 +22,7 @@ You can align the Badge in every corner of the container.
 
 <Showcase showcase-name="Badge/BadgePlacement">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Badge/BadgePlacement.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Badge/BadgePlacement.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Badge/BadgePlacement/index.tsx
-::
 
 </Showcase>
 
@@ -50,15 +32,7 @@ A nifty effect that makes the Badge a bit more attractive is to add an outline t
 
 <Showcase showcase-name="Badge/BadgeOutline">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Badge/BadgeOutline.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Badge/BadgeOutline.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Badge/BadgeOutline/index.tsx
-::
 
 </Showcase>
 
@@ -68,21 +42,17 @@ A common use case for the Badge is to place it on a user's avatar.
 
 <Showcase showcase-name="Badge/BadgeAvatar">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Badge/BadgeAvatar.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Badge/BadgeAvatar.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Badge/BadgeAvatar/index.tsx
-::
 
 </Showcase>
+
+::vue-only
 
 ## Accessibility Notes
 
 The component itself does not provide any specific accessibility features. Please make sure that the content displayed in SfBadge component is meaningful and understandable by all users.
+
+::
 
 ## Playground
 
@@ -96,25 +66,7 @@ The component itself does not provide any specific accessibility features. Pleas
 | ----------- | ------------------ | ------------- | ------------------------------------------------------ |
 | `content`   | `string`           | `number`      |                                                        |
 | `max`       | `number`           | `99`          |                                                        |
-| `placement` | `SfBadgePlacement` | `top-right`   | `top-right`, `top-left`, `bottom-right`, `bottom-left` |
 | `variant`   | `SfBadgeVariant`   | `standard`    | `standard`, `dot`                                      |
-
-#tab-3
-
-::vue-only
-
-<<<../../../../packages/sfui/frameworks/vue/components/SfBadge/SfBadge.vue
-
-::
-::react-only
-
-<<<../../../../packages/sfui/frameworks/react/components/SfBadge/SfBadge.tsx
-
-::
-::qwik-only
-
-<<<../../../../dist/packages/qwik-storefront-ui/components/SfBadge/index.tsx
-
-::
+| `placement` | `SfBadgePlacement` | `top-right`   | `top-right`, `top-left`, `bottom-right`, `bottom-left` |
 
 ::
