@@ -6,40 +6,33 @@
 
 `SfInput` is a single-line text field allows users to enter any combination of letters, numbers, or symbols. It adds default styles to the native `<input type="text">` and supports supports adding content before/after the text input.
 
-::info
+<!--
+:: info
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields).
 ::
+-->
 
 ## Examples
 
 ### Basic input component
 
-`SfInput` supports 3 sizes that can be set with the `size` prop: `'sm'`, `md`, and `'lg'`.
+`SfInput` supports 3 sizes that can be set with the `size` prop: `'sm'`, `base`, and `'lg'`.
 
 <Showcase showcase-name="Input/InputWithoutLabel" style="min-height:400px;">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Input/InputWithoutLabel.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Input/InputWithoutLabel.tsx
-::
+<<<../../../website/src/routes/showcases/Input/InputWithoutLabel/index.tsx
+
 </Showcase>
 
 ### Input with icons
 
-You can insert content before and after your input using the ::vue-only `prefix` and `suffix` slots::::react-only`slotPrefix` and `slotSuffix` props::.
-
+You can insert content before and after your input using the `prefix` and `suffix` slots.
 This can be useful for adding icons or buttons to your input.
 
 <Showcase showcase-name="Input/InputIcons">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Input/InputIcons.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Input/InputIcons.tsx
-::
+<<<../../../website/src/routes/showcases/Input/InputIcons/index.tsx
+
 </Showcase>
 
 ### Input in disabled state
@@ -48,12 +41,8 @@ This can be useful for adding icons or buttons to your input.
 
 <Showcase showcase-name="Input/InputDisabled">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Input/InputDisabled.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Input/InputDisabled.tsx
-::
+<<<../../../website/src/routes/showcases/Input/InputDisabled/index.tsx
+
 </Showcase>
 
 ### Readonly Input
@@ -62,12 +51,8 @@ This can be useful for adding icons or buttons to your input.
 
 <Showcase showcase-name="Input/InputReadonly">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Input/InputReadonly.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Input/InputReadonly.tsx
-::
+<<<../../../website/src/routes/showcases/Input/InputReadonly/index.tsx
+
 </Showcase>
 
 ### Invalid State
@@ -76,12 +61,8 @@ If you pass the `invalid` prop, the input will be styled to indicate an invalid 
 
 <Showcase showcase-name="Input/InputInvalid">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Input/InputInvalid.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Input/InputInvalid.tsx
-::
+<<<../../../website/src/routes/showcases/Input/InputInvalid/index.tsx
+
 </Showcase>
 
 ### Full Example
@@ -90,85 +71,45 @@ This is an example of what `SfInput` might look like in your end code. It has a 
 
 <Showcase showcase-name="Input/InputCharacters">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Input/InputCharacters.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Input/InputCharacters.tsx
-::
+<<<../../../website/src/routes/showcases/Input/InputCharacters/index.tsx
+
 </Showcase>
 
 ## Notes
 
-All non-prop attributes and styles added to `SfInput` component are passed directly to the native input element. This means that you can add all of the input attributes directly to `SfInput`. If you want to style the wrapper `div`, you can pass your classes via the ::vue-only`wrapperClass`::::react-only `wrapperClassName`::prop.
+All non-prop attributes and styles added to `SfInput` component are passed directly to the native input element. This means that you can add all of the input attributes directly to `SfInput`. If you want to style the wrapper `div`, you can pass your classes via the `wrapperClass`.
 
 Since, `size` is a specified prop of `SfInput`, you won't be able to pass the native `size` attribute to your input element. Instead, you can use the `width` property with `ch` unit instead (eg. `width: 10ch`).
 
-## Accessibility notes
+<!-- ## Accessibility notes
 
 Since `SfInput` uses `<input>`, it inherits all the features of the native input. For example, `SfInput` is focusable for keyboard users with `tab`.
 
-Avoid adding `div` tags to slots. If an input element is wrapped in `label` tag (recommended) then it can't have `div` inside.
+Avoid adding `div` tags to slots. If an input element is wrapped in `label` tag (recommended) then it can't have `div` inside. -->
 
 ## Playground
 
-<Generate style="height: 600px;"/>
+<Generate class="playground" style="height: 800px;"/>
 
 #tab-2
 
 ## Props
 
-::vue-only
-| Prop name | Type | Default value | Possible values |
-| ------------ | -------- | ------------- | -------------------------------------- |
-| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
-| `invalid` | `boolean` | `false` | |
-| `wrapperTag` | `string` | `span` | Any tag name for input wrapper |
-::
-
-::react-only
-| Prop name | Type | Default value | Possible values |
-| ------------ | -------- | ------------- | -------------------------------------- |
-| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
-| `invalid` | `boolean` | `false` | |
-| `wrapperTag` | `string` | `span` | Any tag name for input wrapper |
-| `wrapperAs` | `string` | `span` | Any tag name for input wrapper |
-| `className` | `string` | | |
-| `slotPrefix` | `ReactNode` | | |
-| `slotSuffix` | `ReactNode` | | |
-::
-
-::vue-only
+| Prop name       | Type                                   | Default value | Possible values          |
+| --------------- | -------------------------------------- | ------------- | ------------------------ |
+| `class?`        | `string`                               |               |                          |
+| `size?`         | `SfInputSize`                          | `'base'`      | `'sm'`, `'base'`, `'lg'` |
+| `invalid?`      | `boolean`                              |               |                          |
+| `wrapperClass?` | `string`                               |               |                          |
+| `slotPrefix?`   | `boolean`                              |               |                          |
+| `slotSuffix?`   | `boolean`                              |               |                          |
+| `ref?`          | `Signal<Element>`                      |               |                          |
+| `onChange$?`    | `PropFunction<(event: <...>) => void>` |               |                          |
 
 ## Slots
 
-| Slot name | Description                        |
-| --------- | ---------------------------------- |
-| `prefix`  | Custom content for prefix in input |
-| `suffix`  | Custom content for suffix in input |
-
-::
-
-::vue-only
-
-## Events
-
-| Event name          | Trigger                       |
-| ------------------- | ----------------------------- |
-| `update:modelValue` | triggers v-model update event |
-
-::
-
-#tab-3
-::vue-only
-
-<<<../../../../packages/sfui/frameworks/vue/components/SfInput/SfInput.vue
-
-::
-
-::react-only
-
-<<< ../../../../packages/sfui/frameworks/react/components/SfInput/SfInput.tsx
-
-::
-::
+| Slot name | Description                |
+| --------- | -------------------------- |
+| `prefix`  | Left side slotted content  |
+| `default` | Slotted content            |
+| `suffix`  | Right side slotted content |
