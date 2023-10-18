@@ -7,11 +7,9 @@ export type SfListItemProps = QwikIntrinsicElements['a'] & {
   size?: `${SfListItemSize}`;
   disabled?: boolean;
   selected?: boolean;
-  slotSuffix?: Signal<Element>;
-  slotPrefix?: Signal<Element>;
   role?: string;
-  showSlotPrefix?: boolean;
-  showSlotSuffix?: boolean;
+  slotPrefix?: boolean;
+  slotSuffix?: boolean;
 };
 
 export enum SfListItemSize {

@@ -15,12 +15,10 @@ export const SfListItem = component$<SfListItemProps>(
     disabled,
     selected,
     class: _class,
-    slotPrefix,
-    slotSuffix,
     as,
     ref,
-    showSlotPrefix,
-    showSlotSuffix,
+    slotPrefix,
+    slotSuffix,
     ...attributes
   }) => {
     const Tag = as || defaultListItemTag;
@@ -43,7 +41,7 @@ export const SfListItem = component$<SfListItemProps>(
         data-testid="list-item"
         {...attributes}
       >
-        {showSlotPrefix && (
+        {slotPrefix && (
           <span class={disabled ? 'text-disabled-500' : 'text-neutral-500'}>
             <Slot name="prefix" />
           </span>
@@ -51,7 +49,7 @@ export const SfListItem = component$<SfListItemProps>(
         <span class="flex flex-col w-full min-w-0">
           <Slot />
         </span>
-        {showSlotSuffix && (
+        {slotSuffix && (
           <span class={disabled ? 'text-disabled-500' : 'text-neutral-500'}>
             <Slot name="suffix" />
           </span>
