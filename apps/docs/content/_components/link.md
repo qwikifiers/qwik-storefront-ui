@@ -51,7 +51,7 @@ When no tag provided, the component will render as an `<a>`. To achieve proper a
 
 ## Playground
 
-<Generate />
+<Generate class="playground" />
 
 #tab-2
 
