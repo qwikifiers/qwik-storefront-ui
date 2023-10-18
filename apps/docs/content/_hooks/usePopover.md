@@ -1,6 +1,6 @@
 # usePopover
 
-::tabs{:titles='["Usage", "API", "Source Code"]'}
+::tabs{:titles='["Usage", "API"]'}
 
 #tab-1
 
@@ -18,8 +18,6 @@ For a minimal example, we can implement a floating element using two properties 
 2. `style` - An object containing the position styles for your floating element.
 
 By binding these properties to the appropriate elements, we can create any floating element - in this case, we have a Tooltip that displays when the reference element is hovered.
-
-
 
 ```tsx
 import * as React from 'react';
@@ -57,8 +55,6 @@ For a minimal example, we can implement a floating element using three propertie
 
 By binding these properties to the appropriate elements, we can create any floating element - in this case, we have a Tooltip that displays when the reference element is hovered.
 
-
-
 ```vue
 <script lang="ts" setup>
 import { ref } from 'vue';
@@ -78,12 +74,7 @@ const { referenceRef, floatingRef, style } = usePopover({ isOpen });
 <template>
   <span ref="referenceRef" @mouseenter="isOpen = true" @mouseleave="isOpen = false">
     <slot />
-    <div
-      v-if="isOpen"
-      ref="floatingRef"
-      class="p-2 rounded bg-black text-white"
-      :style="style"
-    >
+    <div v-if="isOpen" ref="floatingRef" class="p-2 rounded bg-black text-white" :style="style">
       {{ text }}
     </div>
   </span>
@@ -92,53 +83,46 @@ const { referenceRef, floatingRef, style } = usePopover({ isOpen });
 
 ::
 
-
-
-
 #tab-2
 
 ## Parameters
 
 ::react-only
-| Name      | Type                     | Default value | Description                               |
+| Name | Type | Default value | Description |
 | --------- | ------------------------ | ------------- | ----------------------------------------- |
-| isOpen  | `boolean`                |  `false`             | Recalculates position when isOpen is true |
+| isOpen | `boolean` | `false` | Recalculates position when isOpen is true |
 ::
 ::vue-only
-| Name      | Type                     | Default value | Description                               |
+| Name | Type | Default value | Description |
 | --------- | ------------------------ | ------------- | ----------------------------------------- |
-| isOpen  | `MaybeRef<boolean>`                |  `false`             | Recalculates position when isOpen is true |
-| referenceRef  | `MaybeElementRef<Element | VirtualElement>` | `undefined`              | Reference element based on which floating element will be positioned  |
-| floatingRef  | `MaybeElementRef<HTMLElement>` | `undefined`              | Element to float next to the reference element  |
-| placement | `SfPopoverPlacement`    | 'bottom'      | Placement of floating element              |
-| middleware    | `UseFloatingProps['middleware']`                 |              | Array of `@floating-ui` middlewares |
-| strategy | `SfPopoverStrategy`    | 'absolute'      | Positioning strategy (absolute or fixed)              |
+| isOpen | `MaybeRef<boolean>` | `false` | Recalculates position when isOpen is true |
+| referenceRef | `MaybeElementRef<Element | VirtualElement>` | `undefined` | Reference element based on which floating element will be positioned |
+| floatingRef | `MaybeElementRef<HTMLElement>` | `undefined` | Element to float next to the reference element |
+| placement | `SfPopoverPlacement` | 'bottom' | Placement of floating element |
+| middleware | `UseFloatingProps['middleware']` | | Array of `@floating-ui` middlewares |
+| strategy | `SfPopoverStrategy` | 'absolute' | Positioning strategy (absolute or fixed) |
 ::
-
-
 
 ## Return value
 
 ::vue-only
-| Name  | Type           | Default value | Description |
+| Name | Type | Default value | Description |
 | ----- | -------------- | ------------- | ----------- |
-| style | `Object` |               | Styles object for positioning the floating element            |
+| style | `Object` | | Styles object for positioning the floating element |
 | middlewareData | `MiddlewareData` | | MiddlewareData coming from @floating-ui |
-| referenceRef  | `MaybeElementRef<Element | VirtualElement>` | `undefined`              | Reference element based on which floating element will be positioned  |
-| floatingRef  | `MaybeElementRef<HTMLElement>` | `undefined`              | Element to float next to the reference element  |
+| referenceRef | `MaybeElementRef<Element | VirtualElement>` | `undefined` | Reference element based on which floating element will be positioned |
+| floatingRef | `MaybeElementRef<HTMLElement>` | `undefined` | Element to float next to the reference element |
 ::
 ::react-only
-| Name  | Type           | Default value | Description |
+| Name | Type | Default value | Description |
 | ----- | -------------- | ------------- | ----------- |
-| style | `Object` |               | Styles object for positioning the floating element            |
+| style | `Object` | | Styles object for positioning the floating element |
 | middlewareData | `MiddlewareData` | | MiddlewareData coming from @floating-ui |
-| refs  | `Object`   |               | Element refs setters & getters            |
+| refs | `Object` | | Element refs setters & getters |
 
 ::
 
-
 #tab-3
-
 
 ::react-only
 <<<../../../../packages/sfui/frameworks/react/hooks/usePopover/usePopover.ts
@@ -146,6 +130,5 @@ const { referenceRef, floatingRef, style } = usePopover({ isOpen });
 ::vue-only
 <<<../../../../packages/sfui/frameworks/vue/composables/usePopover/usePopover.ts
 ::
-
 
 ::

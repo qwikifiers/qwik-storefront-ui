@@ -1,6 +1,6 @@
 # Rating
 
-::tabs{:titles='["Usage", "API", "Source Code"]'}
+::tabs{:titles='["Usage", "API"]'}
 
 #tab-1
 

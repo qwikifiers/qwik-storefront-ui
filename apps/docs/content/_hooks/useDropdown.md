@@ -1,6 +1,6 @@
 # useDropdown
 
-::tabs{:titles='["Usage", "API", "Source Code"]'}
+::tabs{:titles='["Usage", "API"]'}
 
 #tab-1
 
@@ -16,6 +16,7 @@ For a minimal example, we can implement a floating element using two properties 
 By binding these properties to the appropriate elements, we can create a dropdown menu that opens when a button is clicked.
 
 ::react-only
+
 ```tsx
 import * as React from 'react';
 import { useDropdown, SfButton } from '@storefront-ui/react';
@@ -42,6 +43,7 @@ function Dropdown() {
   );
 }
 ```
+
 ::
 
 ::vue-only
@@ -60,7 +62,7 @@ import { useDropdown, SfButton } from '@storefront-ui/vue';
 
 const isOpen = ref(false);
 
-const { referenceRef, floatingRef, style } = useDropdown({ isOpen, onClose: () => isOpen.value = false });
+const { referenceRef, floatingRef, style } = useDropdown({ isOpen, onClose: () => (isOpen.value = false) });
 </script>
 
 <template>
@@ -74,6 +76,7 @@ const { referenceRef, floatingRef, style } = useDropdown({ isOpen, onClose: () =
   </div>
 </template>
 ```
+
 ::
 
 ::tip There are more options!
@@ -85,47 +88,43 @@ For a full list of the possible parameters and return values, see the API sectio
 ## Parameters
 
 ::vue-only
-| Name      | Type                     | Default value | Description                               |
+| Name | Type | Default value | Description |
 | --------- | ------------------------ | ------------- | ----------------------------------------- |
-| onClose\* | `() => void`             |               |                                           |
-| isOpen  | `MaybeRef<boolean>`                |  `false`             | Recalculates position when isOpen is true |
-| referenceRef  | `MaybeElementRef<Element | VirtualElement>` | `undefined`              | Reference element based on which floating element will be positioned  |
-| floatingRef  | `MaybeElementRef<HTMLElement>` | `undefined`              | Element to float next to the reference element  |
-| placement | `SfPopoverPlacement`    | 'bottom'      | Placement of floating element              |
-| middleware    | `UseFloatingProps['middleware']`                 |              | Array of `@floating-ui` middlewares |
-| strategy | `SfPopoverStrategy`    | 'absolute'      | Positioning strategy (absolute or fixed)              |
+| onClose\* | `() => void` | | |
+| isOpen | `MaybeRef<boolean>` | `false` | Recalculates position when isOpen is true |
+| referenceRef | `MaybeElementRef<Element | VirtualElement>` | `undefined` | Reference element based on which floating element will be positioned |
+| floatingRef | `MaybeElementRef<HTMLElement>` | `undefined` | Element to float next to the reference element |
+| placement | `SfPopoverPlacement` | 'bottom' | Placement of floating element |
+| middleware | `UseFloatingProps['middleware']` | | Array of `@floating-ui` middlewares |
+| strategy | `SfPopoverStrategy` | 'absolute' | Positioning strategy (absolute or fixed) |
 ::
 ::react-only
-| Name      | Type                     | Default value | Description                               |
+| Name | Type | Default value | Description |
 | --------- | ------------------------ | ------------- | ----------------------------------------- |
-| onCloseDeps | `string[]`             |               | Dependency array for `useMemo` for `onClose` function |
-| isOpen  | `boolean`                |  `false`             | Recalculates position when isOpen is true |
-| placement | `SfPopoverPlacement`    | 'bottom'      | Placement of floating element              |
-| middleware    | `UseFloatingProps['middleware']`                 |              | Array of `@floating-ui` middlewares |
-| strategy | `SfPopoverStrategy`    | 'absolute'      | Positioning strategy (absolute or fixed)             
+| onCloseDeps | `string[]` | | Dependency array for `useMemo` for `onClose` function |
+| isOpen | `boolean` | `false` | Recalculates position when isOpen is true |
+| placement | `SfPopoverPlacement` | 'bottom' | Placement of floating element |
+| middleware | `UseFloatingProps['middleware']` | | Array of `@floating-ui` middlewares |
+| strategy | `SfPopoverStrategy` | 'absolute' | Positioning strategy (absolute or fixed)  
 ::
-
 
 ## Return value
 
 ::vue-only
-| Name  | Type           | Default value | Description |
+| Name | Type | Default value | Description |
 | ----- | -------------- | ------------- | ----------- |
-| style | `Object` |               | Styles object for positioning the floating element            |
-| referenceRef  | `MaybeElementRef<Element | VirtualElement>` | `undefined`              | Reference element based on which floating element will be positioned  |
-| floatingRef  | `MaybeElementRef<HTMLElement>` | `undefined`              | Element to float next to the reference element  |
+| style | `Object` | | Styles object for positioning the floating element |
+| referenceRef | `MaybeElementRef<Element | VirtualElement>` | `undefined` | Reference element based on which floating element will be positioned |
+| floatingRef | `MaybeElementRef<HTMLElement>` | `undefined` | Element to float next to the reference element |
 ::
 ::react-only
-| Name  | Type           | Default value | Description |
+| Name | Type | Default value | Description |
 | ----- | -------------- | ------------- | ----------- |
-| style | `Object` |               | Styles object for positioning the floating element            |
-| refs  | `Object`   |               | Element refs setters & getters            |
+| style | `Object` | | Styles object for positioning the floating element |
+| refs | `Object` | | Element refs setters & getters |
 ::
 
-
-
 #tab-3
-
 
 ::react-only
 <<<../../../../packages/sfui/frameworks/react/hooks/useDropdown/useDropdown.ts
@@ -133,6 +132,5 @@ For a full list of the possible parameters and return values, see the API sectio
 ::vue-only
 <<<../../../../packages/sfui/frameworks/vue/composables/useDropdown/useDropdown.ts
 ::
-
 
 ::

@@ -1,6 +1,6 @@
 # useFocusVisible
 
-::tabs{:titles='["Usage", "API", "Source Code"]'}
+::tabs{:titles='["Usage", "API"]'}
 
 #tab-1
 
@@ -38,15 +38,11 @@ Most browsers implements `:focus-visible` pseudo-class to activate on every focu
 
 #tab-3
 
-
-
 ::react-only
 <<<../../../../packages/sfui/frameworks/react/hooks/useFocusVisible/useFocusVisible.ts
 ::
 ::vue-only
 <<<../../../../packages/sfui/frameworks/vue/composables/useFocusVisible/useFocusVisible.ts
 ::
-
-
 
 ::

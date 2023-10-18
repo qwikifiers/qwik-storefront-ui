@@ -1,6 +1,6 @@
 # useDisclosure
 
-::tabs{:titles='["Usage", "API", "Source Code"]'}
+::tabs{:titles='["Usage", "API"]'}
 
 #tab-1
 
@@ -8,9 +8,8 @@ The `useDisclosure` utility gives you controls for a Boolean `isOpen` value. Thi
 
 ## Usage
 
-
-
 ::react-only
+
 ```tsx
 import { SfButton, useDisclosure } from '@storefront-ui/react';
 
@@ -27,9 +26,11 @@ function Basic() {
   );
 }
 ```
+
 ::
 
 ::vue-only
+
 ```vue
 <script lang="ts" setup>
 import { SfButton, useDisclosure } from '@storefront-ui/vue';
@@ -45,24 +46,20 @@ const { isOpen, toggle, open, close } = useDisclosure();
 </template>
 ```
 
-
 ::
-
-
 
 ### With Initial Value
 
 By default, the value of `isOpen` is false. But we can pass an initial value using an option object with an `initialValue`.
 
-
-
 ::react-only
+
 ```tsx
 import { SfButton, useDisclosure } from '@storefront-ui/react';
 
 function OpenByDefault() {
-  const { isOpen, toggle } = useDisclosure({ 
-    initialValue: true
+  const { isOpen, toggle } = useDisclosure({
+    initialValue: true,
   });
 
   return (
@@ -73,14 +70,16 @@ function OpenByDefault() {
   );
 }
 ```
+
 ::
 ::vue-only
+
 ```vue
 <script lang="ts" setup>
 import { SfButton, useDisclosure } from '@storefront-ui/vue';
 
-const { isOpen, toggle } = useDisclosure({ 
-  initialValue: true
+const { isOpen, toggle } = useDisclosure({
+  initialValue: true,
 });
 </script>
 
@@ -89,8 +88,8 @@ const { isOpen, toggle } = useDisclosure({
   <p v-if="isOpen">This will be open by default!</p>
 </template>
 ```
-::
 
+::
 
 #tab-2
 
@@ -111,13 +110,11 @@ const { isOpen, toggle } = useDisclosure({
 
 #tab-3
 
-
 ::react-only
 <<<../../../../packages/sfui/frameworks/react/hooks/useDisclosure/useDisclosure.ts
 ::
 ::vue-only
 <<<../../../../packages/sfui/frameworks/vue/composables/useDisclosure/useDisclosure.ts
 ::
-
 
 ::

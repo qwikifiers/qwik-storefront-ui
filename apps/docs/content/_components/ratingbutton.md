@@ -2,7 +2,7 @@
 
 The RatingButton component is an interactive input element specifically designed for evaluations on product pages. It provides users with the ability to select a rating by choosing an icon using either the cursor or keyboard input. The number of icons displayed and the actual icon used can be customized based on your specific requirements. The rating scale within the component operates from left to right.
 
-::tabs{:titles='["Usage", "API", "Source Code"]'}
+::tabs{:titles='["Usage", "API"]'}
 
 #tab-1
 
