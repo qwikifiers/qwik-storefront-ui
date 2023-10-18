@@ -16,19 +16,7 @@ By default, `SfCounter` will put parentheses around its children.
 
 <Showcase showcase-name="Counter/Counter">
 
-::vue-only
-
-<<<../../../preview/nuxt/pages/showcases/Counter/Counter.vue
-
-::
-::react-only
-
-<<<../../../preview/next/pages/showcases/Counter/Counter.tsx
-
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Counter/Counter/index.tsx
-::
 
 </Showcase>
 
@@ -38,19 +26,7 @@ By default, `SfCounter` will put parentheses around its children.
 
 <Showcase showcase-name="Counter/CounterPill">
 
-::vue-only
-
-<<<../../../preview/nuxt/pages/showcases/Counter/CounterPill.vue
-
-::
-::react-only
-
-<<<../../../preview/next/pages/showcases/Counter/CounterPill.tsx
-
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Counter/CounterPill/index.tsx
-::
 
 </Showcase>
 
@@ -60,25 +36,13 @@ You can customize the colors of `SfCounter` by passing Tailwind classes.
 
 <Showcase showcase-name="Counter/CounterCustomBackground">
 
-::vue-only
-
-<<<../../../preview/nuxt/pages/showcases/Counter/CounterCustomBackground.vue
-
-::
-::react-only
-
-<<<../../../preview/next/pages/showcases/Counter/CounterCustomBackground.tsx
-
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Counter/CounterCustomBackground/index.tsx
-::
 
 </Showcase>
 
-## Accessibility notes
+<!-- ## Accessibility notes
 
-The root element of `SfCounter` is a `<span>`. Since a `<span>` is an inline element, you should avoid placing block elements (like `div` or `p`) inside of it.
+The root element of `SfCounter` is a `<span>`. Since a `<span>` is an inline element, you should avoid placing block elements (like `div` or `p`) inside of it. -->
 
 ## Playground
 
@@ -88,53 +52,14 @@ The root element of `SfCounter` is a `<span>`. Since a `<span>` is an inline ele
 
 ## Props
 
-::react-only
-| Prop name | Type | Default value | Possible values |
-| --------- | --------------- | ------------- | -------------------------------------------------- |
-| `size` | `SfCounterSize` | `'base'` | `'3xs'`, `'2xs'`, `'xs'`, `'sm'`, `'base'`, `'lg'` |
-| `pill` | `boolean` | `false` | |
-| `className` | `string` | | |
-| `children` | `ReactNode` | | |
-::
-
-::vue-only
-
 | Prop name | Type            | Default value | Possible values                                    |
 | --------- | --------------- | ------------- | -------------------------------------------------- |
-| `size`    | `SfCounterSize` | `'base'`      | `'3xs'`, `'2xs'`, `'xs'`, `'sm'`, `'base'`, `'lg'` |
-| `pill`    | `boolean`       | `false`       |                                                    |
-
-::qwik-only
-| Prop name | Type | Default value | Possible values |
-| --------- | --------------- | ------------- | -------------------------------------------------- |
-| `size` | `SfCounterSize` | `'base'` | `'3xs'`, `'2xs'`, `'xs'`, `'sm'`, `'base'`, `'lg'` |
-| `pill` | `boolean` | `false` | |
-| `className` | `string` | | |
-| `children` | `ReactNode` | | |
-::
+| `size?`   | `SfCounterSize` | `'base'`      | `'3xs'`, `'2xs'`, `'xs'`, `'sm'`, `'base'`, `'lg'` |
+| `pill?`   | `boolean`       | `false`       |                                                    |
+| `class?`  | `string`        |               |                                                    |
 
 ## Slots
 
 | Slot name | Description                     |
 | --------- | ------------------------------- |
 | `default` | To be filled with counter value |
-
-::
-
-#tab-3
-
-::vue-only
-
-<<<../../../../packages/sfui/frameworks/vue/components/SfCounter/SfCounter.vue
-
-::
-::react-only
-
-<<< ../../../../packages/sfui/frameworks/react/components/SfCounter/SfCounter.tsx
-
-::
-::qwik-only
-<<<../../../../dist/packages/qwik-storefront-ui/components/SfCounter/index.tsx
-::
-
-::
