@@ -2,6 +2,15 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.0.6](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.5...qwik-storefront-ui-0.0.6) (2023-10-18)
+
+
+### Bug Fixes
+
+* SfInput ([8417fdd](https://github.com/qwikifiers/qwik-storefront-ui/commit/8417fddd3b89cef99cdc58ea46c903e978605dc9))
+
+
+
 ## [0.0.5](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.4...qwik-storefront-ui-0.0.5) (2023-10-18)
 
 
