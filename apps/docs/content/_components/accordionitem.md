@@ -7,11 +7,9 @@ The `SfAccordionItem` component is a wrapper around the native `<details>` and `
 
 The root element of this component is `<details>`, and any attributes that you apply onto the `SfAccordionItem` component will be passed to the `<details>` element. The one exception is the `onToggle$` attribute. The component prevents the native browser behavior and implements its own `onToggle$` handler.
 
-:::vue-only
 ::info
 See all of the attributes that you can pass to `<details>` in the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details).
 ::
-:::
 
 ## Examples
 
@@ -145,3 +143,8 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 :::react-only
 <<<../../../../packages/sfui/frameworks/react/components/SfAccordionItem/SfAccordionItem.tsx
 :::
+:::qwik-only
+<<<../../../../dist/packages/qwik-storefront-ui/components/SfAccordionItem/index.tsx
+:::
+
+::
