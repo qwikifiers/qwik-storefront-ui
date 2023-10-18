@@ -11,7 +11,6 @@ import { createControlsOptions } from '../../../components/utils/ControlsOptions
 import { ControlsType } from '../../../components/utils/types';
 import { EXAMPLES_STATE } from '../layout';
 
-
 const prefixSlotOptions = createControlsOptions({
   none: undefined,
   'Search icon': <SfIconSearch />,
@@ -22,11 +21,10 @@ const suffixSlotOptions = createControlsOptions({
 });
 
 export default component$(() => {
-  const selectPrefix = useSignal<boolean>()
-  const selectSuffix = useSignal<boolean>()
+  const selectPrefix = useSignal<boolean>();
+  const selectSuffix = useSignal<boolean>();
 
   const examplesState = useContext(EXAMPLES_STATE);
-
 
   useTask$(() => {
     examplesState.data = {
@@ -41,7 +39,6 @@ export default component$(() => {
           modelName: 'slotPrefix',
           description: 'slotPrefix',
           options: prefixSlotOptions.controlsOptions,
-
         },
         {
           type: 'select',
@@ -90,13 +87,17 @@ export default component$(() => {
   useTask$(({ track }) => {
     track(() => examplesState.data.state);
     if (selectPrefix.value === null) return;
-    selectPrefix.value = prefixSlotOptions.getValue(examplesState.data.state.slotPrefix)
+    selectPrefix.value = prefixSlotOptions.getValue(
+      examplesState.data.state.slotPrefix
+    );
   });
 
   useTask$(({ track }) => {
     track(() => examplesState.data.state);
     if (selectSuffix.value === null) return;
-    selectSuffix.value = suffixSlotOptions.getValue(examplesState.data.state.slotSuffix)
+    selectSuffix.value = suffixSlotOptions.getValue(
+      examplesState.data.state.slotSuffix
+    );
   });
 
   return (
@@ -104,7 +105,9 @@ export default component$(() => {
       <SfButton
         slotPrefix={selectPrefix.value}
         slotSuffix={selectSuffix.value}
-        {...examplesState.data.state} class="max-w-[200px]">
+        {...examplesState.data.state}
+        class="max-w-[200px]"
+      >
         <div q:slot="prefix">
           <SfIconSearch />
         </div>

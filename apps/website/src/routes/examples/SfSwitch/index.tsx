@@ -1,4 +1,10 @@
-import { $, QwikChangeEvent, component$, useContext, useTask$ } from '@builder.io/qwik';
+import {
+  $,
+  QwikChangeEvent,
+  component$,
+  useContext,
+  useTask$,
+} from '@builder.io/qwik';
 import { SfSwitch } from 'qwik-storefront-ui';
 import { ComponentExample } from '../../../components/utils/ComponentExample';
 import { ControlsType } from '../../../components/utils/types';

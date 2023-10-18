@@ -1,3 +1,3 @@
 export * from './types';
 
-export {  SfSelect } from './SfSelect';
+export { SfSelect } from './SfSelect';

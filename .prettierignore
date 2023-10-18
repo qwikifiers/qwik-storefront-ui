@@ -6,3 +6,7 @@
 dist
 node_modules
 coverage
+apps/docs/.nuxt/**/*
+apps/docs/.output/**/*
+*.yaml
+CHANGELOG.md

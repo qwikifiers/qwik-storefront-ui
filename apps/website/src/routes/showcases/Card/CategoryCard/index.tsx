@@ -18,7 +18,10 @@ export default component$(() => {
   return (
     <div class="flex flex-wrap gap-4 lg:gap-6 lg:flex-no-wrap">
       {categories.map(({ title, image }) => (
-        <div class="relative min-w-[180px] flex-col max-w-[240px] group" key={title}>
+        <div
+          class="relative min-w-[180px] flex-col max-w-[240px] group"
+          key={title}
+        >
           <a
             class="absolute w-full h-full z-1 focus-visible:outline focus-visible:outline-offset focus-visible:rounded-md"
             href="/"

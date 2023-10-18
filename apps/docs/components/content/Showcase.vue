@@ -5,7 +5,9 @@
         @click="tab = 1"
         class="px-3 py-2 border-b-2"
         :class="[
-          tab === 1 ? 'text-black dark:text-white border-primary-600 dark:border-primary-600' : 'dark:border-zinc-700',
+          tab === 1
+            ? 'text-black dark:text-white border-primary-600 dark:border-primary-600'
+            : 'dark:border-zinc-700',
         ]"
       >
         Preview
@@ -14,7 +16,9 @@
         @click="tab = 2"
         class="px-3 py-2 border-b-2"
         :class="[
-          tab === 2 ? 'text-black dark:text-white border-primary-600 dark:border-primary-600' : 'dark:border-zinc-700',
+          tab === 2
+            ? 'text-black dark:text-white border-primary-600 dark:border-primary-600'
+            : 'dark:border-zinc-700',
         ]"
       >
         Code
@@ -37,7 +41,11 @@
           :no-paddings="noPaddings"
           :no-scale="noScale"
         />
-        <div ref="handlerRef" class="select-none rounded-tr items-center hidden sm:flex" style="cursor: ew-resize">
+        <div
+          ref="handlerRef"
+          class="select-none rounded-tr items-center hidden sm:flex"
+          style="cursor: ew-resize"
+        >
           <Icon name="akar-icons:drag-vertical" class="pointer-events-none" />
         </div>
       </div>
@@ -94,10 +102,15 @@ const eventMoveListener = (e) => {
   if (!isHandlerDragging.value) return false;
 
   const containerOffsetLeft = wrapperRef.value.getBoundingClientRect().left;
-  const pointerRelativeXpos = (e?.clientX || (e?.touches[0] && e?.touches[0]?.pageX)) - containerOffsetLeft;
+  const pointerRelativeXpos =
+    (e?.clientX || (e?.touches[0] && e?.touches[0]?.pageX)) -
+    containerOffsetLeft;
   const minWidth = 386;
 
-  previewElementRef.value.style.maxWidth = `${Math.max(minWidth, pointerRelativeXpos)}px`;
+  previewElementRef.value.style.maxWidth = `${Math.max(
+    minWidth,
+    pointerRelativeXpos
+  )}px`;
 };
 
 onMounted(() => {

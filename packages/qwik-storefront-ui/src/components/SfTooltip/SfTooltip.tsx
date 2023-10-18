@@ -18,10 +18,14 @@ export const SfTooltip = component$<SfTooltipProps>(
             // })}
           >
             {label}
-            {showArrow && <span class="bg-black rotate-45" /*{...getArrowProps({ class: 'bg-black rotate-45' })}*/ />}
+            {showArrow && (
+              <span
+                class="bg-black rotate-45" /*{...getArrowProps({ class: 'bg-black rotate-45' })}*/
+              />
+            )}
           </div>
         )}
       </span>
     );
-  },
+  }
 );

@@ -1,3 +1,3 @@
 export * from './types';
 
-export {  SfProgressLinear } from './SfProgressLinear';
+export { SfProgressLinear } from './SfProgressLinear';

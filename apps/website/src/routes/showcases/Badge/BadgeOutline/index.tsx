@@ -1,4 +1,4 @@
-import { SfBadge, SfButton, SfIconShoppingCart } from "qwik-storefront-ui";
+import { SfBadge, SfButton, SfIconShoppingCart } from 'qwik-storefront-ui';
 
 export default function BadgeOutline() {
   return (
@@ -15,7 +15,11 @@ export default function BadgeOutline() {
       </div>
 
       <div class="p-3 bg-primary-700">
-        <SfButton class="group relative hover:bg-primary-800 active:bg-primary-900" square variant="tertiary">
+        <SfButton
+          class="group relative hover:bg-primary-800 active:bg-primary-900"
+          square
+          variant="tertiary"
+        >
           <SfIconShoppingCart class="text-white" />
           <SfBadge
             content={100}

@@ -1,5 +1,4 @@
-import { SfBadge, SfButton, SfIconShoppingCart } from "qwik-storefront-ui";
-
+import { SfBadge, SfButton, SfIconShoppingCart } from 'qwik-storefront-ui';
 
 export default function BadgePlacement() {
   return (

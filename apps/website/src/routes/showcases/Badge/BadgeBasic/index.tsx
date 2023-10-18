@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import { SfBadge, SfButton, SfIconShoppingCart } from 'qwik-storefront-ui';
 
-export default  component$(() => {
+export default component$(() => {
   return (
     <div class="flex gap-3">
       <SfButton class="relative" square variant="tertiary">
@@ -25,4 +25,4 @@ export default  component$(() => {
       </SfButton>
     </div>
   );
-})
+});

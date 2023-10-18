@@ -1,3 +1,3 @@
 export * from './types';
 
-export {  SfTooltip } from './SfTooltip';
+export { SfTooltip } from './SfTooltip';

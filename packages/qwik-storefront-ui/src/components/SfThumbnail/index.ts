@@ -1,3 +1,3 @@
 export * from './types';
 
-export {  SfThumbnail } from './SfThumbnail';
+export { SfThumbnail } from './SfThumbnail';

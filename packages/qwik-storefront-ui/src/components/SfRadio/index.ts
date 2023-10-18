@@ -1,3 +1,3 @@
 export * from './types';
 
-export {  SfRadio } from './SfRadio';
+export { SfRadio } from './SfRadio';

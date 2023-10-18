@@ -1,10 +1,11 @@
 import { component$ } from '@builder.io/qwik';
 import { SfSwitchProps } from './types';
 
-export const SfSwitch = component$<SfSwitchProps>(({ ref, invalid, class: _class, ...attributes }) => (
-  <input
-    {...(ref ? { ref } : {})}
-    class={`appearance-none h-5 min-w-[36px] bg-transparent border-2 border-gray-500 rounded-full relative ease-in-out duration-300 
+export const SfSwitch = component$<SfSwitchProps>(
+  ({ ref, invalid, class: _class, ...attributes }) => (
+    <input
+      {...(ref ? { ref } : {})}
+      class={`appearance-none h-5 min-w-[36px] bg-transparent border-2 border-gray-500 rounded-full relative ease-in-out duration-300 
           hover:border-primary-800 hover:before:checked:bg-white checked:before:left-1/2 checked:before:ml-0 checked:before:mr-0.5 disabled:before:bg-gray-500/50 
           hover:before:bg-primary-800 active:border-primary-800 active:before:bg-primary-800 checked:bg-none checked:bg-primary-700 checked:border-primary-700 
           checked:before:bg-white hover:checked:bg-primary-800 hover:checked:border-primary-800 disabled:border-gray-500/50 checked:disabled:before:bg-white 
@@ -17,9 +18,10 @@ export const SfSwitch = component$<SfSwitchProps>(({ ref, invalid, class: _class
                 : ''
             }
             ${_class}`}
-    type="checkbox"
-    role="switch"
-    {...attributes}
-    data-testid="switch"
-  />
-));
+      type="checkbox"
+      role="switch"
+      {...attributes}
+      data-testid="switch"
+    />
+  )
+);

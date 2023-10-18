@@ -1,3 +1,3 @@
 export * from './types';
 
-export {  SfDropdown } from './SfDropdown';
+export { SfDropdown } from './SfDropdown';

@@ -1,3 +1,3 @@
 export * from './types';
 
-export {  SfLoaderCircular } from './SfLoaderCircular';
+export { SfLoaderCircular } from './SfLoaderCircular';

@@ -1,3 +1,3 @@
 export * from './types';
 
-export {  SfSwitch } from './SfSwitch';
+export { SfSwitch } from './SfSwitch';

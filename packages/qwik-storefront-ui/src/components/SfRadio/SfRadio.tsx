@@ -1,13 +1,14 @@
 import { component$ } from '@builder.io/qwik';
 import { SfRadioProps } from './types';
 
-export const SfRadio = component$<SfRadioProps>(({ invalid, ref, class: _class, disabled,onChange$, ...attributes }) => {
-  return (
-    <input
-      {...(ref ? { ref } : {})}
-      type="radio"
-      disabled={disabled}
-      class={`
+export const SfRadio = component$<SfRadioProps>(
+  ({ invalid, ref, class: _class, disabled, onChange$, ...attributes }) => {
+    return (
+      <input
+        {...(ref ? { ref } : {})}
+        type="radio"
+        disabled={disabled}
+        class={`
         h-5 w-5 border-2 p-[3px] bg-clip-content rounded-full appearance-none cursor-pointer focus-visible:outline focus-visible:outline-offset disabled:border-disabled-500 disabled:cursor-not-allowed disabled:checked:bg-disabled-500 disabled:checked:border-disabled-500
         ${
           invalid && !disabled
@@ -16,8 +17,9 @@ export const SfRadio = component$<SfRadioProps>(({ invalid, ref, class: _class, 
         }
         ${_class}
       `}
-      onChange$={onChange$}
-      {...attributes}
-    />
-  );
-});
+        onChange$={onChange$}
+        {...attributes}
+      />
+    );
+  }
+);
