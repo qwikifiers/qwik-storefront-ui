@@ -51,24 +51,24 @@ const links = computed<NavItem[]>(() => {
         })) ?? []),
       ],
     },
-    {
-      title: 'Hooks',
-      _path: '/hooks',
-      children: [
-        {
-          title: `All ${'Hooks'}`,
-          _path: '/hooks',
-          _id: 'all-hooks',
-          sidebarNesting: 'inline',
-        },
-        ...(hooks.qwik.map((hook: string) => ({
-          title: hook,
-          _path: `/qwik/hooks/${hook.toLowerCase()}`,
-          _id: hook,
-          sidebarNesting: 'inline',
-        })) ?? []),
-      ],
-    },
+    // {
+    //   title: 'Hooks',
+    //   _path: '/hooks',
+    //   children: [
+    //     {
+    //       title: `All ${'Hooks'}`,
+    //       _path: '/hooks',
+    //       _id: 'all-hooks',
+    //       sidebarNesting: 'inline',
+    //     },
+    //     ...(hooks.qwik.map((hook: string) => ({
+    //       title: hook,
+    //       _path: `/qwik/hooks/${hook.toLowerCase()}`,
+    //       _id: hook,
+    //       sidebarNesting: 'inline',
+    //     })) ?? []),
+    //   ],
+    // },
   ];
 });
 </script>
