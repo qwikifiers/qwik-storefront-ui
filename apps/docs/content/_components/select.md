@@ -1,19 +1,16 @@
----
-layout: AtomLayout
-hideBreadcrumbs: true
----
-
 # Select
 
-::tabs{:titles='["Usage", "API", "Source Code"]' class="mt-8"}
+::tabs{:titles='["Usage", "API"]'}
 
 #tab-1
 
 `SfSelect` is a wrapper around the native `<select>` element. It provides additional styles for different states of `<select>` element.
 
+<!--
 ::warning
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields.html).
 ::
+ -->
 
 ## Examples
 
@@ -23,33 +20,17 @@ If you need to make this field required, it is crucial to communicate this inten
 
 <Showcase showcase-name="Select/SelectSizes" style="min-height:350px" >
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Select/SelectSizes.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Select/SelectSizes.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Select/SelectSizes/index.tsx
-::
 
 </Showcase>
 
 ### Custom chevron
 
-You can replace the default chevron with your own custom content by using the ::vue-only`chevron` slot:: ::react-only`slotChevron` prop:: ::qwik-only`chevron` slot::.
+You can replace the default chevron with your own custom content by using the `chevron` slot.
 
 <Showcase showcase-name="Select/SelectCustomChevron">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Select/SelectCustomChevron.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Select/SelectCustomChevron.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Select/SelectCustomChevron/index.tsx
-::
 
 </Showcase>
 
@@ -59,15 +40,7 @@ You can replace the default chevron with your own custom content by using the ::
 
 <Showcase showcase-name="Select/SelectInvalid">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Select/SelectInvalid.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Select/SelectInvalid.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Select/SelectInvalid/index.tsx
-::
 
 </Showcase>
 
@@ -77,59 +50,28 @@ All non-prop attributes and styles added to `SfSelect` component are passed dire
 
 If you only have a few options, consider using the [`Radio`](radio.html) component instead of `Select`.
 
+<!--
 ## Accessibility notes
 
 Since this component uses the native `<select>` element, it inherits its accessibility features. For example, keyboard users can focus the select with `tab`, open with `space`, navigate the options using `arrows`, close the options menu with `Escape`, and select an option with `Enter` or `Space`.
+ -->
 
 ## Playground
 
-<Generate />
+<Generate class="playground" />
 
 #tab-2
 
 ## Props
 
-::vue-only
-| Prop name | Type | Default value | Possible values |
-| ------------------- | ----------------- | ------------- | -------------------------------------- |
-| `modelValue` | `boolean | string[]` | | |
-| `size` | `SfSelectSize` | `'base'` | `'sm'`, `'base'`,`'lg'` |
-| `disabled` | `boolean` | `false` | |
-| `invalid` | `boolean` | `false` | |
-| `required` | `boolean` | `false` | |
-| `placeholder` | `string` | | |
-| `wrapperClassName` | `string` | | |
-::
-::react-only
-| Prop name | Type | Default value | Possible values |
-| ------------------- | ----------------- | ------------- | -------------------------------------- |
-| `value` | `string` | | |
-| `size` | `SfSelectSize` | `'base'` | `'sm'`, `'base'`,`'lg'` |
-| `disabled` | `boolean` | `false` | |
-| `invalid` | `boolean` | `false` | |
-| `required` | `boolean` | `false` | |
-| `placeholder` | `string` | | |
-| `wrapperClassName` | `string` | | |
-| `onChange` | `Function` | | |
-| `slotChevron` | `ReactNode` | | |
-| `children` | `ReactNode` | | |
-::
-::qwik-only
-| Prop name | Type | Default value | Possible values |
-| ------------------- | ----------------- | ------------- | -------------------------------------- |
-| `value` | `string` | | |
-| `size` | `SfSelectSize` | `'base'` | `'sm'`, `'base'`,`'lg'` |
-| `disabled` | `boolean` | `false` | |
-| `invalid` | `boolean` | `false` | |
-| `required` | `boolean` | `false` | |
-| `placeholder` | `string` | | |
-| `wrapperClassName` | `string` | | |
-| `onChange` | `Function` | | |
-| `slotChevron` | `ReactNode` | | |
-| `children` | `ReactNode` | | |
-::
-
-::vue-only
+| Prop name          | Type                                                                | Default value | Possible values         |
+| ------------------ | ------------------------------------------------------------------- | ------------- | ----------------------- |
+| `class?`           | `string`                                                            |               |                         |
+| `size?`            | `SfSelectSize`                                                      | `'base'`      | `'sm'`, `'base'`,`'lg'` |
+| `invalid?`         | `boolean`                                                           | `false`       |                         |
+| `wrapperClass?`    | `string`                                                            |               |                         |
+| `showSlotChevron?` | `boolean`                                                           |               |                         |
+| `onChange$?`       | `PropFunction<(event: QwikChangeEvent<HTMLSelectElement>) => void>` |               |                         |
 
 ## Slots
 
@@ -137,22 +79,3 @@ Since this component uses the native `<select>` element, it inherits its accessi
 | --------- | ------------------------ |
 | `default` | Place for select options |
 | `chevron` | Custom chevron           |
-
-## Events
-
-| Event name          | Trigger                       |
-| ------------------- | ----------------------------- |
-| `update:modelValue` | triggers v-model update event |
-
-::
-
-#tab-3
-::vue-only
-<<<../../../../packages/sfui/frameworks/vue/components/SfSelect/SfSelect.vue
-::
-
-::react-only
-<<< ../../../../packages/sfui/frameworks/react/components/SfSelect/SfSelect.tsx
-::
-
-::
