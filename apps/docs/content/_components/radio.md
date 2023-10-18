@@ -6,9 +6,11 @@
 
 `SfRadio` provides additional styles for different states of `<input type="radio">`. It can be used for choosing between a list of values when only one option can be selected at a time.
 
+<!--
 ::tip
 If you need to make this field required, it is crucial to communicate this intention clearly to your end users. You can find more information about [required form fields in our guide here](../blocks/FormFields.html).
 ::
+ -->
 
 ## Examples
 
@@ -16,15 +18,7 @@ If you need to make this field required, it is crucial to communicate this inten
 
 <Showcase showcase-name="Radio/RadioWithoutLabel">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Radio/RadioWithoutLabel.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Radio/RadioWithoutLabel.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Radio/RadioWithoutLabel/index.tsx
-::
 
 </Showcase>
 
@@ -34,15 +28,7 @@ It's a best practice to use label with your `SfRadio` component so users can und
 
 <Showcase showcase-name="Radio/RadioLeading">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Radio/RadioLeading.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Radio/RadioLeading.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Radio/RadioLeading/index.tsx
-::
 
 </Showcase>
 
@@ -50,33 +36,18 @@ It's a best practice to use label with your `SfRadio` component so users can und
 
 <Showcase showcase-name="Radio/RadioTrailing">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Radio/RadioTrailing.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Radio/RadioTrailing.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Radio/RadioTrailing/index.tsx
-::
 
 </Showcase>
 
+<!--
 ### With legend
 
 Radio Group can have a `legend` tag, which represents a caption for the content of its parent `fieldset` tag.
 
 <Showcase showcase-name="RadioGroup/RadioGroupWithLegend">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/RadioGroup/RadioGroupWithLegend.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/RadioGroup/RadioGroupWithLegend.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/RadioGroup/RadioGroupWithLegend/index.tsx
-::
 
 </Showcase>
 
@@ -86,42 +57,11 @@ Radio components can be aligned inside RadioGroup in a `column` or in a `row`.
 
 <Showcase showcase-name="RadioGroup/RadioGroupAlignment" >
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/RadioGroup/RadioGroupAlignment.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/RadioGroup/RadioGroupAlignment.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/RadioGroup/RadioGroupAlignment/index.tsx
-::
 
-</Showcase>
+</Showcase> -->
 
-::react-only
-
-### Uncontrolled Group
-
-<Showcase showcase-name="RadioGroup/RadioGroupUncontrolled" >
-
-<<<../../../preview/next/pages/showcases/RadioGroup/RadioGroupUncontrolled.tsx
-
-</Showcase>
-
-::
-
-::qwik-only
-
-### Uncontrolled Group
-
-<Showcase showcase-name="RadioGroup/RadioGroupUncontrolled" >
-
-<<<../../../website/src/routes/showcases/RadioGroup/RadioGroupUncontrolled/index.tsx
-
-</Showcase>
-
-::
-
+<!--
 ## Accessibility notes
 
 You can provide a bigger hit area for your radio buttons by making your `label` element another trigger for the radio button. This can be done by wrapping the `input` element in a `label` element.
@@ -129,60 +69,19 @@ You can provide a bigger hit area for your radio buttons by making your `label` 
 When multiple radio elements are grouped together, one of their parent elements should have [`role="radiogroup"`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/radiogroup_role). This will help indicate which radio inputs affect the same value.
 
 If you have an element that is not an `<input type="radio">`, you should set the [role="radio"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/radio_role) so that it is recognized as a radio button.
+ -->
 
 ## Playground
 
-<Generate />
+<Generate class="playground" style="height: 700px;" />
 
 #tab-2
 
 ## Props
 
-::vue-only
-| Prop name | Type | Default value | Possible values |
-| ---------- | ----------------------------- | ------------- | --------------------- |
-| `name`\* | `string` | | |
-| `invalid` | `boolean` | `false` | |
-| `value` | `string` | | |
-| `modelValue` | `string` | | |
-| `disabled` | `boolean` | `false` | |
-::
-::react-only
-| Prop name | Type | Default value | Possible values |
-| ---------- | ----------------------------- | ------------- | --------------------- |
-| `name`\* | `string` | | |
-| `invalid` | `boolean` | `false` | |
-| `checked` | `boolean` | | |
-| `onChange` | `Function` | | |
-| `className` | `string` | | |
-::
-::qwik-only
-| Prop name | Type | Default value | Possible values |
-| ---------- | ----------------------------- | ------------- | --------------------- |
-| `name`\* | `string` | | |
-| `invalid` | `boolean` | `false` | |
-| `checked` | `boolean` | | |
-| `onChange` | `Function` | | |
-| `className` | `string` | | |
-::
-
-::vue-only
-
-## Events
-
-| Event name          | Trigger                   |
-| ------------------- | ------------------------- |
-| `update:modelValue` | triggers radio event emit |
-
-::
-
-#tab-3
-::vue-only
-<<<../../../../packages/sfui/frameworks/vue/components/SfRadio/SfRadio.vue
-::
-
-::react-only
-<<< ../../../../packages/sfui/frameworks/react/components/SfRadio/SfRadio.tsx
-::
-
-::
+| Prop name   | Type                                                               | Default value | Possible values |
+| ----------- | ------------------------------------------------------------------ | ------------- | --------------- |
+| `class?`    | `string`                                                           |               |                 |
+| `ref?`      | `Signal<Element>`                                                  |               |                 |
+| `invalid?`  | `boolean`                                                          | `false`       |                 |
+| `onChange$` | `PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>` |               |                 |
