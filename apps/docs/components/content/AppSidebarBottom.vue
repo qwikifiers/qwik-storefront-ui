@@ -15,7 +15,7 @@ const links = computed<NavItem[]>(() => {
           _id: 'all-components',
           sidebarNesting: 'inline',
         },
-        ...components.map((component: string) => ({
+        ...components['qwik'].map((component: string) => ({
           title: component.replace('Sf', ''),
           _path: `/qwik/components/${component
             .replace('Sf', '')
@@ -35,7 +35,7 @@ const links = computed<NavItem[]>(() => {
           _id: 'all-blocks',
           sidebarNesting: 'inline',
         },
-        ...blocks.map((block: string) => ({
+        ...blocks['qwik'].map((block: string) => ({
           title: block.replace('Sf', ''),
           _path: `/qwik/blocks/${block.toLowerCase()}`,
           _id: block,
