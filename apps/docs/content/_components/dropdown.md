@@ -4,17 +4,11 @@
 
 #tab-1
 
-The `SfDropdown` component is built on top of `useDropdown` and accepts all its params.
+The `SfDropdown` component.
 
-::react-only
-Learn more about `useDropdown` hook in the [Hooks > useDropdown docs](/react/hooks/usedropdown).
-::
-::vue-only
-Learn more about `useDropdown` composable in the [Composables > useDropdown docs](/vue/hooks/usedropdown).
-::
-::qwik-only
-Learn more about `useDropdown` hook in the [Hooks > useDropdown docs](/react/hooks/usedropdown).
-::
+<!-- is built on top of `useDropdown` and accepts all its params. -->
+
+<!-- Learn more about `useDropdown` hook in the [Hooks > useDropdown docs](/react/hooks/usedropdown). -->
 
 ## Examples
 
@@ -24,25 +18,13 @@ By default, the floating content of `SfDropdown` will be placed below your trigg
 
 <Showcase showcase-name="Dropdown/BasicDropdown" style="min-height:400px">
 
-::vue-only
-
-<<<../../../preview/nuxt/pages/showcases/Dropdown/BasicDropdown.vue
-
-::
-::react-only
-
-<<<../../../preview/next/pages/showcases/Dropdown/BasicDropdown.tsx
-
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Dropdown/BasicDropdown/index.tsx
-::
 
 </Showcase>
 
-## Accessibility notes
+<!-- ## Accessibility notes
 
-The floating content area has an `aria-hidden` attribute that reflects the visibility of the dropdown (`modelValue`). When the dropdown is not open (`modelValue` is `false`), the `aria-hidden` attribute is set to `true`, ensuring that the content is hidden from assistive technologies.
+The floating content area has an `aria-hidden` attribute that reflects the visibility of the dropdown (`modelValue`). When the dropdown is not open (`modelValue` is `false`), the `aria-hidden` attribute is set to `true`, ensuring that the content is hidden from assistive technologies. -->
 
 ## Playground
 
@@ -52,70 +34,10 @@ The floating content area has an `aria-hidden` attribute that reflects the visib
 
 ## Props
 
-::react-only
-| Prop name | Type | Default value | Possible values |
-| --------- | ---- | ------------- | --------------- |
-| `open` | `boolean` | | |
-| `onClose`\* | `() => void` | | |
-| `trigger`\* | `ReactNode` | | |
-| `children` | `ReactNode` | | |
-| `placement` | `SfPopoverPlacement` | `'bottom'` | Placement of floating element |
-| `middleware` | `UseFloatingProps['middleware']` | | Array of `@floating-ui` middlewares |
-| `strategy` | `SfPopoverStrategy` | `'absolute'` | Positioning strategy (`absolute` or `fixed`) |
-::
-
-::vue-only
-| Prop name | Type | Default value | Possible values |
-| --------- | ---- | ------------- | --------------- |
-| `modelValue` | `boolean` | | |
-| `placement` | `SfPopoverPlacement` | `'bottom'` | Placement of floating element |
-| `middleware` | `UseFloatingProps['middleware']` | | Array of `@floating-ui` middlewares |
-| `strategy` | `SfPopoverStrategy` | `'absolute'` | Positioning strategy (`absolute` or `fixed`) |
-::
-
-::qwik-only
-| Prop name | Type | Default value | Possible values |
-| --------- | ---- | ------------- | --------------- |
-| `open` | `boolean` | | |
-| `onClose`\* | `() => void` | | |
-| `trigger`\* | `ReactNode` | | |
-| `children` | `ReactNode` | | |
-| `placement` | `SfPopoverPlacement` | `'bottom'` | Placement of floating element |
-| `middleware` | `UseFloatingProps['middleware']` | | Array of `@floating-ui` middlewares |
-| `strategy` | `SfPopoverStrategy` | `'absolute'` | Positioning strategy (`absolute` or `fixed`) |
-::
-
-::vue-only
-
-## Slots
-
-| Slot name | Description                        |
-| --------- | ---------------------------------- |
-| `default` | Dropdown content                   |
-| `trigger` | Element that opens up the dropdown |
-
-## Events
-
-| Event name          | Trigger                                            |
-| ------------------- | -------------------------------------------------- |
-| `update:modelValue` | emits on clicking outside of dropdown or on escape |
-
-::
-
-#tab-3
-
-::vue-only
-
-<<<../../../../packages/sfui/frameworks/vue/components/SfDropdown/SfDropdown.vue
-
-::
-::react-only
-
-<<< ../../../../packages/sfui/frameworks/react/components/SfDropdown/SfDropdown.tsx
-
-::
-::qwik-only
-<<<../../../../dist/packages/qwik-storefront-ui/components/SfDropdown/index.tsx
-::
-
-::
+| Prop name   | Type                                    | Default value | Possible values |
+| ----------- | --------------------------------------- | ------------- | --------------- |
+| `style?`    | `QwikIntrinsicElements['div']['style']` |               |                 |
+| `ref?`      | `Signal<Element>`                       |               |                 |
+| `class?`    | `string`                                |               |                 |
+| `open?`     | `boolean`                               |               |                 |
+| `onClose$?` | `PropFunction<() => void>`              |               |                 |

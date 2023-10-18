@@ -61,4 +61,4 @@ The component is providing keyboard accessibility with `@keydown.esc="onEscKeyDo
 
 | Slot name | Description             |
 | --------- | ----------------------- |
-| `default` | place content of drawer |
+| `default` | Place content of drawer |
