@@ -7,37 +7,15 @@ The `SfAccordionItem` component is a wrapper around the native `<details>` and `
 
 The root element of this component is `<details>`, and any attributes that you apply onto the `SfAccordionItem` component will be passed to the `<details>` element. The one exception is the `onToggle$` attribute. The component prevents the native browser behavior and implements its own `onToggle$` handler.
 
-::info
-See all of the attributes that you can pass to `<details>` in the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details).
-::
-
 ## Examples
 
 ### Basic Accordion
 
-:::vue-only
-To control the state of the accordion, you can use the `modelValue` prop. This prop is a boolean that indicates whether the accordion is open or closed.
-:::
-
-:::react-only
 To control the state of the accordion, you can use the `open` prop. This prop is a boolean that indicates whether the accordion is open or closed.
-:::
-
-:::qwik-only
-To control the state of the accordion, you can use the `open` prop. This prop is a boolean that indicates whether the accordion is open or closed.
-:::
 
 <Showcase showcase-name="AccordionItem/BasicAccordion" style="min-height:400px">
 
-:::vue-only
-<<<../../../preview/nuxt/pages/showcases/AccordionItem/BasicAccordion.vue
-:::
-:::react-only
-<<<../../../preview/next/pages/showcases/AccordionItem/BasicAccordion.tsx
-:::
-:::qwik-only
 <<<../../../website/src/routes/showcases/AccordionItem/BasicAccordion/index.tsx
-:::
 
 </Showcase>
 
@@ -47,17 +25,11 @@ This example only allows one item to be open at a time.
 
 <Showcase showcase-name="AccordionItem/CollapsableAccordion" style="min-height:400px">
 
-:::vue-only
-<<<../../../preview/nuxt/pages/showcases/AccordionItem/CollapsableAccordion.vue
-:::
-:::react-only
-<<<../../preview/next/pages/showcases/AccordionItem/CollapsableAccordion.tsx
-:::
-:::qwik-only
 <<<../../../website/src/routes/showcases/AccordionItem/CollapsableAccordion/index.tsx
-:::
 
 </Showcase>
+
+:::vue-only
 
 ### Animated
 
@@ -65,16 +37,7 @@ Animate AccordionItem to give that nice feeling of smooth transition.
 
 <Showcase showcase-name="AccordionItem/AccordionAnimate" style="min-height:400px">
 
-:::vue-only
-<<<../../../preview/nuxt/pages/showcases/AccordionItem/AccordionAnimate.vue
-:::
-
-:::react-only
-<<<../../../preview/next/pages/showcases/AccordionItem/AccordionAnimate.tsx
-:::
-:::qwik-only
 <<<../../../website/src/routes/showcases/AccordionItem/AccordionAnimate/index.tsx
-:::
 
 </Showcase>
 
@@ -84,6 +47,8 @@ Since `SfAccordion` uses `<details>` and `<summary>` HTML elements, it inherits 
 
 For example, `<summary>` elements are focusable and can be activated by pressing the `Enter` or `Space` keys.
 
+:::
+
 ## Playground
 
 <Generate />
@@ -92,59 +57,13 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 
 ## Props
 
-:::react-only
+:::qwik-only
 | Prop name | Type | Default value | Possible values |
 | ----------------- | ------------------------- | ------------- | --------------- |
 | `open` | `boolean` | false | |
-| `summaryClassName` | `string` | | |
-| `onToggle` | `(open: boolean) => void` | | |
-| `children` | `ReactNode` | | |
-:::
-
-:::vue-only
-| Prop name | Type | Default value | Possible values |
-| ----------------- | ------------------------- | ------------- | --------------- |
-| `modelValue` | `boolean` | false | |
-| `summaryClass` | `string` | | |
-:::
-
-:::vue-only
-
-## Slots
-
-| Slot name | Description           |
-| --------- | --------------------- |
-| `default` | content to expand     |
-| `summary` | header with a summary |
-
-## Events
-
-| Event name          | Trigger                            |
-| ------------------- | ---------------------------------- |
-| `update:modelValue` | Triggers when click on the summary |
-
-:::
-
-:::qwik-only
-| Prop name | Type | Default value | Possible values |
-| ----------------- | ------------------------- | ------------- | --------------- |
 | `ref?` | `Signal<Element>` | | |
 | `summaryClass` | `string` | | |
 | `onToggle$?` | `PropFunction<(open: boolean) => void>` | | |
-:::
-
-#tab-3
-
-## Source code
-
-:::vue-only
-<<<../../../../packages/sfui/frameworks/vue/components/SfAccordionItem/SfAccordionItem.vue
-:::
-:::react-only
-<<<../../../../packages/sfui/frameworks/react/components/SfAccordionItem/SfAccordionItem.tsx
-:::
-:::qwik-only
-<<<../../../../dist/packages/qwik-storefront-ui/components/SfAccordionItem/index.tsx
 :::
 
 ::
