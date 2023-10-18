@@ -46,13 +46,9 @@ A common use case for the Badge is to place it on a user's avatar.
 
 </Showcase>
 
-::vue-only
+<!-- ## Accessibility Notes
 
-## Accessibility Notes
-
-The component itself does not provide any specific accessibility features. Please make sure that the content displayed in SfBadge component is meaningful and understandable by all users.
-
-::
+The component itself does not provide any specific accessibility features. Please make sure that the content displayed in SfBadge component is meaningful and understandable by all users. -->
 
 ## Playground
 

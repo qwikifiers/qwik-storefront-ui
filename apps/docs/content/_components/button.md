@@ -68,15 +68,11 @@ You can truncate button content with Tailwind using `max-w-` and `truncate` clas
 
 </Showcase>
 
-::vue-only
-
-## Accessibility notes
+<!-- ## Accessibility notes
 
 Button component can be rendered as `<button>` or `<a>` or any other tag by providing it with prop ::vue-only`tag`::::react-only`as`::. When rendered as `<button>` this component applies default `type='button'` if no other `type` is passed as a prop.
 
-If you need to use Button with non-`<button>` tags like `<div>` you need to add `role='button'`. When this role is added to an element, the browser will send out an accessible alert event to assistive technology products which can then notify the user. You can override this behaviour by passing `role` prop by yourself.
-
-::
+If you need to use Button with non-`<button>` tags like `<div>` you need to add `role='button'`. When this role is added to an element, the browser will send out an accessible alert event to assistive technology products which can then notify the user. You can override this behaviour by passing `role` prop by yourself. -->
 
 ## Playground
 

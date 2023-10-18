@@ -29,9 +29,7 @@ This example only allows one item to be open at a time.
 
 </Showcase>
 
-:::vue-only
-
-### Animated
+<!-- ### Animated
 
 Animate AccordionItem to give that nice feeling of smooth transition.
 
@@ -45,9 +43,7 @@ Animate AccordionItem to give that nice feeling of smooth transition.
 
 Since `SfAccordion` uses `<details>` and `<summary>` HTML elements, it inherits all of their accessibility features.
 
-For example, `<summary>` elements are focusable and can be activated by pressing the `Enter` or `Space` keys.
-
-:::
+For example, `<summary>` elements are focusable and can be activated by pressing the `Enter` or `Space` keys. -->
 
 ## Playground
 
@@ -57,13 +53,11 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 
 ## Props
 
-:::qwik-only
-| Prop name | Type | Default value | Possible values |
-| ----------------- | ------------------------- | ------------- | --------------- |
-| `open` | `boolean` | false | |
-| `ref?` | `Signal<Element>` | | |
-| `summaryClass` | `string` | | |
-| `onToggle$?` | `PropFunction<(open: boolean) => void>` | | |
-:::
+| Prop name      | Type                                    | Default value | Possible values |
+| -------------- | --------------------------------------- | ------------- | --------------- |
+| `open`         | `boolean`                               | false         |                 |
+| `ref?`         | `Signal<Element>`                       |               |                 |
+| `summaryClass` | `string`                                |               |                 |
+| `onToggle$?`   | `PropFunction<(open: boolean) => void>` |               |                 |
 
 ::

@@ -36,15 +36,11 @@ When using `SfCheckbox` with a label, you can use Tailwind's `peer` modifiers to
 
 </Showcase>
 
-::vue-only
-
-## Accessibility notes
+<!-- ## Accessibility notes
 
 `SfCheckbox` is a wrapper for `<input type="checkbox">` so it inherits all the accessibility features of the native checkbox.
 
-It's focusable and can be toggled with `Space`.
-
-::
+It's focusable and can be toggled with `Space`. -->
 
 ## Playground
 
