@@ -2,6 +2,16 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.0.5](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.4...qwik-storefront-ui-0.0.5) (2023-10-18)
+
+
+### Features
+
+* add SfBadge component ([#8](https://github.com/qwikifiers/qwik-storefront-ui/issues/8)) ([e13e5ad](https://github.com/qwikifiers/qwik-storefront-ui/commit/e13e5ad02785b753265458c4f5316b1395d3de6b))
+* add suffix and prefix props on SfButton ([#11](https://github.com/qwikifiers/qwik-storefront-ui/issues/11)) ([7948fb0](https://github.com/qwikifiers/qwik-storefront-ui/commit/7948fb0e7fee0444327dc11cc8bd541fa81211de))
+
+
+
 ## [0.0.4](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.3...qwik-storefront-ui-0.0.4) (2023-09-19)
 
 
