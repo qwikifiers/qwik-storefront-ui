@@ -27,4 +27,5 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
+  css: ['@/assets/main.scss'],
 });

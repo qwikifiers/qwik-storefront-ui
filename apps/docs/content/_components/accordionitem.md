@@ -47,7 +47,7 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 
 ## Playground
 
-<Generate />
+<Generate class="playground" />
 
 #tab-2
 

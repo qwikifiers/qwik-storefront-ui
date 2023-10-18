@@ -70,7 +70,7 @@ When using `SfChip` without any text label/description inside, you should specif
 
 ## Playground
 
-<Generate style="height: 380px" />
+<Generate class="playground" />
 
 #tab-2
 

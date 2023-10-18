@@ -76,7 +76,7 @@ If you need to use Button with non-`<button>` tags like `<div>` you need to add 
 
 ## Playground
 
-<Generate />
+<Generate class="playground" />
 
 #tab-2
 

@@ -28,7 +28,7 @@ The floating content area has an `aria-hidden` attribute that reflects the visib
 
 ## Playground
 
-<Generate />
+<Generate class="playground" />
 
 #tab-2
 

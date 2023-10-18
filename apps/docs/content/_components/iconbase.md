@@ -62,7 +62,7 @@ When using an Icon without any additional label and/or description, you should s
 
 ## Playground
 
-<Generate style="height: 380px" />
+<Generate class="playground" />
 
 #tab-2
 

@@ -40,7 +40,7 @@ The component is providing keyboard accessibility with `@keydown.esc="onEscKeyDo
 
 ## Playground
 
-<Generate style="height: 600px"/>
+<Generate class="playground" style="height: 600px;"/>
 
 #tab-2
 

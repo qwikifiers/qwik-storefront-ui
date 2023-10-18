@@ -44,7 +44,7 @@ It's focusable and can be toggled with `Space`. -->
 
 ## Playground
 
-<Generate style="height: 450px" />
+<Generate class="playground" />
 
 #tab-2
 

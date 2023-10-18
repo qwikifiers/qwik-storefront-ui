@@ -52,7 +52,7 @@ The component itself does not provide any specific accessibility features. Pleas
 
 ## Playground
 
-<Generate style="height: 380px" />
+<Generate class="playground" />
 
 #tab-2
 
