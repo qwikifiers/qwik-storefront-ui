@@ -94,4 +94,10 @@ If you need to use Button with non-`<button>` tags like `<div>` you need to add 
 | `square`     | `boolean`                              | `false`       |                                             |
 | `onClick$`   | `PropFunction<(event: <...>) => void>` |               |                                             |
 
-::
+## Slots
+
+| Slot name | Description                |
+| --------- | -------------------------- |
+| `prefix`  | Left side slotted content  |
+| `default` | Slotted content            |
+| `suffix`  | Right side slotted content |

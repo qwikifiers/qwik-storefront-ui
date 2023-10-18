@@ -85,3 +85,11 @@ When using `SfChip` without any text label/description inside, you should specif
 | `inputProps?` | `QwikIntrinsicElements['input']` |               |                  |
 | `slotPrefix?` | `boolean`                        |               |                  |
 | `slotSuffix?` | `boolean`                        |               |                  |
+
+## Slots
+
+| Slot name | Description                |
+| --------- | -------------------------- |
+| `prefix`  | Left side slotted content  |
+| `default` | Slotted content            |
+| `suffix`  | Right side slotted content |

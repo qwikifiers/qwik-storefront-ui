@@ -59,5 +59,3 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 | `ref?`         | `Signal<Element>`                       |               |                 |
 | `summaryClass` | `string`                                |               |                 |
 | `onToggle$?`   | `PropFunction<(open: boolean) => void>` |               |                 |
-
-::

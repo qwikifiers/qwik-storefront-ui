@@ -64,5 +64,3 @@ The component itself does not provide any specific accessibility features. Pleas
 | `max`       | `number`           | `99`          |                                                        |
 | `variant`   | `SfBadgeVariant`   | `standard`    | `standard`, `dot`                                      |
 | `placement` | `SfBadgePlacement` | `top-right`   | `top-right`, `top-left`, `bottom-right`, `bottom-left` |
-
-::
