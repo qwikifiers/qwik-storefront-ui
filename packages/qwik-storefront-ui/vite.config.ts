@@ -6,6 +6,7 @@ import { qwikNxVite } from 'qwik-nx/plugins';
 import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
@@ -14,12 +15,26 @@ export default defineConfig({
     qwikVite(),
     tsconfigPaths({ root: '../../' }),
     dts({
-      tsConfigFilePath: join(
+      tsconfigPath: join(
         dirname(fileURLToPath(import.meta.url)),
         'tsconfig.lib.json'
       ),
-      // Faster builds by skipping tests. Set this to false to enable type checking.
-      skipDiagnostics: true,
+      entryRoot: 'src',
+      afterDiagnostic(ds) {
+        // ensure DTS errors are still visible - otherwise get swallowed and silent
+        console.log((ds ?? []).map((d) => d.messageText));
+
+        const nonPortableTypeErrors = ds.filter((d) => d.code === 2742);
+        if (nonPortableTypeErrors.length > 0) {
+          // stop the build for 2742 specifically
+          return Promise.reject(nonPortableTypeErrors);
+        }
+
+        return;
+      },
+    }),
+    viteStaticCopy({
+      targets: [{ src: './README.md', dest: './' }],
     }),
   ],
   server: {
@@ -33,13 +48,12 @@ export default defineConfig({
   // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
     target: 'es2020',
-    emptyOutDir: true,
     lib: {
       entry: './src/index.ts',
-
       // Could also be a dictionary or array of multiple entry points.
       name: 'qwik-storefront-ui',
-      fileName: (format) => `index.qwik.${format === 'es' ? 'mjs' : 'cjs'}`,
+      fileName: (format, entryName) =>
+        `${entryName}.qwik.${format === 'es' ? 'mjs' : 'cjs'}`,
       // fileName: 'index',
       // Change this to the formats you want to support.
       // Don't forgot to update your package.json as well.
@@ -48,6 +62,10 @@ export default defineConfig({
     rollupOptions: {
       // External packages that should not be bundled into your library.
       external: [],
+      output: {
+        preserveModules: true,
+        preserveModulesRoot: 'packages/qwik-storefront-ui/src',
+      },
     },
   },
   test: {

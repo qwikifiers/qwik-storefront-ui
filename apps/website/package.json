@@ -1,3 +1,6 @@
 {
-  "name": "website"
+  "name": "website",
+  "dependencies": {
+    "qwik-storefront-ui": "workspace:*"
+  }
 }
