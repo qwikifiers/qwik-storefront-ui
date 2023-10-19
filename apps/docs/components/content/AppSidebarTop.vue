@@ -49,9 +49,19 @@ function selectFramework(framework: Framework) {
     location.href = `https://docs.storefrontui.io/v2/${framework.name}/getting-started.html`;
   }
 }
+
+const element = ref();
+onMounted(() => {
+  setTimeout(() => {
+    const style = element.value.parentElement.style;
+    element.value.parentElement.style = 'overflow: hidden;';
+    element.value.parentElement.scrollTop = 0;
+    element.value.parentElement.style = style;
+  }, 0);
+});
 </script>
 <template>
-  <div class="relative mb-4">
+  <div class="relative" ref="element">
     <SfDropdown
       v-model="isOpen"
       class="[&>div]:w-[calc(100%-3rem)] [&>div]:!left-0 [&>div]:border [&>div]:rounded w-full"
