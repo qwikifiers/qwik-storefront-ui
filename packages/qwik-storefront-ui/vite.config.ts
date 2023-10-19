@@ -15,23 +15,11 @@ export default defineConfig({
     qwikVite(),
     tsconfigPaths({ root: '../../' }),
     dts({
-      tsconfigPath: join(
+      tsConfigFilePath: join(
         dirname(fileURLToPath(import.meta.url)),
         'tsconfig.lib.json'
       ),
       entryRoot: 'src',
-      afterDiagnostic(ds) {
-        // ensure DTS errors are still visible - otherwise get swallowed and silent
-        // console.log((ds ?? []).map((d) => d.messageText));
-
-        const nonPortableTypeErrors = ds.filter((d) => d.code === 2742);
-        if (nonPortableTypeErrors.length > 0) {
-          // stop the build for 2742 specifically
-          return Promise.reject(nonPortableTypeErrors);
-        }
-
-        return;
-      },
     }),
     viteStaticCopy({
       targets: [{ src: './README.md', dest: './' }],
