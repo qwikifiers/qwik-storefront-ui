@@ -8,6 +8,11 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      siteUrl: 'https://qwik-storefront-ui.pages.dev/',
+      siteName: 'Qwik Storefront UI library',
+      siteDescription:
+        'A frontend library for Qwik that helps developers quickly build fast, accessible, and beautiful storefronts.',
+      language: 'en',
       storefrontUi: true,
       DOCS_EXAMPLES_QWIK_PATH: process.env.DOCS_EXAMPLES_QWIK_PATH,
     },
