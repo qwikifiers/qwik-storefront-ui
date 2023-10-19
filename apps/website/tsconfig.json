@@ -18,13 +18,5 @@
     "noEmit": true,
     "types": ["node", "vite/client", "vitest"]
   },
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ],
   "include": ["src"]
 }

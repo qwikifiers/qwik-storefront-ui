@@ -54,8 +54,8 @@ const route = useRoute();
 
 const framework = useCookie('framework', {
   default: () => ({
-    name: 'Vue',
-    icon: 'logos:vue',
+    name: 'qwik',
+    icon: 'logos:qwik',
   }),
 });
 
