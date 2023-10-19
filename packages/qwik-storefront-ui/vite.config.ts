@@ -22,7 +22,7 @@ export default defineConfig({
       entryRoot: 'src',
       afterDiagnostic(ds) {
         // ensure DTS errors are still visible - otherwise get swallowed and silent
-        console.log((ds ?? []).map((d) => d.messageText));
+        // console.log((ds ?? []).map((d) => d.messageText));
 
         const nonPortableTypeErrors = ds.filter((d) => d.code === 2742);
         if (nonPortableTypeErrors.length > 0) {

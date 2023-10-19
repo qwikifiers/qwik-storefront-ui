@@ -27,7 +27,6 @@ export default component$(() => {
       positiveAlertSignal.value = true;
       setTimeout(() => (positiveAlertSignal.value = false), 5000);
     }
-    console.log(email);
     inputValueSignal.value = '';
   });
 
