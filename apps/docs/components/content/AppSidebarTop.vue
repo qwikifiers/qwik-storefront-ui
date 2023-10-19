@@ -61,7 +61,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="relative" ref="element">
+  <div class="relative mb-4" ref="element">
     <SfDropdown
       v-model="isOpen"
       class="[&>div]:w-[calc(100%-3rem)] [&>div]:!left-0 [&>div]:border [&>div]:rounded w-full"
