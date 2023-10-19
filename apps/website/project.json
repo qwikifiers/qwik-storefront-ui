@@ -30,21 +30,11 @@
       }
     },
     "build.ssr": {
-      "executor": "@nx/vite:build",
-      "defaultConfiguration": "preview",
+      "executor": "nx:run-commands",
       "options": {
-        "outputPath": "dist/apps/website"
-      },
-      "configurations": {
-        "preview": {
-          "ssr": "src/entry.preview.tsx",
-          "mode": "production"
-        },
-        "production": {
-          "configFile": "apps/website/adapters/cloudflare-pages/vite.config.ts"
-        }
-      },
-      "dependsOn": []
+        "command": "vite build -c adapters/static/vite.config.ts",
+        "cwd": "apps/website"
+      }
     }
   },
   "tags": []
