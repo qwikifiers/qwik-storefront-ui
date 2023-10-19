@@ -63,7 +63,7 @@ const { storefrontUi } = useRuntimeConfig().public;
         <AppHeader class="sticky top-0 bg-white dark:bg-neutral-950 z-50" />
 
         <div
-          class="flex items-center lg:hidden text-left border-b w-full px-6 py-2 text-sm gap-x-2 sticky top-[57px] bg-white dark:bg-neutral-950 z-40"
+          class="flex items-center lg:hidden text-left border-b w-full px-6 py-2 text-sm gap-x-2 sticky top-[0px] bg-white dark:bg-neutral-950 z-40"
         >
           <button @click="isMobileMenuOpen = true">
             <Icon name="ri:menu-2-fill" class="text-lg" />
