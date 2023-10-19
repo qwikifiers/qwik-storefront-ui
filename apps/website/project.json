@@ -29,7 +29,7 @@
         "reportsDirectory": "../../coverage/apps/website"
       }
     },
-    "serve": {
+    "dev": {
       "executor": "@nx/vite:dev-server",
       "options": {
         "buildTarget": "website:build.client",
