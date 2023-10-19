@@ -10,6 +10,7 @@ export const SfChip = component$<SfChipProps>(
     inputProps,
     square = false,
     ref,
+    onChange$,
     ...attributes
   }: SfChipProps) => {
     const chipId = useId();
@@ -59,6 +60,7 @@ export const SfChip = component$<SfChipProps>(
           class="hidden"
           type="checkbox"
           {...inputProps}
+          onChange$={(e) => onChange$ && onChange$(e)}
         />
         <label
           for={chipId}

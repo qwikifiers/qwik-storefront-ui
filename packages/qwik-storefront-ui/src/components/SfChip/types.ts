@@ -1,4 +1,9 @@
-import { QwikIntrinsicElements, Signal } from '@builder.io/qwik';
+import {
+  PropFunction,
+  QwikChangeEvent,
+  QwikIntrinsicElements,
+  Signal,
+} from '@builder.io/qwik';
 
 export type SfChipProps = {
   ref?: Signal<Element | undefined>;
@@ -8,6 +13,7 @@ export type SfChipProps = {
   inputProps?: QwikIntrinsicElements['input'];
   slotPrefix?: boolean;
   slotSuffix?: boolean;
+  onChange$?: PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>;
 };
 
 export enum SfChipSize {

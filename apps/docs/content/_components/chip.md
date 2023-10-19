@@ -76,15 +76,16 @@ When using `SfChip` without any text label/description inside, you should specif
 
 ## Props
 
-| Prop name     | Type                             | Default value | Possible values  |
-| ------------- | -------------------------------- | ------------- | ---------------- |
-| `ref?`        | `Signal<Element>`                |               |                  |
-| `class?`      | `string`                         |               |                  |
-| `size?`       | `string`                         | `'base'`      | `'sm'`, `'base'` |
-| `square?`     | `boolean`                        |               |                  |
-| `inputProps?` | `QwikIntrinsicElements['input']` |               |                  |
-| `slotPrefix?` | `boolean`                        |               |                  |
-| `slotSuffix?` | `boolean`                        |               |                  |
+| Prop name     | Type                                                               | Default value | Possible values  |
+| ------------- | ------------------------------------------------------------------ | ------------- | ---------------- |
+| `ref?`        | `Signal<Element>`                                                  |               |                  |
+| `class?`      | `string`                                                           |               |                  |
+| `size?`       | `string`                                                           | `'base'`      | `'sm'`, `'base'` |
+| `square?`     | `boolean`                                                          |               |                  |
+| `inputProps?` | `QwikIntrinsicElements['input']`                                   |               |                  |
+| `slotPrefix?` | `boolean`                                                          |               |                  |
+| `slotSuffix?` | `boolean`                                                          |               |                  |
+| `onChange$?`  | `PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>` |               |                  |
 
 ## Slots
 

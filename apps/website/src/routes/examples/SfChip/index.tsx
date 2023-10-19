@@ -80,6 +80,7 @@ export default component$(() => {
           onChange$: selectHandler,
         }}
         slotPrefix={true}
+        onChange$={(e) => console.log(e)}
       >
         <div q:slot="prefix">
           <SfThumbnail

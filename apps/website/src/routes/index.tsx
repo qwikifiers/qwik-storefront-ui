@@ -1,9 +1,8 @@
 import { component$ } from '@builder.io/qwik';
-import { SfLink } from 'qwik-storefront-ui';
 export default component$(() => (
   <>
-    <SfLink href="/examples?show=true">Examples</SfLink>
+    <a href="/examples?show=true">Examples</a>
     <hr />
-    <SfLink href="/showcases?show=true">Showcases</SfLink>
+    <a href="/showcases?show=true">Showcases</a>
   </>
 ));
