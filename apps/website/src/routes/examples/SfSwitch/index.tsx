@@ -34,11 +34,17 @@ export default component$(() => {
           modelName: 'disabled',
           propType: 'boolean',
         },
+        {
+          type: 'boolean',
+          modelName: 'invalid',
+          propType: 'boolean',
+        },
       ] satisfies ControlsType,
       state: {
         value: 'value',
         disabled: false,
         checked: false,
+        invalid: false,
       },
     };
   });
