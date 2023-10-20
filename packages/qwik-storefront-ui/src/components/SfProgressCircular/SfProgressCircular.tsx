@@ -43,7 +43,7 @@ export const SfProgressCircular = component$<SfProgressCircularProps>(
           ${sizeClasses[size]} 
           ${_class}`}
         viewBox="25 25 50 50"
-        strokeDasharray={strokeDasharray}
+        stroke-dasharray={strokeDasharray}
         data-testid="progress"
         {...attributes}
       >
