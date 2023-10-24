@@ -23,7 +23,7 @@ export const components = {
     // 'SfScrollable',
     // 'SfSelect',
     'SfSwitch',
-    // 'SfTextarea',
+    'SfTextarea',
     // 'SfThumbnail',
     // 'SfTooltip',
   ],
