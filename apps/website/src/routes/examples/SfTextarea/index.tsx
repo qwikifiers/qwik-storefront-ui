@@ -19,7 +19,7 @@ export default component$(() => {
         {
           type: 'select',
           modelName: 'size',
-          propDefaultValue: SfTextareaSize.base,
+          propDefaultValue: 'SfInputSize.base',
           propType: 'SfInputSize',
           options: Object.keys(SfTextareaSize),
           isRequired: false,
@@ -145,12 +145,11 @@ export default component$(() => {
           readOnly={examplesState.data.state.readonly}
           onInput$={onInputChange}
           wrapperClass={[
-            `w-full block ${
+            `w-full block h-2/5 ${
               examplesState.data.state.disabled
-                ? 'bg-disabled-100 ring-disabled-300 ring-1 text-disabled-500'
-                : examplesState.data.state.readonly
-                ? 'bg-disabled-100 ring-disabled-300 ring-1 text-neutral-500'
-                : ''
+                ? '!bg-disabled-100 !ring-disabled-300 !ring-1 !text-disabled-500'
+                : examplesState.data.state.readonly &&
+                  '!bg-disabled-100 !ring-disabled-300 !ring-1 !text-neutral-500'
             }`,
           ]}
         />

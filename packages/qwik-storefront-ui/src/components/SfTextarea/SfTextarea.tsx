@@ -1,5 +1,4 @@
 import { component$, useSignal } from '@builder.io/qwik';
-import { useFocusVisible } from '../../shared/hooks/useFocusVisible';
 import { SfTextareaSize, type SfTextareaProps } from './types';
 
 const sizeClasses = {
@@ -16,7 +15,6 @@ export const SfTextarea = component$<SfTextareaProps>(
     ...attributes
   }) => {
     const ref = useSignal<HTMLTextAreaElement>();
-    const { isFocusVisible } = useFocusVisible({ isTextInput: true });
 
     return (
       <textarea
@@ -26,7 +24,6 @@ export const SfTextarea = component$<SfTextareaProps>(
           {
             'ring-2 ring-negative-700': invalid,
             'ring-1 ring-neutral-200': !invalid,
-            'focus:outline focus:outline-offset': isFocusVisible,
           },
           sizeClasses[size],
           wrapperClass,
