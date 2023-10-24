@@ -102,7 +102,7 @@ export default component$(() => {
     };
   });
 
-  const onChange = $((event: QwikChangeEvent<HTMLTextAreaElement>) => {
+  const onInputChange = $((event: QwikChangeEvent<HTMLTextAreaElement>) => {
     examplesState.data.state = {
       ...examplesState.data.state,
       value: event.target.value,
@@ -143,15 +143,15 @@ export default component$(() => {
           placeholder={examplesState.data.state.placeholder}
           disabled={examplesState.data.state.disabled}
           readOnly={examplesState.data.state.readonly}
-          onChange$={onChange}
-          class={[
-            'w-full block',
-            {
-              '!bg-disabled-100 !ring-disabled-300 !ring-1 !text-disabled-500':
-                examplesState.data.state.disabled,
-              '!bg-disabled-100 !ring-disabled-300 !ring-1 !text-neutral-500':
-                examplesState.data.state.readonly,
-            },
+          onInput$={onInputChange}
+          wrapperClass={[
+            `w-full block ${
+              examplesState.data.state.disabled
+                ? 'bg-disabled-100 ring-disabled-300 ring-1 text-disabled-500'
+                : examplesState.data.state.readonly
+                ? 'bg-disabled-100 ring-disabled-300 ring-1 text-neutral-500'
+                : ''
+            }`,
           ]}
         />
       </label>

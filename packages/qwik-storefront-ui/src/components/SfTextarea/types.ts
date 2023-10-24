@@ -6,7 +6,7 @@ export type SfTextareaProps = Omit<
 > & {
   size?: `${SfTextareaSize}`;
   invalid?: boolean;
-  className?: string;
+  wrapperClass?: string[];
   style?: CSSProperties;
 };
 
