@@ -104,7 +104,7 @@ Similar to images, you can also pass an icon into the default slot.
 
 ## Playground
 
-<Generate style="height: 450px" />
+<Generate class="playground" style="height: 500px;" />
 
 #tab-2
 

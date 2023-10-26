@@ -98,7 +98,7 @@ Textarea is multi-line input, so Return or Enter key inserts a line break.
 
 ## Playground
 
-<Generate style="height: 600px;"/>
+<Generate class="playground" style="height: 800px;" />
 
 #tab-2
 

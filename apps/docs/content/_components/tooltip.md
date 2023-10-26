@@ -41,7 +41,7 @@ By default, this component sets `role="tooltip"`.
 
 ## Playground
 
-<Generate />
+<Generate class="playground" />
 
 #tab-2
 

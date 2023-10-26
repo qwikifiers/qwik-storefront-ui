@@ -82,7 +82,7 @@ The previous and next buttons have `aria-label` attributes (`buttonPrevAriaLabel
 
 ## Playground
 
-<Generate style="height: 500px" />
+<Generate class="playground" style="height: 600px;" />
 
 #tab-2
 

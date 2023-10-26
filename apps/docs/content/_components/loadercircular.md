@@ -44,7 +44,7 @@ It's important to properly set `aria-label` for screen readers to read proper in
 
 ## Playground
 
-<Generate class="playground"/>
+<Generate class="playground" />
 
 #tab-2
 

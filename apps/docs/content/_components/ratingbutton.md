@@ -107,7 +107,7 @@ The RatingButton uses hidden radio input elements to satisfy all keyboard functi
 
 ## Playground
 
-<Generate style="height:400px" />
+<Generate class="playground" />
 
 #tab-2
 
