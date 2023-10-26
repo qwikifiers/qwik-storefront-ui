@@ -1,6 +1,6 @@
 # Textarea component
 
-::tabs{:titles='["Usage", "API", "Source Code"]' class="mt-8"}
+::tabs{:titles='["Usage", "API"]' class="mt-8"}
 
 #tab-1
 
@@ -12,15 +12,7 @@ The Textarea is a multi-line text input control allows users to enter any combin
 
 <Showcase showcase-name="Textarea/TextareaDisabled">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Textarea/TextareaDisabled.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Textarea/TextareaDisabled.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Textarea/TextareaDisabled/index.tsx
-::
 
 </Showcase>
 
@@ -30,15 +22,8 @@ The Textarea is a multi-line text input control allows users to enter any combin
 
 <Showcase showcase-name="Textarea/TextareaReadonly">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Textarea/TextareaReadonly.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Textarea/TextareaReadonly.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Textarea/TextareaReadonly/index.tsx
-::
+
 </Showcase>
 
 ### Invalid State
@@ -47,15 +32,8 @@ If you pass the `invalid` prop, the Textarea will be styled to indicate an inval
 
 <Showcase showcase-name="Textarea/TextareaInvalid" style="min-height: 200px;">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Textarea/TextareaInvalid.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Textarea/TextareaInvalid.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Textarea/TextareaInvalid/index.tsx
-::
+
 </Showcase>
 
 ### Textarea with characters counter
@@ -64,15 +42,8 @@ The Textarea component provides the option to display a character count, allowin
 
 <Showcase showcase-name="Textarea/TextareaCharacters">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Textarea/TextareaCharacters.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Textarea/TextareaCharacters.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Textarea/TextareaCharacters/index.tsx
-::
+
 </Showcase>
 
 ### Textarea with autoresize
@@ -81,20 +52,15 @@ The Textarea component supports autoresizing based on the content entered by the
 
 <Showcase showcase-name="Textarea/TextareaAutoresize">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Textarea/TextareaAutoresize.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Textarea/TextareaAutoresize.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Textarea/TextareaAutoresize/index.tsx
-::
+
 </Showcase>
 
+<!--
 ## Accessibility notes
 
 Textarea is multi-line input, so Return or Enter key inserts a line break.
+ -->
 
 ## Playground
 
@@ -104,46 +70,10 @@ Textarea is multi-line input, so Return or Enter key inserts a line break.
 
 ## Props
 
-::vue-only
-| Prop name | Type | Default value | Possible values |
-| ------------ | -------- | ------------- | -------------------------------------- |
-| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
-| `invalid` | `boolean` | `false` |  
-::
-
-::react-only
-| Prop name | Type | Default value | Possible values |
-| ------------ | -------- | ------------- | -------------------------------------- |
-| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
-| `invalid` | `boolean` | `false` |  
-| `className` | `string` | |  
-::
-
-::qwik-only
-| Prop name | Type | Default value | Possible values |
-| ------------ | -------- | ------------- | -------------------------------------- |
-| `size` | `SfInputSize` | `'base'` | `'sm'`, `'base'`, `'lg'` |
-| `invalid` | `boolean` | `false` |  
-| `className` | `string` | |  
-::
-
-::vue-only
-
-## Events
-
-| Event name          | Trigger                       |
-| ------------------- | ----------------------------- |
-| `update:modelValue` | triggers v-model update event |
-
-::
-
-#tab-3
-
-::vue-only
-<<<../../../../packages/sfui/frameworks/vue/components/SfTextarea/SfTextarea.vue
-::
-::react-only
-<<<../../../../packages/sfui/frameworks/react/components/SfTextarea/SfTextarea.tsx
-::
-
-::
+| Prop name       | Type                                   | Default value | Possible values          |
+| --------------- | -------------------------------------- | ------------- | ------------------------ |
+| `onInput$?`     | `PropFunction<(event: Event) => void>` |               |                          |
+| `size?`         | `SfInputSize`                          | `'base'`      | `'sm'`, `'base'`, `'lg'` |
+| `invalid?`      | `boolean`                              |               |                          |
+| `wrapperClass?` | `string[]`                             |               |                          |
+| `style?`        | `CSSProperties`                        |               |                          |
