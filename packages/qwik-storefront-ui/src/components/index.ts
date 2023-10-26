@@ -20,5 +20,6 @@ export * from './SfRadio';
 export * from './SfRating';
 export * from './SfSelect';
 export * from './SfSwitch';
+export * from './SfTextarea';
 export * from './SfThumbnail';
 export * from './SfTooltip';

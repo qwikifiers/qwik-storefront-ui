@@ -1,7 +1,7 @@
 export const hooks = [
   // 'useDisclosure',
   // 'useDropdown',
-  // 'useFocusVisible',
+  'useFocusVisible',
   // 'usePagination',
   // 'usePopover',
   // 'useScrollable',
