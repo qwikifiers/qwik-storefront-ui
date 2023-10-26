@@ -1,12 +1,6 @@
 import { $, component$, useComputed$, useSignal } from '@builder.io/qwik';
 import { SfTextarea } from 'qwik-storefront-ui';
 
-interface ChangeEvent<T = HTMLTextAreaElement> {
-  target: {
-    value: T extends { value: infer V } ? V : T;
-  };
-}
-
 export default component$(() => {
   const characterLimit = 25;
   const disabled = false;
@@ -30,8 +24,9 @@ export default component$(() => {
       ? 'text-negative-700 font-medium'
       : 'text-neutral-500';
 
-  const onChange = $((event: ChangeEvent) => {
-    valueSignal.value = event?.target.value;
+  const onInput = $((e: Event) => {
+    const target = e.target as HTMLInputElement;
+    valueSignal.value = target.value;
   });
 
   return (
@@ -43,7 +38,7 @@ export default component$(() => {
           placeholder="Write something about yourself..."
           invalid={invalid}
           disabled={disabled}
-          onInput$={onChange}
+          onInput$={onInput}
           wrapperClass={['w-full mt-0.5 block']}
         />
       </label>

@@ -1,10 +1,4 @@
-import {
-  $,
-  QwikChangeEvent,
-  component$,
-  useContext,
-  useTask$,
-} from '@builder.io/qwik';
+import { $, component$, useContext, useTask$ } from '@builder.io/qwik';
 import { SfTextarea, SfTextareaSize } from 'qwik-storefront-ui';
 import { ComponentExample } from '../../../components/utils/ComponentExample';
 import { ControlsType } from '../../../components/utils/types';
@@ -102,10 +96,12 @@ export default component$(() => {
     };
   });
 
-  const onInputChange = $((event: QwikChangeEvent<HTMLTextAreaElement>) => {
+  const onInput = $((e: Event) => {
+    const target = e.target as HTMLInputElement;
+
     examplesState.data.state = {
       ...examplesState.data.state,
-      value: event.target.value,
+      value: target.value,
     };
   });
 
@@ -113,6 +109,7 @@ export default component$(() => {
     ? examplesState.data.state.value.length >
       examplesState.data.state.characterLimit
     : false;
+
   const charsCount = examplesState.data.state.characterLimit
     ? examplesState.data.state.characterLimit -
       examplesState.data.state.value.length
@@ -143,7 +140,7 @@ export default component$(() => {
           placeholder={examplesState.data.state.placeholder}
           disabled={examplesState.data.state.disabled}
           readOnly={examplesState.data.state.readonly}
-          onInput$={onInputChange}
+          onInput$={onInput}
           wrapperClass={[
             `w-full block h-2/5 ${
               examplesState.data.state.disabled

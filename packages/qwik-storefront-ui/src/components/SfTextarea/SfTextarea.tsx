@@ -12,7 +12,12 @@ export const SfTextarea = component$<SfTextareaProps>(
     size = SfTextareaSize.base,
     invalid = false,
     wrapperClass,
-    ...attributes
+    name,
+    value,
+    readOnly,
+    disabled,
+    placeholder,
+    onInput$,
   }) => {
     const ref = useSignal<HTMLTextAreaElement>();
 
@@ -28,7 +33,13 @@ export const SfTextarea = component$<SfTextareaProps>(
           sizeClasses[size],
           wrapperClass,
         ]}
-        {...attributes}
+        // eslint-disable-next-line qwik/valid-lexical-scope
+        onInput$={onInput$}
+        placeholder={placeholder}
+        disabled={disabled}
+        value={value}
+        readOnly={readOnly}
+        name={name}
         data-testid="textarea"
       />
     );
