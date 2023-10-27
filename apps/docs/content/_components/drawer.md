@@ -1,6 +1,6 @@
 # Drawer
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -62,3 +62,9 @@ The component is providing keyboard accessibility with `@keydown.esc="onEscKeyDo
 | Slot name | Description             |
 | --------- | ----------------------- |
 | `default` | Place content of drawer |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfDrawer/SfDrawer.tsx
