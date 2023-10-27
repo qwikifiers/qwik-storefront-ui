@@ -1,6 +1,6 @@
 # Dropdown
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -41,3 +41,9 @@ The floating content area has an `aria-hidden` attribute that reflects the visib
 | `class?`    | `string`                                |               |                 |
 | `open?`     | `boolean`                               |               |                 |
 | `onClose$?` | `PropFunction<() => void>`              |               |                 |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfDropdown/SfDropdown.tsx
