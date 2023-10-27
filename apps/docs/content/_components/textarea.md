@@ -1,6 +1,6 @@
 # Textarea component
 
-::tabs{:titles='["Usage", "API"]' class="mt-8"}
+::tabs{:titles='["Usage", "API", "Source code"]' class="mt-8"}
 
 #tab-1
 
@@ -77,3 +77,9 @@ Textarea is multi-line input, so Return or Enter key inserts a line break.
 | `invalid?`      | `boolean`                              |               |                          |
 | `wrapperClass?` | `string[]`                             |               |                          |
 | `style?`        | `CSSProperties`                        |               |                          |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfTextArea/SfTextArea.tsx
