@@ -1,6 +1,6 @@
 # Radio
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -85,3 +85,9 @@ If you have an element that is not an `<input type="radio">`, you should set the
 | `ref?`      | `Signal<Element>`                                                  |               |                 |
 | `invalid?`  | `boolean`                                                          | `false`       |                 |
 | `onChange$` | `PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>` |               |                 |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfRadio/SfRadio.tsx
