@@ -1,6 +1,6 @@
 # ProgressCircular
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -78,3 +78,9 @@ This component sets the `role="progressbar"` to [allow screen readers treat it a
 | Slot name | Description     |
 | --------- | --------------- |
 | `default` | Slotted content |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfProgressCircular/SfProgressCircular.tsx
