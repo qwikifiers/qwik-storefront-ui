@@ -1,6 +1,6 @@
 # AccordionItem
 
-::tabs{:titles='["Usage", "API", "Source"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 The `SfAccordionItem` component is a wrapper around the native `<details>` and `<summary>` HTML elements. It allows you to create an accordion component that expands and collapses content.
