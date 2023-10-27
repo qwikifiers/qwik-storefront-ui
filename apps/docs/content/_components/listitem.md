@@ -1,6 +1,6 @@
 # ListItem
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -71,3 +71,9 @@ When no tag provided, the component will render as an `<li>`. To achieve proper 
 | `prefix`  | Left side slotted content  |
 | `default` | Slotted content            |
 | `suffix`  | Right side slotted content |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfListItem/SfListItem.tsx
