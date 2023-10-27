@@ -30,6 +30,18 @@ export default defineNitroPlugin((nitro: any) => {
           filePath = path
             .join(path.dirname(import.meta.url), '..', '..', '..', filePath)
             .replace('file:/', '/');
+          if (!fs.existsSync(filePath)) {
+            filePath = path
+              .join(
+                path.dirname(import.meta.url),
+                '..',
+                '..',
+                '..',
+                '..',
+                resolver.resolve(normalizedSrc)
+              )
+              .replace('file:/', '/');
+          }
         }
 
         const isAFile = fs.existsSync(filePath);
