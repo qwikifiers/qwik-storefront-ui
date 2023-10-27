@@ -1,6 +1,6 @@
 # AccordionItem
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source"]'}
 
 #tab-1
 The `SfAccordionItem` component is a wrapper around the native `<details>` and `<summary>` HTML elements. It allows you to create an accordion component that expands and collapses content.
@@ -59,3 +59,9 @@ For example, `<summary>` elements are focusable and can be activated by pressing
 | `ref?`         | `Signal<Element>`                       |               |                 |
 | `summaryClass` | `string`                                |               |                 |
 | `onToggle$?`   | `PropFunction<(open: boolean) => void>` |               |                 |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfAccordionItem/SfAccordionItem.tsx
