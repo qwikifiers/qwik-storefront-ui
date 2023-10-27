@@ -1,6 +1,6 @@
 # LoaderLinear
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -59,3 +59,9 @@ It's important to properly set `aria-label` for screen readers to read proper in
 | `class`     | `string`             |               |                                                                           |
 | `size`      | `SfLoaderLinearSize` | `'base'`      | `'minimal'`, `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'`,`'2xl'`,`'3xl'`,`'4xl'` |
 | `ariaLabel` | `string`             | `'loading'`   |                                                                           |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfLoaderLinear/SfLoaderLinear.tsx
