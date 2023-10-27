@@ -1,6 +1,6 @@
 # Rating
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -76,3 +76,9 @@ For better out-of-the-box accessibility, `SfRating` adds `role="img"` and an `ar
 | `size?`          | `SfRatingSize` | `'base'`      | `'xs'`,`'sm'`,`'base'`,`'lg'`,`'xl'` |
 | `halfIncrement?` | `boolean`      | `false`       |                                      |
 | `ariaLabel?`     | `string`       |               |                                      |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfRating/SfRating.tsx

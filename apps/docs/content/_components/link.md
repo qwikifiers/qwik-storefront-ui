@@ -1,6 +1,6 @@
 # Link
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -69,3 +69,9 @@ When no tag provided, the component will render as an `<a>`. To achieve proper a
 | Slot name | Description     |
 | --------- | --------------- |
 | `default` | Slotted content |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfLink/SfLink.tsx

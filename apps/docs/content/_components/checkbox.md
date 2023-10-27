@@ -1,6 +1,6 @@
 # Checkbox
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -55,3 +55,9 @@ It's focusable and can be toggled with `Space`. -->
 | `ref?`       | `Signal<Element>`                                                  |               |                 |
 | `invalid`    | `boolean`                                                          | `false`       |                 |
 | `onChange$?` | `PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>` |               |                 |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfCheckbox/SfCheckbox.tsx

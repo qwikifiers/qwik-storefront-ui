@@ -1,6 +1,6 @@
 # Button
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -101,3 +101,9 @@ If you need to use Button with non-`<button>` tags like `<div>` you need to add 
 | `prefix`  | Left side slotted content  |
 | `default` | Slotted content            |
 | `suffix`  | Right side slotted content |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfButton/SfButton.tsx

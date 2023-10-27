@@ -1,6 +1,6 @@
 # Switch
 
-::tabs{:titles='["Usage", "API"]' class="mt-8"}
+::tabs{:titles='["Usage", "API", "Source code"]' class="mt-8"}
 
 #tab-1
 
@@ -62,3 +62,9 @@ By default, it comes with a `role="switch"` attribute. This is useful for screen
 | `class?`    | `string`                                                           |               |                 |
 | `invalid?`  | `boolean`                                                          |               |                 |
 | `onChange$` | `PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>` |               |                 |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfSwitch/SfSwitch.tsx

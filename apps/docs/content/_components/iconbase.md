@@ -1,6 +1,6 @@
 # Icons
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -75,3 +75,9 @@ When using an Icon without any additional label and/or description, you should s
 | Slot name | Description                                |
 | --------- | ------------------------------------------ |
 | `default` | Content of an SVG, e.g. `<path d='...'/>`. |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfIconBase/SfIconBase.tsx

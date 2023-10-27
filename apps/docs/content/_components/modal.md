@@ -1,6 +1,6 @@
 # Modal
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -84,3 +84,9 @@ Both techniques can be seen in the code examples above.
 | Slot name | Description     |
 | --------- | --------------- |
 | `default` | Slotted content |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfModal/SfModal.tsx

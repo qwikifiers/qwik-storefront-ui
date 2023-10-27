@@ -1,6 +1,6 @@
 # ProgressLinear
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -74,3 +74,9 @@ ProgressLinear uses native [`<progress>`](https://developer.mozilla.org/en-US/do
 | Slot name | Description     |
 | --------- | --------------- |
 | `default` | Slotted content |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfProgressLinear/SfProgressLinear.tsx

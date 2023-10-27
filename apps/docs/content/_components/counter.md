@@ -1,6 +1,6 @@
 # Counter
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -63,3 +63,9 @@ The root element of `SfCounter` is a `<span>`. Since a `<span>` is an inline ele
 | Slot name | Description                     |
 | --------- | ------------------------------- |
 | `default` | To be filled with counter value |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfCounter/SfCounter.tsx

@@ -4,7 +4,7 @@
 This component is shipped in our NPM package, but its API might change based on user feedback.
 :::
 
-::tabs{:titles='["Usage", "API"]' class="mt-8"}
+::tabs{:titles='["Usage", "API", "Source code"]' class="mt-8"}
 
 #tab-1
 
@@ -94,3 +94,9 @@ When using `SfChip` without any text label/description inside, you should specif
 | `prefix`  | Left side slotted content  |
 | `default` | Slotted content            |
 | `suffix`  | Right side slotted content |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfChip/SfChip.tsx

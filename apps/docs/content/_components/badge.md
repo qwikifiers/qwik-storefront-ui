@@ -1,6 +1,6 @@
 # Badge
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -64,3 +64,9 @@ The component itself does not provide any specific accessibility features. Pleas
 | `max`       | `number`           | `99`          |                                                        |
 | `variant`   | `SfBadgeVariant`   | `standard`    | `standard`, `dot`                                      |
 | `placement` | `SfBadgePlacement` | `top-right`   | `top-right`, `top-left`, `bottom-right`, `bottom-left` |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfBadge/SfBadge.tsx

@@ -1,6 +1,6 @@
 # Input
 
-::tabs{:titles='["Usage", "API"]'}
+::tabs{:titles='["Usage", "API", "Source code"]'}
 
 #tab-1
 
@@ -113,3 +113,9 @@ Avoid adding `div` tags to slots. If an input element is wrapped in `label` tag 
 | `prefix`  | Left side slotted content  |
 | `default` | Slotted content            |
 | `suffix`  | Right side slotted content |
+
+#tab-3
+
+## Source code
+
+<<<../../../../packages/qwik-storefront-ui/src/components/SfInput/SfInput.tsx
