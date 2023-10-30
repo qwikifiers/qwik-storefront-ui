@@ -26,7 +26,7 @@ Internally, `SfChip` uses a hidden `<input type="checkbox">` element to handle t
 
 ### Thumbnails
 
-`SfChip` provides ::vue-only`prefix` and `suffix` slots::::react-only`slotPrefix` and `slotSuffix` props:: that you can use to add custom content before/after your default content. This can be useful for adding things like icons, badges, or `SfThumbnail` to your toggleable chip.
+`SfChip` provides `slotPrefix` and `slotSuffix` props that you can use to add custom content before/after your default content. This can be useful for adding things like icons, badges, or `SfThumbnail` to your toggleable chip.
 
 <Showcase showcase-name="Chip/ChipWithThumbnail">
 
