@@ -12,15 +12,7 @@ This block contain empty `anchor` element, this specific manipulation adds possi
 
 <Showcase showcase-name="Card/CardDefault" style="min-height: 600px">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Card/CardDefault.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Card/CardDefault.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Card/CardDefault/index.tsx
-::
 
 </Showcase>
 
@@ -30,15 +22,7 @@ The category card view with a circle shaped image, and category title, clickable
 
 <Showcase showcase-name="Card/CategoryCard" style="min-height: 400px;">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Card/CategoryCard.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Card/CategoryCard.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Card/CategoryCard/index.tsx
-::
 
 </Showcase>
 
@@ -48,14 +32,6 @@ This type of card has only button to interact.
 
 <Showcase showcase-name="Card/CardFeature" style="min-height: 600px">
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Card/CardFeature.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Card/CardFeature.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Card/CardFeature/index.tsx
-::
 
 </Showcase>
