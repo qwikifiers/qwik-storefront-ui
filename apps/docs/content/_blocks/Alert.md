@@ -8,15 +8,7 @@ Simple version of alert that has neutral grey color.
 
 <Showcase showcase-name="Alert/AlertNeutral" >
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Alert/AlertNeutral.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Alert/AlertNeutral.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Alert/AlertNeutral/index.tsx
-::
 
 </Showcase>
 
@@ -25,15 +17,9 @@ Simple version of alert that has neutral grey color.
 Green color indicates that an action went successful.
 
 <Showcase showcase-name="Alert/AlertPositive" >
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Alert/AlertPositive.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Alert/AlertPositive.tsx
-::
-::qwik-only
+
 <<<../../../website/src/routes/showcases/Alert/AlertPositive/index.tsx
-::
+
 </Showcase>
 
 ## Alert secondary
@@ -41,15 +27,9 @@ Green color indicates that an action went successful.
 This type is informative just like neutral except that its palette is more noticeable.
 
 <Showcase showcase-name="Alert/AlertSecondary" >
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Alert/AlertSecondary.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Alert/AlertSecondary.tsx
-::
-::qwik-only
+
 <<<../../../website/src/routes/showcases/Alert/AlertSecondary/index.tsx
-::
+
 </Showcase>
 
 ## Alert warning
@@ -58,15 +38,8 @@ Alert can be more descriptive and its content can be splitted into title and des
 
 <Showcase showcase-name="Alert/AlertWarning" >
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Alert/AlertWarning.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Alert/AlertWarning.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Alert/AlertWarning/index.tsx
-::
+
 </Showcase>
 
 ## Alert error
@@ -75,13 +48,6 @@ This type is usually used for information displayed when an important problem oc
 
 <Showcase showcase-name="Alert/AlertError" >
 
-::vue-only
-<<<../../../preview/nuxt/pages/showcases/Alert/AlertError.vue
-::
-::react-only
-<<<../../../preview/next/pages/showcases/Alert/AlertError.tsx
-::
-::qwik-only
 <<<../../../website/src/routes/showcases/Alert/AlertError/index.tsx
-::
+
 </Showcase>
