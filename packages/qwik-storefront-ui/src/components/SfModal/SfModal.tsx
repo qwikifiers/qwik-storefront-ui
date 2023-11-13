@@ -32,24 +32,20 @@ export const SfModal = component$<SfModalProps>(
 
     useVisibleTask$(({ cleanup }) => {
       const handleClick = (event: Event) => {
-        console.log('open value:', open);
         if (
           !disableClickAway &&
-          !elementRef.value?.contains(event.target as Node) &&
-          open
+          !elementRef.value?.contains(event.target as Node)
         ) {
-          console.log('OUTSIDE');
           onClose$ && onClose$();
         }
       };
-      const handleKeyDown = (event: KeyboardEvent) => {
-        if (!disableEsc && event.key === 'Escape' && open) {
-          console.log('keydown esc');
-          onClose$ && onClose$();
-        }
-      };
-
       document.addEventListener('click', handleClick);
+
+      const handleKeyDown = (event: KeyboardEvent) => {
+        if (!disableEsc && event.key === 'Escape') {
+          onClose$ && onClose$();
+        }
+      };
       document.addEventListener('keydown', handleKeyDown);
 
       cleanup(() => {
@@ -58,7 +54,7 @@ export const SfModal = component$<SfModalProps>(
       });
     });
 
-    return open ? (
+    return (
       <Tag
         ref={elementRef ? elementRef : {}}
         class={`fixed inset-0 w-fit h-fit m-auto p-6 pt-10 lg:p-10 border border-neutral-100 bg-white shadow-xl rounded-xl outline-none 
@@ -72,7 +68,7 @@ export const SfModal = component$<SfModalProps>(
       >
         <Slot />
       </Tag>
-    ) : null;
+    );
   }
 );
 
