@@ -4,7 +4,7 @@ export type SfModalProps = QwikIntrinsicElements['modal'] & {
   as: any;
   class?: string;
   ref?: Signal<Element>;
-  open?: boolean;
+  open: boolean;
   disableClickAway?: boolean;
   disableEsc?: boolean;
   onClose$?: PropFunction<() => void>;
