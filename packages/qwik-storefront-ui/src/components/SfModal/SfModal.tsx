@@ -6,7 +6,6 @@ const defaultModalTag = 'div';
 export const SfModal = component$<SfModalProps>(
   ({
     as,
-    open,
     disableClickAway,
     disableEsc,
     onClose$,
