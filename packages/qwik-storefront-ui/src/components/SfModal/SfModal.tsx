@@ -1,4 +1,4 @@
-import { Slot, component$ } from '@builder.io/qwik';
+import { Slot, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
 import { SfModalProps } from './types';
 
 const defaultModalTag = 'div';
@@ -6,15 +6,14 @@ const defaultModalTag = 'div';
 export const SfModal = component$<SfModalProps>(
   ({
     as,
-    ref,
-    open,
     disableClickAway,
     disableEsc,
-    onClose,
+    onClose$,
     class: _class,
     ...attributes
   }) => {
     const Tag = as || defaultModalTag;
+    const elementRef = useSignal<Element>();
 
     // TODO
     // const modalRef = useRef(null);
@@ -23,17 +22,6 @@ export const SfModal = component$<SfModalProps>(
     //   onClose?.();
     // });
 
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (!disableEsc && event.key === 'Escape') {
-        onClose?.();
-      }
-      if (
-        'onKeyDown' in attributes &&
-        typeof attributes.onKeyDown === 'function'
-      )
-        return attributes.onKeyDown?.(event);
-    };
-
     // TODO
     // useTrapFocus(modalRef, {
     //   activeState: open,
@@ -41,20 +29,45 @@ export const SfModal = component$<SfModalProps>(
     //   initialFocusContainerFallback: true,
     // });
 
-    return open ? (
+    useVisibleTask$(({ cleanup }) => {
+      const handleClick = (event: Event) => {
+        if (
+          !disableClickAway &&
+          !elementRef.value?.contains(event.target as Node)
+        ) {
+          onClose$ && onClose$();
+        }
+      };
+      document.addEventListener('click', handleClick);
+
+      const handleKeyDown = (event: KeyboardEvent) => {
+        if (!disableEsc && event.key === 'Escape') {
+          onClose$ && onClose$();
+        }
+      };
+      document.addEventListener('keydown', handleKeyDown);
+
+      cleanup(() => {
+        document.removeEventListener('click', handleClick);
+        document.removeEventListener('keydown', handleKeyDown);
+      });
+    });
+
+    return (
       <Tag
-        {...(ref ? { ref } : {})}
+        ref={elementRef ? elementRef : {}}
         class={`fixed inset-0 w-fit h-fit m-auto p-6 pt-10 lg:p-10 border border-neutral-100 bg-white shadow-xl rounded-xl outline-none 
           ${_class}`}
         tabIndex="-1"
         aria-modal="true"
         data-testid="modal"
         {...attributes}
-        onKeyDown={onKeyDown}
+        disableEsc={disableEsc}
+        disableClickAway={disableClickAway}
       >
         <Slot />
       </Tag>
-    ) : null;
+    );
   }
 );
 
