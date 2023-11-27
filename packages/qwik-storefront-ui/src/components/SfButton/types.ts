@@ -5,9 +5,10 @@ import {
   Signal,
 } from '@builder.io/qwik';
 
-export type SfButtonProps = QwikIntrinsicElements['button'] &
-  QwikIntrinsicElements['a'] & {
+export type SfButtonProps = Omit<QwikIntrinsicElements['button'], 'type'> &
+  Omit<QwikIntrinsicElements['a'], 'type'> & {
     as?: any;
+    class?: string;
     ref?: Signal<Element | undefined>;
     size?: `${SfButtonSize}`;
     variant?: `${SfButtonVariant}`;
@@ -15,6 +16,7 @@ export type SfButtonProps = QwikIntrinsicElements['button'] &
     slotSuffix?: boolean;
     disabled?: boolean;
     square?: boolean;
+    type?: 'button' | 'reset' | 'submit';
     onClick$?: PropFunction<
       (event: QwikMouseEvent<HTMLButtonElement, MouseEvent>) => void
     >;
