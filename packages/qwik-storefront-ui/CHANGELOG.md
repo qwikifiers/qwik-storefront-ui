@@ -2,6 +2,24 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.0.8](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.7...qwik-storefront-ui-0.0.8) (2023-11-27)
+
+
+### Bug Fixes
+
+* added playground for modal ([#35](https://github.com/qwikifiers/qwik-storefront-ui/issues/35)) ([e058ec8](https://github.com/qwikifiers/qwik-storefront-ui/commit/e058ec8d8d50316190334f431ba2c0e6b5ab5e79))
+* solve SfButton issue ([#37](https://github.com/qwikifiers/qwik-storefront-ui/issues/37)) ([c245931](https://github.com/qwikifiers/qwik-storefront-ui/commit/c24593112c64dfacf50f81e7e0b9f7ba20771171))
+* website & library configs ([#26](https://github.com/qwikifiers/qwik-storefront-ui/issues/26)) ([636675d](https://github.com/qwikifiers/qwik-storefront-ui/commit/636675d8d3d2b26f3b9f84765b3e176c61033f7e))
+
+
+### Features
+
+* add SfProgressCircular example ([#29](https://github.com/qwikifiers/qwik-storefront-ui/issues/29)) ([9cf058f](https://github.com/qwikifiers/qwik-storefront-ui/commit/9cf058f0898d1e91b99facb89b5ea7681f446aa5))
+* add SfTextarea component ([#30](https://github.com/qwikifiers/qwik-storefront-ui/issues/30)) ([532fc27](https://github.com/qwikifiers/qwik-storefront-ui/commit/532fc27eedcb13c657c3bde16ca8605cbd7502fc))
+* chip add onChange$ event ([3518205](https://github.com/qwikifiers/qwik-storefront-ui/commit/35182059b16d3cf89fa14cad3f99e45aba2bdca8))
+
+
+
 ## [0.0.7](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.6...qwik-storefront-ui-0.0.7) (2023-10-18)
 
 
