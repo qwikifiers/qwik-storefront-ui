@@ -18,13 +18,24 @@ export const getSizeClasses = (
 ) => {
   switch (size) {
     case SfButtonSize.sm:
-      return [square ? 'p-1.5' : 'leading-5 text-sm py-1.5 px-3', 'gap-1.5'];
+      return [
+        square ? 'p-1.5' : 'leading-5 text-sm py-1.5 px-3',
+        'gap-1.5',
+      ].join(' ');
     case SfButtonSize.lg:
-      return [square ? 'p-4' : 'py-3 leading-6 px-6', 'gap-3'];
+      return [square ? 'p-4' : 'py-3 leading-6 px-6', 'gap-3'].join(' ');
     default:
-      return [square ? 'p-2' : 'py-2 leading-6 px-4', 'gap-2'];
+      return [square ? 'p-2' : 'py-2 leading-6 px-4', 'gap-2'].join(' ');
   }
 };
+
+const Button = component$((attributes) => {
+  return (
+    <button {...attributes}>
+      <Slot />
+    </button>
+  );
+});
 
 export const SfButton = component$<SfButtonProps>(
   ({
@@ -36,18 +47,15 @@ export const SfButton = component$<SfButtonProps>(
     slotSuffix,
     variant = SfButtonVariant.primary,
     square,
+    type,
     ...attributes
   }) => {
-    const Tag = as || defaultButtonTag;
+    const Tag = as || Button;
 
     return (
       <Tag
         {...(ref ? { ref } : {})}
-        type={
-          typeof Tag === 'string' && Tag.toLowerCase() === 'button'
-            ? 'button'
-            : undefined
-        }
+        type={type}
         class={[
           'inline-flex items-center justify-center font-medium text-base focus-visible:outline focus-visible:outline-offset rounded-md disabled:text-disabled-500 disabled:bg-disabled-300 disabled:shadow-none disabled:ring-0 disabled:cursor-not-allowed',
           getSizeClasses(size, square),
