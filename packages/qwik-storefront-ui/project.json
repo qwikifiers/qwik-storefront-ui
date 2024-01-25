@@ -5,7 +5,7 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
@@ -19,7 +19,7 @@
       }
     },
     "test": {
-      "executor": "@nrwl/vite:test",
+      "executor": "@nx/vite:test",
       "outputs": ["../..//coverage/packages/qwik-storefront-ui"],
       "options": {
         "passWithNoTests": true,
@@ -27,7 +27,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["packages/qwik-storefront-ui/**/*.{ts,tsx,js,jsx}"]
@@ -68,6 +68,28 @@
       "options": {
         "tag": "${tag}",
         "notes": "${notes}"
+      }
+    },
+    "component-test": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "packages/qwik-storefront-ui/cypress.config.ts",
+        "testingType": "component",
+        "watch": true,
+        "skipNxCache": true,
+        "env": {
+          "pluginVisualRegressionCleanupUnusedImages": false
+        }
+      }
+    },
+    "component-test-ci": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "packages/qwik-storefront-ui/cypress.config.ts",
+        "testingType": "component",
+        "env": {
+          "pluginVisualRegressionCleanupUnusedImages": false
+        }
       }
     }
   },

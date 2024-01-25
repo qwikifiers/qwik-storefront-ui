@@ -4,6 +4,16 @@
     "outDir": "../../dist/out-tsc"
   },
   "files": [],
-  "exclude": [],
-  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+  "exclude": [
+    "cypress/**/*",
+    "cypress.config.ts",
+    "**/*.cy.ts",
+    "**/*.cy.js",
+    "**/*.cy.tsx",
+    "**/*.cy.jsx",
+    "**/*.spec.jsx",
+    "**/*.spec.tsx",
+    "**/*.spec.ts"
+  ],
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "cypress.config.ts"]
 }
