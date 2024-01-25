@@ -15,7 +15,7 @@
     }
   },
   "plugins": ["@typescript-eslint"],
-  "ignorePatterns": ["!**/*"],
+  "ignorePatterns": ["!**/*", "cypress.config.ts"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
