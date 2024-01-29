@@ -23,11 +23,11 @@ export const SfChip = component$<SfChipProps>(
       switch (size) {
         case SfChipSize.sm:
           return square
-            ? 'px-1.5'
+            ? 'px-1.5 rounded-none'
             : [slotPrefix ? 'pl-1.5' : 'pl-3', slotSuffix ? 'pr-1.5' : 'pr-3'];
         default:
           return square
-            ? 'px-2'
+            ? 'px-2 rounded-none'
             : [slotPrefix ? 'pl-2' : 'pl-4', slotSuffix ? 'pr-2' : 'pr-4'];
       }
     };
