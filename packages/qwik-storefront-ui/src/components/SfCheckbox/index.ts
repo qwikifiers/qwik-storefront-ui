@@ -1,3 +1,1 @@
-export * from './types';
-
-export { SfCheckbox } from './SfCheckbox';
+export { SfCheckbox, type SfCheckboxProps } from './SfCheckbox';
