@@ -1,4 +1,4 @@
-import { Slot, component$ } from '@builder.io/qwik';
+import { Slot, component$, PropsOf } from '@builder.io/qwik';
 import { SfButtonProps, SfButtonSize, SfButtonVariant } from './types';
 
 export const defaultButtonTag = 'button';
@@ -29,7 +29,7 @@ export const getSizeClasses = (
   }
 };
 
-const Button = component$((attributes) => {
+const Button = component$((attributes: PropsOf<'button'>) => {
   return (
     <button {...attributes}>
       <Slot />
