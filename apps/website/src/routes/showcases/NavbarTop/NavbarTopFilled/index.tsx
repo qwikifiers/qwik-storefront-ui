@@ -36,7 +36,7 @@ export default component$(() => {
           <a href="/" aria-label="SF Homepage" class="inline-block text-white">
             <picture>
               <source
-                srcSet={'/images/vsf_logo_white.svg'}
+                src-set={'/images/vsf_logo_white.svg'}
                 media="(min-width: 767px)"
               />
               <img

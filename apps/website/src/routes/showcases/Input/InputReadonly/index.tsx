@@ -9,8 +9,8 @@ export default component$(() => {
         <span class="text-sm font-medium">Label</span>
         <SfInput
           value={valueSignal.value}
-          onChange$={(event) => {
-            valueSignal.value = event.target.value;
+          onChange$={(_: Event, el: HTMLInputElement) => {
+            valueSignal.value = el.value;
           }}
           wrapperClass="!bg-disabled-100 !ring-disabled-300 !ring-1"
           readOnly

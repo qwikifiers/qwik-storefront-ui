@@ -1,13 +1,8 @@
-import {
-  PropFunction,
-  QwikChangeEvent,
-  QwikIntrinsicElements,
-  Signal,
-} from '@builder.io/qwik';
+import { PropsOf, Signal } from '@builder.io/qwik';
 
-export type SfSwitchProps = Omit<QwikIntrinsicElements['input'], 'children'> & {
+export type SfSwitchProps = PropsOf<'input'> & {
   ref?: Signal<Element | undefined>;
   class?: string;
   invalid?: boolean;
-  onChange$: PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>;
+  onChange$: PropsOf<'input'>['onChange$'];
 };

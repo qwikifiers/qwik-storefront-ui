@@ -1,14 +1,6 @@
-import {
-  PropFunction,
-  QwikChangeEvent,
-  QwikIntrinsicElements,
-  Signal,
-} from '@builder.io/qwik';
+import { PropsOf, Signal } from '@builder.io/qwik';
 
-export type SfInputProps = Omit<
-  QwikIntrinsicElements['input'],
-  'size' | 'class' | 'children' | 'change'
-> & {
+export type SfInputProps = Omit<PropsOf<'input'>, 'size' | 'children'> & {
   class?: string;
   size?: `${SfInputSize}`;
   invalid?: boolean;
@@ -16,7 +8,7 @@ export type SfInputProps = Omit<
   slotPrefix?: boolean;
   slotSuffix?: boolean;
   ref?: Signal<Element | undefined>;
-  onChange$?: PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>;
+  onChange$?: PropsOf<'input'>['onChange$'];
 };
 
 export enum SfInputSize {

@@ -25,8 +25,8 @@ export default component$(() => {
               name={name}
               value={value}
               checked={checkedStateSignal.value === value}
-              onChange$={(event) => {
-                checkedStateSignal.value = event.target.value;
+              onChange$={(_, el) => {
+                checkedStateSignal.value = el.value;
               }}
             />
             <span class="ml-2 text-base font-normal leading-6 font-body">
