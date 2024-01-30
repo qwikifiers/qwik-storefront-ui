@@ -10,6 +10,7 @@ export type SfSelectProps = Omit<QwikIntrinsicElements['select'], 'size'> & {
   invalid?: boolean;
   wrapperClass?: string;
   slotChevron?: boolean;
+  placeholder?: string;
   onChange$?: PropFunction<(event: QwikChangeEvent<HTMLSelectElement>) => void>;
 };
 

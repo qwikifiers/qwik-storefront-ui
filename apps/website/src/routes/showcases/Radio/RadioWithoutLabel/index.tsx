@@ -22,8 +22,8 @@ export default component$(() => {
           value={value}
           class="block mb-4"
           checked={checkedStateSignal.value === value}
-          onChange$={(event) => {
-            checkedStateSignal.value = event.target.value;
+          onChange$={(_, el) => {
+            checkedStateSignal.value = el.value;
           }}
         />
       ))}

@@ -1,4 +1,3 @@
-import type { QwikChangeEvent } from '@builder.io/qwik';
 import { $, component$, useSignal } from '@builder.io/qwik';
 import type { SfDrawerProps } from 'qwik-storefront-ui';
 import { SfButton, SfDrawer, SfDrawerPlacement } from 'qwik-storefront-ui';
@@ -9,8 +8,8 @@ export default component$(() => {
     SfDrawerPlacement.left
   );
 
-  const changePlacement = $((event: QwikChangeEvent<HTMLSelectElement>) => {
-    placementSignal.value = event.target.value as SfDrawerProps['placement'];
+  const changePlacement = $((_: Event, el: HTMLSelectElement) => {
+    placementSignal.value = el.value as SfDrawerProps['placement'];
   });
 
   return (

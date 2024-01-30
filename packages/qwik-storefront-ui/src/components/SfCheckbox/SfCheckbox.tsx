@@ -1,5 +1,10 @@
-import { component$ } from '@builder.io/qwik';
-import { SfCheckboxProps } from './types';
+import { component$, PropsOf, Signal } from '@builder.io/qwik';
+
+export type SfCheckboxProps = {
+  ref?: Signal<Element | undefined>;
+  invalid?: boolean;
+  onChange$?: PropsOf<'input'>['onChange$'];
+} & PropsOf<'input'>;
 
 export const SfCheckbox = component$<SfCheckboxProps>(
   ({ invalid, class: _class, ref, onChange$, ...attributes }) => (

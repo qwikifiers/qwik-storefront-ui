@@ -40,7 +40,7 @@ export default component$(() => {
           >
             <picture>
               <source
-                srcSet={'/images/vsf_logo.svg'}
+                src-set={'/images/vsf_logo.svg'}
                 media="(min-width: 767px)"
               />
               <img

@@ -1,13 +1,8 @@
-import {
-  PropFunction,
-  QwikChangeEvent,
-  QwikIntrinsicElements,
-  Signal,
-} from '@builder.io/qwik';
+import { PropsOf, Signal } from '@builder.io/qwik';
 
-export type SfRadioProps = Omit<QwikIntrinsicElements['input'], 'children'> & {
+export type SfRadioProps = PropsOf<'input'> & {
   class?: string;
   ref?: Signal<Element | undefined>;
   invalid?: boolean;
-  onChange$: PropFunction<(event: QwikChangeEvent<HTMLInputElement>) => void>;
+  onChange$?: PropsOf<'input'>['onChange$'];
 };

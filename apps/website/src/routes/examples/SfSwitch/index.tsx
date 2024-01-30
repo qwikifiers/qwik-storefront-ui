@@ -1,5 +1,6 @@
 import {
   $,
+  InputHTMLAttributes,
   QwikChangeEvent,
   component$,
   useContext,
@@ -49,8 +50,8 @@ export default component$(() => {
     };
   });
 
-  const onChange = $((event: QwikChangeEvent<HTMLInputElement>) => {
-    const { checked } = event.target;
+  const onChange = $((_: Event, el: HTMLInputElement) => {
+    const { checked } = el;
     examplesState.data.state = { ...examplesState.data.state, checked };
   });
 

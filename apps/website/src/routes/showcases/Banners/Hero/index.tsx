@@ -9,7 +9,7 @@ export default component$(() => {
   return (
     <div class="relative min-h-[600px]">
       <picture>
-        <source srcSet={desktopBackground} media="(min-width: 768px)" />
+        <source src-set={desktopBackground} media="(min-width: 768px)" />
         <img
           src={mobileBackground}
           class="absolute w-full h-full z-[-1] md:object-cover"

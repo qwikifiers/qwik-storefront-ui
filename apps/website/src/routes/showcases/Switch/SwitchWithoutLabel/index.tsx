@@ -7,8 +7,8 @@ export default component$(() => {
     <SfSwitch
       checked={checkedStateSignal.value}
       value="value-1"
-      onChange$={(event) => {
-        checkedStateSignal.value = event.target.checked;
+      onChange$={(_, el) => {
+        checkedStateSignal.value = el.checked;
       }}
     />
   );

@@ -96,10 +96,10 @@ export default component$(() => {
     };
   });
 
-  const onChange = $((event: QwikChangeEvent<HTMLInputElement>) => {
+  const onChange = $((_: Event, el: HTMLInputElement) => {
     examplesState.data.state = {
       ...examplesState.data.state,
-      value: event.target.value,
+      value: el.value,
     };
   });
   const isAboveLimit = examplesState.data.state.characterLimit

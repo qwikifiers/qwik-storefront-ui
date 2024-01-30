@@ -48,8 +48,8 @@ export default component$(() => {
               : ''
           }`}
           value={valueSignal.value}
-          onChange$={(event) => {
-            valueSignal.value = event.target.value;
+          onChange$={(_: Event, el: HTMLInputElement) => {
+            valueSignal.value = el.value;
           }}
         />
       </label>

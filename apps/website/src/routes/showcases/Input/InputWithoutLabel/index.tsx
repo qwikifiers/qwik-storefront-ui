@@ -6,7 +6,7 @@ export default component$(() => {
     <div class="flex flex-col gap-y-5">
       <SfInput size="sm" aria-label="Label size sm" />
       <SfInput aria-label="Label size base" />
-      <SfInput size="lg" aria-label="Label size lg" />
+      <SfInput size={'lg'} aria-label="Label size lg" />
     </div>
   );
 });
