@@ -1,4 +1,10 @@
-import { component$, useContext, useSignal, useTask$ } from '@builder.io/qwik';
+import {
+  $,
+  component$,
+  useContext,
+  useSignal,
+  useTask$,
+} from '@builder.io/qwik';
 import {
   SfRatingButton,
   SfRatingButtonSize,
@@ -12,8 +18,12 @@ export default component$(() => {
   const examplesState = useContext(EXAMPLES_STATE);
 
   const maxValue = useSignal(5);
+  const selectedValue = useSignal(0);
 
-  useTask$(() => {
+  useTask$(({ track }) => {
+    track(() => {
+      maxValue.value, selectedValue.value;
+    });
     examplesState.data = {
       controls: [
         {
@@ -27,6 +37,7 @@ export default component$(() => {
                 min: 0,
                 max: maxValue.value,
                 step: 1,
+                modelValue: selectedValue.value,
               },
             },
           ],
@@ -62,23 +73,36 @@ export default component$(() => {
         },
       ] satisfies ControlsType,
       state: {
-        value: 0,
+        modelValue: selectedValue.value,
         max: maxValue.value,
         size: SfRatingSize.base,
+        disabled: false,
       },
     };
+  });
+
+  useTask$(({ track }) => {
+    track(() => examplesState.data.state.max);
+    maxValue.value = examplesState.data.state.max || 5;
+  });
+
+  useTask$(({ track }) => {
+    track(() => examplesState.data.state.modelValue);
+    selectedValue.value = examplesState.data.state.modelValue;
+  });
+
+  const onChange = $((value: number) => {
+    examplesState.data.state.modelValue = value;
   });
 
   return (
     <ComponentExample>
       <SfRatingButton
-        value={Number(examplesState.data.state.value)}
+        value={Number(examplesState.data.state.modelValue)}
         max={Number(examplesState.data.state.max)}
         size={examplesState.data.state.size}
         disabled={examplesState.data.state.disabled}
-        onChange$={(value) => {
-          examplesState.data.state.value = value;
-        }}
+        onChange$={onChange}
       />
     </ComponentExample>
   );
