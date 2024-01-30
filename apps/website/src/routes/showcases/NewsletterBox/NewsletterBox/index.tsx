@@ -52,8 +52,8 @@ export default component$(() => {
             type="email"
             wrapperClass="grow"
             placeholder="Type your email"
-            onChange$={(event) => {
-              inputValueSignal.value = event.target.value;
+            onChange$={(_: Event, el: HTMLInputElement) => {
+              inputValueSignal.value = el.value;
             }}
           />
           <SfButton type="submit" size="lg">

@@ -18,7 +18,6 @@ export const SfInput = component$<SfInputProps>(
     class: _class,
     wrapperClass,
     ref,
-    ...attributes
   }) => {
     return (
       <div
@@ -45,7 +44,6 @@ export const SfInput = component$<SfInputProps>(
           size={1}
           value={value}
           {...(ref ? { ref } : {})}
-          {...attributes}
           onChange$={onChange$}
         />
         {slotSuffix && (

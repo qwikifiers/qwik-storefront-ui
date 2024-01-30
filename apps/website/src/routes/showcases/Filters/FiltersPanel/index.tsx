@@ -302,8 +302,8 @@ export default component$(() => {
                         value={value}
                         name="radio-price"
                         checked={selectedFiltersSignal.value.includes(value)}
-                        onChange$={(event) => {
-                          handleRadioSelection(event.target.value);
+                        onChange$={(_: Event, el: HTMLInputElement) => {
+                          handleRadioSelection(el.value);
                         }}
                       />
                     </div>

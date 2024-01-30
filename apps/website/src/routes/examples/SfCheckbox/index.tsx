@@ -79,8 +79,8 @@ export default component$(() => {
         );
   });
 
-  const onChange = $((event: QwikChangeEvent<HTMLInputElement>) => {
-    const { value } = event.target;
+  const onChange = $((_: Event, el: HTMLInputElement) => {
+    const { value } = el;
     examplesState.data.state =
       examplesState.data.state.checkedValue.indexOf(value) > -1
         ? {

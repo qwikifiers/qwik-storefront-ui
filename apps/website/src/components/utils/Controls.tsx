@@ -1,10 +1,4 @@
-import {
-  $,
-  QwikChangeEvent,
-  component$,
-  useContext,
-  useSignal,
-} from '@builder.io/qwik';
+import { $, component$, useContext, useSignal } from '@builder.io/qwik';
 import {
   SfButton,
   SfButtonSize,
@@ -26,22 +20,20 @@ export const Controls = component$<any>(() => {
     };
   });
 
-  const handleJsonOnChangeValue = $(
-    (e: QwikChangeEvent<HTMLTextAreaElement>, name: string) => {
-      examplesState.data.state = {
-        ...examplesState.data.state,
-        [name]: JSON.parse(e.target.value),
-      };
-    }
-  );
+  const handleJsonOnChangeValue = $((el: HTMLTextAreaElement, name: string) => {
+    examplesState.data.state = {
+      ...examplesState.data.state,
+      [name]: JSON.parse(el.value),
+    };
+  });
 
   const handleCheckbox = $(
     (
-      e: QwikChangeEvent<HTMLInputElement>,
+      el: HTMLInputElement,
       name: string,
       currentValue: string | boolean | []
     ) => {
-      const { value } = e.target;
+      const { value } = el;
       if (Array.isArray(currentValue)) {
         const newValue: string[] = [...currentValue];
         const valueItemIndex = newValue.indexOf(value);
@@ -161,11 +153,8 @@ export const Controls = component$<any>(() => {
                       <select
                         value={examplesState.data.state[control.modelName]}
                         aria-labelledby={control.modelName}
-                        onChange$={(e) => {
-                          handleOnChangeValue(
-                            control.modelName,
-                            e.target.value
-                          );
+                        onChange$={(_: Event, el: HTMLSelectElement) => {
+                          handleOnChangeValue(control.modelName, el.value);
                         }}
                       >
                         {(
@@ -224,9 +213,12 @@ export const Controls = component$<any>(() => {
                                           2
                                         ) as string
                                       }
-                                      onChange$={(e) => {
+                                      onChange$={(
+                                        _: Event,
+                                        el: HTMLTextAreaElement
+                                      ) => {
                                         handleJsonOnChangeValue(
-                                          e,
+                                          el,
                                           control.modelName
                                         );
                                       }}
@@ -266,10 +258,13 @@ export const Controls = component$<any>(() => {
                                       value={checkboxValue(option)}
                                       type={control.type}
                                       aria-labelledby={control.modelName}
-                                      onChange$={(e) => {
+                                      onChange$={(
+                                        _: Event,
+                                        el: HTMLInputElement
+                                      ) => {
                                         control.type === 'checkbox'
                                           ? handleCheckbox(
-                                              e,
+                                              el,
                                               control.modelName,
                                               examplesState.data.state[
                                                 control.modelName
@@ -277,7 +272,7 @@ export const Controls = component$<any>(() => {
                                             )
                                           : handleOnChangeValue(
                                               control.modelName,
-                                              e.target.value
+                                              el.value
                                             );
                                       }}
                                       name={`${control.modelName}-${index}`}

@@ -81,8 +81,8 @@ export default component$(() => {
               checked={examplesState.data.state.checked === value}
               disabled={examplesState.data.state.disabled}
               invalid={examplesState.data.state.invalid}
-              onChange$={(event) => {
-                onChangeHandler(event.target.value);
+              onChange$={(_: Event, el: HTMLInputElement) => {
+                onChangeHandler(el.value);
               }}
             />
             <span class="ml-2 text-base font-normal leading-6 font-body">

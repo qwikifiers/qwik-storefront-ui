@@ -9,8 +9,8 @@ export default component$(() => {
       <SfProgressCircular size="2xl" value={value}>
         <text
           class="font-medium"
-          textAnchor="middle"
-          alignmentBaseline="central"
+          text-anchor="middle"
+          alignment-baseline="central"
           x="100%"
           y="100%"
         >
@@ -20,8 +20,8 @@ export default component$(() => {
       <SfProgressCircular size="3xl" value={value}>
         <text
           class="font-medium fill-neutral-400"
-          textAnchor="middle"
-          alignmentBaseline="central"
+          text-anchor="middle"
+          alignment-baseline="central"
           x="100%"
           y="100%"
         >
@@ -31,8 +31,8 @@ export default component$(() => {
       <SfProgressCircular size="3xl" value={value}>
         <text
           class="font-medium text-2xs"
-          textAnchor="middle"
-          alignmentBaseline="central"
+          text-anchor="middle"
+          alignment-baseline="central"
           x="100%"
           y="100%"
         >

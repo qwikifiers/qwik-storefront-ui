@@ -1,6 +1,6 @@
-import { PropFunction, QwikIntrinsicElements, Signal } from '@builder.io/qwik';
+import { PropFunction, PropsOf, Signal } from '@builder.io/qwik';
 
-export type SfModalProps = QwikIntrinsicElements['modal'] & {
+export type SfModalProps = PropsOf<'modal'> & {
   as: any;
   class?: string;
   ref?: Signal<Element>;

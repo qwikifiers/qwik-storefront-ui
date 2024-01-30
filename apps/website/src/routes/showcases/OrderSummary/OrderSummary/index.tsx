@@ -91,8 +91,8 @@ export default component$(() => {
             value={inputValueSignal.value}
             placeholder="Enter promo code"
             wrapperClass="grow"
-            onChange$={(event) => {
-              inputValueSignal.value = event.target.value;
+            onChange$={(_: Event, el: HTMLInputElement) => {
+              inputValueSignal.value = el.value;
             }}
           />
           <SfButton variant="secondary" onClick$={checkPromoCode}>
