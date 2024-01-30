@@ -18,5 +18,4 @@ runs:
     - name: Run Storefront UI Cypress tests
       uses: cypress-io/github-action@v6.6.1
       with:
-        install: false
         command: 'npm run test.storefront-ui.ci'
