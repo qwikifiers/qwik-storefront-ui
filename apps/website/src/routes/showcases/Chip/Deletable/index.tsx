@@ -23,8 +23,8 @@ export default component$(() => {
             class="mr-2"
             inputProps={{
               checked: true,
-              onChange$: $(() => handleRemoveChip(value)),
             }}
+            onChange$={() => handleRemoveChip(value)}
             slotPrefix={true}
             slotSuffix={true}
           >
