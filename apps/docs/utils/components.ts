@@ -19,7 +19,7 @@ export const components = {
     'SfProgressLinear',
     'SfRadio',
     'SfRating',
-    // 'SfRatingButton',
+    'SfRatingButton',
     // 'SfScrollable',
     // 'SfSelect',
     'SfSwitch',

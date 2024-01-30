@@ -18,6 +18,7 @@ export * from './SfProgressCircular';
 export * from './SfProgressLinear';
 export * from './SfRadio';
 export * from './SfRating';
+export * from './SfRatingButton';
 export * from './SfSelect';
 export * from './SfSwitch';
 export * from './SfTextarea';
