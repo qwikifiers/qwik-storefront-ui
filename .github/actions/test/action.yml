@@ -1,0 +1,20 @@
+name: Storefront UI Cypress tests
+
+description: Storefront UI Cypress tests
+
+inputs:
+  github_token:
+    description: GitHub token
+    required: true
+
+runs:
+  using: composite
+
+  steps:
+    - name: Build Storefront UI
+      shell: bash
+      run: npx nx build qwik-storefront-ui
+
+    - name: Run Storefront UI Cypress tests
+      shell: bash
+      run: npx nx run qwik-storefront-ui:component-test-ci
