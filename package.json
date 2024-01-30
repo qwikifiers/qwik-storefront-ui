@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "nx run website:serve",
     "docs:dev": "nx run docs:dev",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test.storefront-ui.ci": "nx run qwik-storefront-ui:component-test-ci"
   },
   "private": false,
   "devDependencies": {
