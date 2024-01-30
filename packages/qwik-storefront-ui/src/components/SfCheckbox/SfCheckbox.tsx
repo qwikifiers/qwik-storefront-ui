@@ -3,7 +3,7 @@ import { component$, PropsOf, Signal } from '@builder.io/qwik';
 export type SfCheckboxProps = {
   ref?: Signal<Element | undefined>;
   invalid?: boolean;
-  onChange$?: PropsOf<'button'>['onChange$'];
+  onChange$?: PropsOf<'input'>['onChange$'];
 } & PropsOf<'input'>;
 
 export const SfCheckbox = component$<SfCheckboxProps>(

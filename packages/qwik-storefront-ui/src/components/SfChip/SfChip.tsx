@@ -1,5 +1,20 @@
-import { Slot, component$, useId } from '@builder.io/qwik';
-import { SfChipProps, SfChipSize } from './types';
+import { PropsOf, Signal, Slot, component$, useId } from '@builder.io/qwik';
+
+export type SfChipProps = {
+  ref?: Signal<Element | undefined>;
+  class?: string;
+  size?: `${SfChipSize}`;
+  square?: boolean;
+  inputProps?: PropsOf<'input'>;
+  slotPrefix?: boolean;
+  slotSuffix?: boolean;
+  onChange$?: PropsOf<'input'>['onChange$'];
+};
+
+export enum SfChipSize {
+  sm = 'sm',
+  base = 'base',
+}
 
 export const SfChip = component$<SfChipProps>(
   ({
@@ -60,7 +75,7 @@ export const SfChip = component$<SfChipProps>(
           class="hidden"
           type="checkbox"
           {...inputProps}
-          onChange$={(e) => onChange$ && onChange$(e)}
+          onChange$={onChange$}
         />
         <label
           for={chipId}

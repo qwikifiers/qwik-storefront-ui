@@ -1,4 +1,4 @@
-import { $, QwikChangeEvent, component$, useSignal } from '@builder.io/qwik';
+import { $, component$, useSignal } from '@builder.io/qwik';
 import {
   SfAccordionItem,
   SfButton,
@@ -207,8 +207,8 @@ export default component$(() => {
                           disabled: !counter,
                           checked: selectedFiltersSignal.value.includes(value),
                           onChange$: $(
-                            (event: QwikChangeEvent<HTMLInputElement>) => {
-                              handleFilterSelection(event.target.value);
+                            (_: InputEvent, el: HTMLInputElement) => {
+                              handleFilterSelection(el.value);
                             }
                           ),
                         }}
@@ -239,8 +239,8 @@ export default component$(() => {
                           checked={selectedFiltersSignal.value.includes(value)}
                           class="appearance-none peer"
                           type="checkbox"
-                          onChange$={(event) => {
-                            handleFilterSelection(event.target.value);
+                          onChange$={(_: InputEvent, el: HTMLInputElement) => {
+                            handleFilterSelection(el.value);
                           }}
                         />
                         <span class="inline-flex items-center justify-center p-1 transition duration-300 rounded-full cursor-pointer ring-1 ring-neutral-200 ring-inset outline-offset-2 outline-secondary-600 peer-checked:ring-2 peer-checked:ring-primary-700 peer-hover:bg-primary-100 peer-hover:ring-primary-200 peer-active:bg-primary-200 peer-active:ring-primary-300 peer-disabled:cursor-not-allowed peer-disabled:bg-disabled-100 peer-disabled:opacity-50 peer-disabled:ring-1 peer-disabled:ring-disabled-200 peer-disabled:hover:ring-disabled-200 peer-checked:hover:ring-primary-700 peer-checked:active:ring-primary-700 peer-focus:outline">
@@ -272,8 +272,8 @@ export default component$(() => {
                         disabled={counter === 0}
                         value={value}
                         checked={selectedFiltersSignal.value.includes(value)}
-                        onChange$={(event) => {
-                          handleFilterSelection(event.target?.value);
+                        onChange$={(_: InputEvent, el: HTMLInputElement) => {
+                          handleFilterSelection(el.value);
                         }}
                       />
                     </div>
