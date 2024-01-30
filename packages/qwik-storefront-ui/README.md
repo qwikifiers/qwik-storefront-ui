@@ -7,7 +7,7 @@
 </p>
 
 <h3 align="center">
-  Qwik UI library and Design System for eCommerce based on <a href="https://tailwindcss.com/">TailwindCSS</a>.
+  Qwik UI library and Design System for eCommerce based on <a href="https://tailwindcss.com/">TailwindCSS</a>!
 </h3>
 
 <img src="https://github.com/vuestorefront/storefront-ui/raw/v2-develop/_readme/showcase.png" alt="showcase">
