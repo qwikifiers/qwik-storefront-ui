@@ -1,8 +1,15 @@
 name: Test
 
 on:
-  - push
-  - pull_request
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - ready_for_review
+
+permissions:
+  pull-requests: read
 
 jobs:
   test:
