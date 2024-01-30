@@ -51,7 +51,7 @@ export const SfRatingButton = component$<SfRatingButtonProps>(
     getLabelText = defaultLabelText,
     name = 'sf-rating-button',
     disabled = false,
-    onChange,
+    onChange$,
     children = renderDefaultIcon,
     ...attributes
   }) => {
@@ -64,7 +64,7 @@ export const SfRatingButton = component$<SfRatingButtonProps>(
       ratingValue <= hover.value || (hover.value === 0 && ratingValue <= value);
 
     const handleChange = $((event: QwikChangeEvent<HTMLInputElement>) => {
-      onChange?.(Number(event.target.value));
+      onChange$?.(Number(event.target.value));
     });
 
     const handleHoverIn = (ratingValue: number) =>

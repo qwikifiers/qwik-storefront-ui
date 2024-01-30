@@ -8,7 +8,7 @@ export interface SfRatingButtonRenderProps {
 
 export interface SfRatingButtonProps {
   value?: number;
-  onChange?: (value: number) => void;
+  onChange$?: (value: number) => void;
   max?: number;
   name?: string;
   disabled?: boolean;

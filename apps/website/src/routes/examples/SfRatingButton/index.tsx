@@ -1,4 +1,4 @@
-import { component$, useContext, useTask$ } from '@builder.io/qwik';
+import { component$, useContext, useSignal, useTask$ } from '@builder.io/qwik';
 import {
   SfRatingButton,
   SfRatingButtonSize,
@@ -10,6 +10,8 @@ import { EXAMPLES_STATE } from '../layout';
 
 export default component$(() => {
   const examplesState = useContext(EXAMPLES_STATE);
+
+  const maxValue = useSignal(5);
 
   useTask$(() => {
     examplesState.data = {
@@ -23,7 +25,7 @@ export default component$(() => {
             {
               bind: {
                 min: 0,
-                max: 5,
+                max: maxValue.value,
                 step: 1,
               },
             },
@@ -61,7 +63,7 @@ export default component$(() => {
       ] satisfies ControlsType,
       state: {
         value: 0,
-        max: 5,
+        max: maxValue.value,
         size: SfRatingSize.base,
       },
     };
@@ -74,6 +76,9 @@ export default component$(() => {
         max={Number(examplesState.data.state.max)}
         size={examplesState.data.state.size}
         disabled={examplesState.data.state.disabled}
+        onChange$={(value) => {
+          examplesState.data.state.value = value;
+        }}
       />
     </ComponentExample>
   );
