@@ -16,5 +16,6 @@ runs:
       run: npx nx build qwik-storefront-ui
 
     - name: Run Storefront UI Cypress tests
-      shell: bash
-      run: npx nx run qwik-storefront-ui:component-test-ci
+      uses: cypress-io/github-action@v5
+      with:
+        command: 'pnpm test.storefront-ui.ci'
