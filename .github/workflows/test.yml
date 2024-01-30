@@ -19,6 +19,7 @@ jobs:
         with:
           access_token: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: actions/checkout@v3
       - name: Setup
         uses: ./.github/actions/setup
 
