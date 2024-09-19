@@ -63,8 +63,8 @@ export const SfRatingButton = component$<SfRatingButtonProps>(
     const isIconFilled = (ratingValue: number) =>
       ratingValue <= hover.value || (hover.value === 0 && ratingValue <= value);
 
-    const handleChange = $((event: QwikChangeEvent<HTMLInputElement>) => {
-      onChange$?.(Number(event.target.value));
+    const handleChange = $((_: Event, element: HTMLInputElement) => {
+      onChange$?.(Number(element.value));
     });
 
     const handleHoverIn = (ratingValue: number) =>
