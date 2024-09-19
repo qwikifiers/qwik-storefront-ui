@@ -2,6 +2,26 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+# [0.1.0](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.8...qwik-storefront-ui-0.1.0) (2024-09-19)
+
+
+### Bug Fixes
+
+* add type to SfButton/Button attributes ([#43](https://github.com/qwikifiers/qwik-storefront-ui/issues/43)) ([16e2e88](https://github.com/qwikifiers/qwik-storefront-ui/commit/16e2e88bfcb65391844fb76d047a919272a88224))
+* add type to SfCheckBox properties ([#44](https://github.com/qwikifiers/qwik-storefront-ui/issues/44)) ([250fe66](https://github.com/qwikifiers/qwik-storefront-ui/commit/250fe66dae3bbf7bbb3e171c4f44b59ed3b0b716))
+* checkbox component custom class ([#41](https://github.com/qwikifiers/qwik-storefront-ui/issues/41)) ([c8691d6](https://github.com/qwikifiers/qwik-storefront-ui/commit/c8691d67567e24ca8e5ea545eaedfb7001115f27))
+* sfCheckBox imports in barrel file ([#45](https://github.com/qwikifiers/qwik-storefront-ui/issues/45)) ([ae3d4b1](https://github.com/qwikifiers/qwik-storefront-ui/commit/ae3d4b1b1ab4c59c7ebe91bec1d55a31aac60a6a))
+* sfChip square ([#46](https://github.com/qwikifiers/qwik-storefront-ui/issues/46)) ([d4867b9](https://github.com/qwikifiers/qwik-storefront-ui/commit/d4867b9893d68cc7a2789d7a91db37f8e8bdf135))
+* solve build errors ([#50](https://github.com/qwikifiers/qwik-storefront-ui/issues/50)) ([a083f59](https://github.com/qwikifiers/qwik-storefront-ui/commit/a083f59646fe8116bd36ff826adc112fc4cedf10))
+* update Chip component type ([#49](https://github.com/qwikifiers/qwik-storefront-ui/issues/49)) ([df2c8b3](https://github.com/qwikifiers/qwik-storefront-ui/commit/df2c8b361904d00e1a24265a60122154bcf22f59))
+
+
+### Features
+
+* **#13:** added SfRatingButton component ([#52](https://github.com/qwikifiers/qwik-storefront-ui/issues/52)) ([7a6281d](https://github.com/qwikifiers/qwik-storefront-ui/commit/7a6281de0da0b045a8f1b23069249094af2119df)), closes [#13](https://github.com/qwikifiers/qwik-storefront-ui/issues/13)
+
+
+
 ## [0.0.8](https://github.com/qwikifiers/qwik-storefront-ui/compare/qwik-storefront-ui-0.0.7...qwik-storefront-ui-0.0.8) (2023-11-27)
 
 
